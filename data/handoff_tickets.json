@@ -1,0 +1,281 @@
+[
+  {
+    "ticketId": "ticket_1771902925099",
+    "timestamp": "2026-02-24T03:15:25.099Z",
+    "userId": "u1",
+    "sessionId": "s1",
+    "question": "我找不到设备绑定入口",
+    "contact": "13800000000",
+    "appContext": {
+      "platform": "android",
+      "appVersion": "1.0.0",
+      "pageCode": "device_home"
+    },
+    "status": "open"
+  },
+  {
+    "ticketId": "ticket_1771902982872",
+    "timestamp": "2026-02-24T03:16:22.872Z",
+    "userId": "u1",
+    "sessionId": "s1",
+    "question": "我找不到设备绑定入口",
+    "contact": "13800000000",
+    "appContext": {
+      "platform": "android",
+      "appVersion": "1.0.0",
+      "pageCode": "device_home"
+    },
+    "status": "open"
+  },
+  {
+    "ticketId": "ticket_1771989751237_403",
+    "timestamp": "2026-02-25T03:22:31.237Z",
+    "userId": "u4",
+    "sessionId": "s4",
+    "question": "怎么申请银行卡额度提升？",
+    "contact": "",
+    "appContext": {
+      "platform": "ios",
+      "appVersion": "1.0.0",
+      "pageCode": "home"
+    },
+    "status": "open",
+    "source": "auto_low_confidence_chat",
+    "reason": "top_score_below_threshold_0.7189",
+    "retrieval": {
+      "topScore": 0.7189221,
+      "threshold": 0.8,
+      "topHits": [
+        {
+          "score": 0.7189221,
+          "faq_id": "GF-010",
+          "question": "F860 是否提供行为追踪与活动洞察？"
+        },
+        {
+          "score": 0.68156606,
+          "faq_id": "GF-011",
+          "question": "App 界面能提供哪些洞察？"
+        },
+        {
+          "score": 0.6807629,
+          "faq_id": "GF-004",
+          "question": "为什么不只用传统 GPS 围栏或智能项圈？"
+        }
+      ]
+    }
+  },
+  {
+    "ticketId": "ticket_1771989777041_74",
+    "timestamp": "2026-02-25T03:22:57.041Z",
+    "userId": "u5",
+    "sessionId": "s5",
+    "question": "怎么申请银行卡额度提升？",
+    "contact": "",
+    "appContext": {
+      "platform": "ios",
+      "appVersion": "1.0.0",
+      "pageCode": "home"
+    },
+    "status": "open",
+    "source": "auto_low_confidence_chat",
+    "reason": "top_score_below_threshold_0.7189",
+    "retrieval": {
+      "topScore": 0.7189221,
+      "threshold": 0.8,
+      "topHits": [
+        {
+          "score": 0.7189221,
+          "faq_id": "GF-010",
+          "question": "F860 是否提供行为追踪与活动洞察？"
+        },
+        {
+          "score": 0.68156606,
+          "faq_id": "GF-011",
+          "question": "App 界面能提供哪些洞察？"
+        },
+        {
+          "score": 0.6807629,
+          "faq_id": "GF-004",
+          "question": "为什么不只用传统 GPS 围栏或智能项圈？"
+        }
+      ]
+    }
+  },
+  {
+    "ticketId": "ticket_1771990548394_127",
+    "timestamp": "2026-02-25T03:35:48.394Z",
+    "userId": "u6",
+    "sessionId": "s6",
+    "question": "怎么申请银行卡额度提升？",
+    "contact": "",
+    "appContext": {
+      "platform": "ios",
+      "appVersion": "1.0.0",
+      "pageCode": "home"
+    },
+    "status": "open",
+    "source": "user_confirmed_handoff",
+    "reason": "top_score_below_threshold_0.7189",
+    "retrieval": {
+      "error": "",
+      "topScore": 0.7189221,
+      "threshold": 0.8,
+      "topHits": [
+        {
+          "score": 0.7189221,
+          "faq_id": "GF-010",
+          "question": "F860 是否提供行为追踪与活动洞察？"
+        },
+        {
+          "score": 0.68156606,
+          "faq_id": "GF-011",
+          "question": "App 界面能提供哪些洞察？"
+        },
+        {
+          "score": 0.6807629,
+          "faq_id": "GF-004",
+          "question": "为什么不只用传统 GPS 围栏或智能项圈？"
+        },
+        {
+          "score": 0.658628,
+          "faq_id": "GF-006",
+          "question": "F860 的定位与边界判定能力如何？"
+        },
+        {
+          "score": 0.6336651,
+          "faq_id": "GF-017",
+          "question": "F860 适用于哪些真实养犬场景？"
+        }
+      ]
+    }
+  },
+  {
+    "ticketId": "ticket_1771994875392_800",
+    "timestamp": "2026-02-25T04:47:55.392Z",
+    "userId": "u_1a9qm1",
+    "sessionId": "s_e44o5x",
+    "question": "这是main飞的吗",
+    "contact": "",
+    "appContext": {
+      "platform": "ios",
+      "appVersion": "1.0.0",
+      "pageCode": "home"
+    },
+    "status": "open",
+    "source": "user_confirmed_handoff",
+    "reason": "top_score_below_threshold_0.5336",
+    "retrieval": {
+      "error": "",
+      "topScore": 0.53357129,
+      "threshold": 0.6,
+      "lexicalMatch": 0.125,
+      "lexicalMatchMin": 0.15,
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 0.53357129,
+          "faq_id": "GF-006",
+          "question": "F860 的定位与边界判定能力如何？"
+        },
+        {
+          "score": 0.37327118600000003,
+          "faq_id": "GF-018",
+          "question": "品牌方如何定义 F860 的产品理念？"
+        },
+        {
+          "score": 0.36578319800000003,
+          "faq_id": "GF-008",
+          "question": "F860 户外环境下防护能力怎么样？"
+        },
+        {
+          "score": 0.365690632,
+          "faq_id": "GF-017",
+          "question": "F860 适用于哪些真实养犬场景？"
+        },
+        {
+          "score": 0.35266065,
+          "faq_id": "GF-009",
+          "question": "项圈材质和清洁维护如何？"
+        }
+      ]
+    }
+  },
+  {
+    "ticketId": "ticket_1772000217331_966",
+    "timestamp": "2026-02-25T06:16:57.331Z",
+    "userId": "u2",
+    "sessionId": "s3",
+    "question": "我找不到设备绑定入口",
+    "contact": "13800000000",
+    "appContext": {
+      "platform": "android",
+      "appVersion": "1.0.0",
+      "pageCode": "device_home"
+    },
+    "status": "open",
+    "source": "manual_api_handoff",
+    "reason": "manual_request",
+    "retrieval": {}
+  },
+  {
+    "ticketId": "ticket_1772000549619_674",
+    "timestamp": "2026-02-25T06:22:29.619Z",
+    "userId": "u3",
+    "sessionId": "s3",
+    "question": "我找不到设备绑定入口",
+    "contact": "13800000000",
+    "appContext": {
+      "platform": "android",
+      "appVersion": "1.0.0",
+      "pageCode": "device_home"
+    },
+    "status": "open",
+    "source": "manual_api_handoff",
+    "reason": "manual_request",
+    "retrieval": {}
+  },
+  {
+    "ticketId": "ticket_1772000550079_700",
+    "timestamp": "2026-02-25T06:22:30.079Z",
+    "userId": "u4",
+    "sessionId": "s4",
+    "question": "请说一下定价规则",
+    "contact": "",
+    "appContext": {
+      "platform": "ios",
+      "appVersion": "1.0.0",
+      "pageCode": "home"
+    },
+    "status": "open",
+    "source": "user_confirmed_handoff",
+    "reason": "top_score_below_threshold_0.3844",
+    "retrieval": {
+      "error": "",
+      "topScore": 0.3844,
+      "topDenseScore": 0.62,
+      "threshold": 0.95,
+      "lexicalMatch": 0,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 0.3844,
+          "faq_id": "GF-012",
+          "question": "F860 是否支持品牌方/B 端合作？"
+        },
+        {
+          "score": 0.3596,
+          "faq_id": "GF-019",
+          "question": "F860 怎么快速上手使用？"
+        },
+        {
+          "score": 0.191429,
+          "faq_id": "GF-017",
+          "question": "F860 适用于哪些真实养犬场景？"
+        }
+      ]
+    }
+  }
+]

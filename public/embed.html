@@ -1,0 +1,520 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover"
+    />
+    <meta name="format-detection" content="telephone=no, email=no, address=no" />
+    <title>在线客服</title>
+    <style>
+      :root {
+        --bg: #f6f8f7;
+        --panel: #ffffff;
+        --line: #d8e2dd;
+        --ink: #1f2a2f;
+        --muted: #5f6d73;
+        --brand: #0f766e;
+        --brand-soft: #dbf2ef;
+        --accent: #0ea5a4;
+        --shadow: 0 10px 24px rgba(17, 24, 39, 0.08);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        margin: 0;
+        height: 100%;
+        overflow: hidden;
+        color: var(--ink);
+        font-family:
+          "PingFang SC", "Hiragino Sans GB", "SF Pro Text", "Segoe UI",
+          sans-serif;
+        background:
+          radial-gradient(120% 90% at 0% -10%, #e4f7f4 0%, transparent 60%),
+          radial-gradient(100% 70% at 100% -10%, #fff1dc 0%, transparent 52%),
+          var(--bg);
+      }
+
+      .app {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .topbar {
+        position: sticky;
+        top: 0;
+        z-index: 2;
+        padding: calc(10px + env(safe-area-inset-top, 0px)) 14px 10px;
+        background: rgba(255, 255, 255, 0.92);
+        backdrop-filter: blur(8px);
+        border-bottom: 1px solid var(--line);
+      }
+
+      .topbar h1 {
+        margin: 0;
+        font-size: 17px;
+        font-weight: 700;
+        letter-spacing: 0.02em;
+      }
+
+      .topbar p {
+        margin: 4px 0 0;
+        font-size: 12px;
+        color: var(--muted);
+      }
+
+      .feed {
+        flex: 1;
+        overflow: auto;
+        padding: 12px 12px 14px;
+        -webkit-overflow-scrolling: touch;
+      }
+
+      .empty {
+        margin: 12px auto;
+        width: min(520px, 100%);
+        text-align: center;
+        color: var(--muted);
+        padding: 20px 16px;
+        border: 1px dashed var(--line);
+        border-radius: 14px;
+        background: rgba(255, 255, 255, 0.55);
+      }
+
+      .msg {
+        max-width: 88%;
+        border-radius: 16px;
+        border: 1px solid transparent;
+        box-shadow: var(--shadow);
+        padding: 10px 12px;
+        margin: 0 0 10px;
+        white-space: pre-wrap;
+        word-break: break-word;
+        line-height: 1.52;
+        font-size: 15px;
+        animation: fadeIn 0.18s ease;
+      }
+
+      .msg-user {
+        margin-left: auto;
+        background: linear-gradient(160deg, #e9fffa, #dbf2ef);
+        border-color: rgba(15, 118, 110, 0.22);
+      }
+
+      .msg-bot {
+        margin-right: auto;
+        background: var(--panel);
+        border-color: rgba(95, 109, 115, 0.2);
+      }
+
+      .meta {
+        margin-top: 5px;
+        font-size: 11px;
+        color: var(--muted);
+      }
+
+      .composer {
+        position: sticky;
+        bottom: 0;
+        z-index: 3;
+        padding: 8px 10px calc(8px + env(safe-area-inset-bottom, 0px));
+        border-top: 1px solid var(--line);
+        background: rgba(255, 255, 255, 0.95);
+        backdrop-filter: blur(8px);
+      }
+
+      .input-row {
+        display: flex;
+        gap: 8px;
+      }
+
+      .composer textarea {
+        flex: 1;
+        border: 1px solid var(--line);
+        border-radius: 12px;
+        min-height: 42px;
+        max-height: 120px;
+        padding: 10px 12px;
+        font: inherit;
+        line-height: 1.45;
+        resize: none;
+        outline: none;
+        color: var(--ink);
+        background: #ffffff;
+      }
+
+      .composer textarea:focus {
+        border-color: var(--accent);
+        box-shadow: 0 0 0 3px rgba(14, 165, 164, 0.18);
+      }
+
+      .send {
+        width: 74px;
+        border: 0;
+        border-radius: 12px;
+        background: linear-gradient(145deg, var(--brand), #0b8b7d);
+        color: #fff;
+        font-size: 14px;
+        font-weight: 700;
+      }
+
+      .send:disabled {
+        opacity: 0.55;
+      }
+
+      .quick {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px;
+        padding: 8px 0 2px;
+      }
+
+      .chip {
+        border: 1px solid var(--line);
+        border-radius: 999px;
+        padding: 5px 10px;
+        font-size: 12px;
+        color: #334155;
+        background: #f8fafc;
+      }
+
+      .chip:active {
+        transform: scale(0.98);
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(6px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="app">
+      <header id="topbar" class="topbar">
+        <h1 id="title">在线客服</h1>
+        <p id="subtitle">已连接，直接输入问题即可。</p>
+      </header>
+
+      <section id="feed" class="feed">
+        <div id="empty" class="empty">你好，我是客服助手。请描述你的问题。</div>
+      </section>
+
+      <footer id="composer" class="composer">
+        <div class="input-row">
+          <textarea
+            id="input"
+            placeholder="请输入你的问题"
+            autocomplete="off"
+            enterkeyhint="send"
+          ></textarea>
+          <button id="send" class="send" type="button">发送</button>
+        </div>
+        <div id="quick" class="quick"></div>
+      </footer>
+    </main>
+
+    <script>
+      (function () {
+        function q(name, fallback) {
+          try {
+            var val = new URLSearchParams(location.search).get(name);
+            return val == null || val === "" ? fallback : val;
+          } catch (err) {
+            return fallback;
+          }
+        }
+
+        function randomId(prefix) {
+          return (
+            prefix +
+            "_" +
+            Math.random().toString(36).slice(2, 8) +
+            Date.now().toString(36).slice(-4)
+          );
+        }
+
+        function now() {
+          try {
+            return new Date().toLocaleTimeString("zh-CN", {
+              hour12: false,
+              hour: "2-digit",
+              minute: "2-digit",
+            });
+          } catch (err) {
+            return new Date().toTimeString().slice(0, 5);
+          }
+        }
+
+        var cfg = {
+          title: q("title", "在线客服"),
+          welcome: q("welcome", "你好，我是客服助手。请描述你的问题。"),
+          placeholder: q("placeholder", "请输入你的问题"),
+          apiBase: q("apiBase", ""),
+          endpoint: q("endpoint", "/api/chat"),
+          userId: q("userId", randomId("u")),
+          sessionId: q("sessionId", randomId("s")),
+          platform: q("platform", "webview"),
+          appVersion: q("appVersion", "1.0.0"),
+          pageCode: q("pageCode", "h5_chat"),
+          hideHeader: q("hideHeader", "0") === "1",
+          suggestions:
+            q("suggestions", "需要订阅费吗,怎么设置电子围栏,支持哪些语言").split(",")
+        };
+
+        if (window.__CHAT_H5_CONFIG__ && typeof window.__CHAT_H5_CONFIG__ === "object") {
+          for (var k in window.__CHAT_H5_CONFIG__) {
+            cfg[k] = window.__CHAT_H5_CONFIG__[k];
+          }
+        }
+
+        var feed = document.getElementById("feed");
+        var empty = document.getElementById("empty");
+        var input = document.getElementById("input");
+        var sendBtn = document.getElementById("send");
+        var quick = document.getElementById("quick");
+        var title = document.getElementById("title");
+        var subtitle = document.getElementById("subtitle");
+        var topbar = document.getElementById("topbar");
+        var pending = false;
+
+        title.textContent = cfg.title;
+        empty.textContent = cfg.welcome;
+        input.placeholder = cfg.placeholder;
+        if (cfg.hideHeader) {
+          topbar.style.display = "none";
+        }
+
+        var chips = (cfg.suggestions || []).filter(Boolean).slice(0, 4);
+        for (var i = 0; i < chips.length; i += 1) {
+          var chip = document.createElement("button");
+          chip.type = "button";
+          chip.className = "chip";
+          chip.textContent = chips[i];
+          chip.dataset.value = chips[i];
+          chip.addEventListener("click", function (ev) {
+            sendMessage(ev.currentTarget.dataset.value);
+          });
+          quick.appendChild(chip);
+        }
+
+        function postToNative(type, payload) {
+          var body = JSON.stringify({ type: type, payload: payload || {} });
+          try {
+            if (
+              window.ReactNativeWebView &&
+              typeof window.ReactNativeWebView.postMessage === "function"
+            ) {
+              window.ReactNativeWebView.postMessage(body);
+            }
+          } catch (err) {}
+
+          try {
+            if (
+              window.webkit &&
+              window.webkit.messageHandlers &&
+              window.webkit.messageHandlers.chatBridge &&
+              typeof window.webkit.messageHandlers.chatBridge.postMessage === "function"
+            ) {
+              window.webkit.messageHandlers.chatBridge.postMessage({
+                type: type,
+                payload: payload || {}
+              });
+            }
+          } catch (err2) {}
+
+          try {
+            window.parent && window.parent !== window && window.parent.postMessage(body, "*");
+          } catch (err3) {}
+        }
+
+        function clearEmpty() {
+          if (empty && empty.parentNode) empty.parentNode.removeChild(empty);
+        }
+
+        function addBubble(role, text) {
+          clearEmpty();
+          var box = document.createElement("div");
+          box.className = "msg " + (role === "user" ? "msg-user" : "msg-bot");
+
+          var content = document.createElement("div");
+          content.textContent = text;
+          box.appendChild(content);
+
+          var meta = document.createElement("div");
+          meta.className = "meta";
+          meta.textContent = (role === "user" ? "你" : "客服") + " · " + now();
+          box.appendChild(meta);
+
+          feed.appendChild(box);
+          feed.scrollTop = feed.scrollHeight + 200;
+          return box;
+        }
+
+        function withApiBase(endpoint) {
+          var base = String(cfg.apiBase || "");
+          if (!base) return endpoint;
+          return base.replace(/\/$/, "") + "/" + String(endpoint || "").replace(/^\//, "");
+        }
+
+        function setPending(flag) {
+          pending = !!flag;
+          sendBtn.disabled = pending;
+          sendBtn.textContent = pending ? "发送中..." : "发送";
+          subtitle.textContent = pending ? "正在处理你的问题..." : "已连接，直接输入问题即可。";
+        }
+
+        function requestChat(payload, callback) {
+          var xhr = new XMLHttpRequest();
+          xhr.open("POST", withApiBase(cfg.endpoint), true);
+          xhr.setRequestHeader("Content-Type", "application/json");
+          xhr.onreadystatechange = function () {
+            if (xhr.readyState !== 4) return;
+            var data = {};
+            try {
+              data = JSON.parse(xhr.responseText || "{}");
+            } catch (err) {}
+
+            if (xhr.status >= 200 && xhr.status < 300) {
+              callback(null, data);
+              return;
+            }
+            callback(
+              new Error(data.message || data.error || ("HTTP " + xhr.status)),
+              data
+            );
+          };
+          xhr.onerror = function () {
+            callback(new Error("network_error"));
+          };
+          xhr.send(JSON.stringify(payload));
+        }
+
+        function sendMessage(raw) {
+          var text = String(raw || "").trim();
+          if (!text || pending) return;
+          input.value = "";
+          addBubble("user", text);
+          setPending(true);
+          postToNative("message_sent", { text: text });
+
+          var loading = addBubble("bot", "正在思考...");
+          requestChat(
+            {
+              userId: cfg.userId,
+              sessionId: cfg.sessionId,
+              message: text,
+                appContext: {
+                  platform: cfg.platform,
+                  appVersion: cfg.appVersion,
+                  pageCode: cfg.pageCode
+                }
+              },
+            function (err, data) {
+              if (err) {
+                loading.querySelector("div").textContent =
+                  "抱歉，网络暂时异常，请稍后重试。";
+                postToNative("error", {
+                  message: err && err.message ? err.message : String(err)
+                });
+                setPending(false);
+                return;
+              }
+
+              loading.querySelector("div").textContent = data.reply || "暂时没有结果。";
+              postToNative("message_received", {
+                reply: data.reply || "",
+                handoff: data.handoff || null,
+                userId: cfg.userId,
+                sessionId: cfg.sessionId
+              });
+              setPending(false);
+            }
+          );
+          try {
+            feed.scrollTop = feed.scrollHeight + 200;
+          } catch (scrollErr) {
+            // no-op
+          }
+        }
+
+        function handleInbound(raw) {
+          var msg = raw;
+          if (typeof msg === "string") {
+            try {
+              msg = JSON.parse(msg);
+            } catch (err) {
+              return;
+            }
+          }
+          if (!msg || typeof msg !== "object") return;
+          var type = msg.type;
+          var payload = msg.payload || {};
+
+          if (type === "set_config") {
+            for (var key in payload) cfg[key] = payload[key];
+            title.textContent = cfg.title || "在线客服";
+          } else if (type === "send_message") {
+            sendMessage(payload.text || payload.message || "");
+          } else if (type === "set_context") {
+            cfg.userId = payload.userId || cfg.userId;
+            cfg.sessionId = payload.sessionId || cfg.sessionId;
+            cfg.platform = payload.platform || cfg.platform;
+            cfg.appVersion = payload.appVersion || cfg.appVersion;
+            cfg.pageCode = payload.pageCode || cfg.pageCode;
+          } else if (type === "clear") {
+            feed.innerHTML = '<div id="empty" class="empty">' + cfg.welcome + "</div>";
+            empty = document.getElementById("empty");
+          }
+        }
+
+        sendBtn.addEventListener("click", function () {
+          sendMessage(input.value);
+        });
+
+        input.addEventListener("keydown", function (event) {
+          if (event.key === "Enter" && !event.shiftKey) {
+            event.preventDefault();
+            sendMessage(input.value);
+          }
+        });
+
+        window.addEventListener("message", function (event) {
+          handleInbound(event.data);
+        });
+        document.addEventListener("message", function (event) {
+          handleInbound(event.data);
+        });
+
+        if (window.visualViewport) {
+          function adjustForKeyboard() {
+            var offset = Math.max(0, window.innerHeight - window.visualViewport.height);
+            document.documentElement.style.setProperty("--kb-offset", offset + "px");
+            document.getElementById("composer").style.transform =
+              offset > 0 ? "translateY(-" + offset + "px)" : "translateY(0)";
+          }
+          window.visualViewport.addEventListener("resize", adjustForKeyboard);
+        }
+
+        postToNative("ready", {
+          userId: cfg.userId,
+          sessionId: cfg.sessionId,
+          platform: cfg.platform,
+          appVersion: cfg.appVersion,
+          pageCode: cfg.pageCode
+        });
+      })();
+    </script>
+  </body>
+</html>

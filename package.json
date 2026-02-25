@@ -1,0 +1,25 @@
+{
+  "name": "ai-cs-service",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon --watch server.js --watch .env server.js",
+    "start": "node server.js",
+    "test:flows": "node scripts/test_flows.js",
+    "embed:qdrant": "node scripts/qdrant_ingest.js",
+    "eval:retrieval": "node scripts/evaluate_retrieval.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "cors": "^2.8.6",
+    "dotenv": "^17.3.1",
+    "express": "^5.2.1",
+    "openai": "^6.23.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}

@@ -1,0 +1,540 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI 客服流程测试台</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Noto+Sans+SC:wght@400;500;700&display=swap");
+
+      :root {
+        --bg-a: #f7f3ea;
+        --bg-b: #dbe9ff;
+        --bg-c: #fffaf1;
+        --ink: #17202a;
+        --muted: #5e6b76;
+        --panel: rgba(255, 255, 255, 0.82);
+        --brand: #0f766e;
+        --brand-2: #0284c7;
+        --danger: #b91c1c;
+        --ok: #166534;
+        --ring: rgba(2, 132, 199, 0.35);
+        --border: rgba(23, 32, 42, 0.12);
+        --shadow: 0 18px 40px rgba(23, 32, 42, 0.14);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        font-family: "Noto Sans SC", "PingFang SC", sans-serif;
+        color: var(--ink);
+        background:
+          radial-gradient(1200px 500px at 8% 10%, #fff5ce 0%, transparent 58%),
+          radial-gradient(1000px 420px at 92% 12%, #dff6ff 0%, transparent 60%),
+          linear-gradient(140deg, var(--bg-a) 0%, var(--bg-b) 55%, var(--bg-c) 100%);
+      }
+
+      .shell {
+        max-width: 1080px;
+        margin: 28px auto;
+        padding: 18px;
+      }
+
+      .card {
+        border: 1px solid var(--border);
+        border-radius: 20px;
+        background: var(--panel);
+        backdrop-filter: blur(8px);
+        box-shadow: var(--shadow);
+      }
+
+      .hero {
+        padding: 22px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+      }
+
+      .hero h1 {
+        margin: 0;
+        font-family: "Space Grotesk", sans-serif;
+        font-size: clamp(22px, 4vw, 34px);
+        letter-spacing: 0.01em;
+      }
+
+      .hero p {
+        margin: 8px 0 0;
+        color: var(--muted);
+      }
+
+      .status {
+        font-family: "Space Grotesk", sans-serif;
+        font-weight: 700;
+        border-radius: 999px;
+        padding: 10px 14px;
+        border: 1px solid var(--border);
+        background: #f8fafc;
+      }
+
+      .status.ok {
+        color: var(--ok);
+        background: #ecfdf5;
+        border-color: rgba(22, 101, 52, 0.2);
+      }
+
+      .status.bad {
+        color: var(--danger);
+        background: #fef2f2;
+        border-color: rgba(185, 28, 28, 0.2);
+      }
+
+      .layout {
+        margin-top: 16px;
+        display: grid;
+        grid-template-columns: 340px 1fr;
+        gap: 16px;
+      }
+
+      .panel {
+        padding: 16px;
+      }
+
+      .panel h2 {
+        margin: 2px 0 12px;
+        font-family: "Space Grotesk", sans-serif;
+        font-size: 18px;
+      }
+
+      .field {
+        margin-bottom: 12px;
+      }
+
+      .field label {
+        display: block;
+        font-size: 13px;
+        color: var(--muted);
+        margin-bottom: 6px;
+      }
+
+      .field input,
+      .field select,
+      .field textarea {
+        width: 100%;
+        border-radius: 10px;
+        border: 1px solid var(--border);
+        padding: 10px 12px;
+        font: inherit;
+        background: rgba(255, 255, 255, 0.95);
+        color: var(--ink);
+        outline: none;
+        transition: box-shadow 0.2s ease, border-color 0.2s ease;
+      }
+
+      .field textarea {
+        min-height: 98px;
+        resize: vertical;
+      }
+
+      .field input:focus,
+      .field select:focus,
+      .field textarea:focus {
+        border-color: var(--brand-2);
+        box-shadow: 0 0 0 4px var(--ring);
+      }
+
+      .btn-row {
+        display: flex;
+        gap: 8px;
+        flex-wrap: wrap;
+      }
+
+      button {
+        border: 0;
+        border-radius: 11px;
+        padding: 10px 14px;
+        font-weight: 700;
+        cursor: pointer;
+        transition: transform 0.14s ease, filter 0.14s ease;
+      }
+
+      button:hover {
+        transform: translateY(-1px);
+        filter: brightness(1.03);
+      }
+
+      button:active {
+        transform: translateY(0);
+      }
+
+      .btn-primary {
+        background: linear-gradient(120deg, var(--brand), #0d9488);
+        color: #fff;
+      }
+
+      .btn-ghost {
+        background: #f8fafc;
+        border: 1px solid var(--border);
+        color: var(--ink);
+      }
+
+      .btn-yes {
+        background: #dcfce7;
+        color: #166534;
+      }
+
+      .btn-no {
+        background: #fee2e2;
+        color: #991b1b;
+      }
+
+      .chat-panel {
+        display: flex;
+        flex-direction: column;
+        min-height: 640px;
+      }
+
+      .chat-feed {
+        flex: 1;
+        padding: 16px;
+        overflow: auto;
+      }
+
+      .empty {
+        color: var(--muted);
+        border: 1px dashed var(--border);
+        border-radius: 12px;
+        padding: 16px;
+        text-align: center;
+      }
+
+      .msg {
+        max-width: 92%;
+        margin-bottom: 12px;
+        padding: 12px 14px;
+        border-radius: 14px;
+        border: 1px solid transparent;
+        line-height: 1.55;
+        white-space: pre-wrap;
+        animation: lift 0.2s ease;
+      }
+
+      .msg.user {
+        margin-left: auto;
+        background: linear-gradient(140deg, #ecfeff, #dbeafe);
+        border-color: rgba(2, 132, 199, 0.25);
+      }
+
+      .msg.bot {
+        margin-right: auto;
+        background: #ffffff;
+        border-color: var(--border);
+      }
+
+      .meta {
+        margin-top: 8px;
+        font-size: 12px;
+        color: var(--muted);
+      }
+
+      .sources {
+        margin-top: 8px;
+        border-top: 1px dashed var(--border);
+        padding-top: 8px;
+      }
+
+      .source-item {
+        font-size: 12px;
+        color: #364152;
+        margin-top: 4px;
+      }
+
+      .handoff {
+        margin-top: 8px;
+        font-size: 12px;
+        padding: 8px;
+        border-radius: 10px;
+        border: 1px solid var(--border);
+        background: #f8fafc;
+      }
+
+      .composer {
+        border-top: 1px solid var(--border);
+        padding: 12px;
+        display: grid;
+        gap: 10px;
+      }
+
+      .composer .quick {
+        display: flex;
+        gap: 8px;
+      }
+
+      @keyframes lift {
+        from {
+          opacity: 0;
+          transform: translateY(6px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      @media (max-width: 920px) {
+        .layout {
+          grid-template-columns: 1fr;
+        }
+        .chat-panel {
+          min-height: 560px;
+        }
+        .hero {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="shell">
+      <section class="card hero">
+        <div>
+          <h1>AI 客服流程测试台</h1>
+          <p>直接在页面验证：检索回答、低置信度询问、用户确认转人工。</p>
+        </div>
+        <div id="healthStatus" class="status">检查服务中...</div>
+      </section>
+
+      <section class="layout">
+        <aside class="card panel">
+          <h2>会话设置</h2>
+          <div class="field">
+            <label for="userId">User ID</label>
+            <input id="userId" type="text" />
+          </div>
+          <div class="field">
+            <label for="sessionId">Session ID</label>
+            <input id="sessionId" type="text" />
+          </div>
+          <div class="field">
+            <label for="platform">Platform</label>
+            <select id="platform">
+              <option value="ios">iOS</option>
+              <option value="android">Android</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="appVersion">App Version</label>
+            <input id="appVersion" type="text" value="1.0.0" />
+          </div>
+          <div class="field">
+            <label for="pageCode">Page Code</label>
+            <input id="pageCode" type="text" value="home" />
+          </div>
+          <div class="btn-row">
+            <button id="regenIds" class="btn-ghost" type="button">重置会话ID</button>
+            <button id="checkHealth" class="btn-ghost" type="button">刷新健康状态</button>
+          </div>
+        </aside>
+
+        <main class="card chat-panel">
+          <div id="chatFeed" class="chat-feed">
+            <div class="empty">输入问题后点击“发送”，开始测试。</div>
+          </div>
+          <div class="composer">
+            <div class="field" style="margin: 0">
+              <textarea
+                id="messageInput"
+                placeholder="例如：F860 需要订阅费吗？ 或 如何申请银行卡额度提升？"
+              ></textarea>
+            </div>
+            <div class="btn-row">
+              <button id="sendBtn" class="btn-primary" type="button">发送</button>
+              <button id="clearBtn" class="btn-ghost" type="button">清空对话</button>
+            </div>
+            <div class="quick">
+              <button id="quickYes" class="btn-yes" type="button">需要</button>
+              <button id="quickNo" class="btn-no" type="button">不需要</button>
+            </div>
+          </div>
+        </main>
+      </section>
+    </div>
+
+    <script>
+      const chatFeed = document.getElementById("chatFeed");
+      const messageInput = document.getElementById("messageInput");
+      const sendBtn = document.getElementById("sendBtn");
+      const clearBtn = document.getElementById("clearBtn");
+      const quickYes = document.getElementById("quickYes");
+      const quickNo = document.getElementById("quickNo");
+      const healthStatus = document.getElementById("healthStatus");
+      const userIdInput = document.getElementById("userId");
+      const sessionIdInput = document.getElementById("sessionId");
+      const platformInput = document.getElementById("platform");
+      const appVersionInput = document.getElementById("appVersion");
+      const pageCodeInput = document.getElementById("pageCode");
+      const regenIdsBtn = document.getElementById("regenIds");
+      const checkHealthBtn = document.getElementById("checkHealth");
+
+      function randomId(prefix) {
+        return `${prefix}_${Math.random().toString(36).slice(2, 8)}`;
+      }
+
+      function nowText() {
+        return new Date().toLocaleTimeString("zh-CN", { hour12: false });
+      }
+
+      function initIds() {
+        userIdInput.value = randomId("u");
+        sessionIdInput.value = randomId("s");
+      }
+
+      function setStatus(ok, text) {
+        healthStatus.className = `status ${ok ? "ok" : "bad"}`;
+        healthStatus.textContent = text;
+      }
+
+      async function checkHealth() {
+        try {
+          const resp = await fetch("/health");
+          if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
+          const data = await resp.json();
+          const summary = [
+            `服务在线`,
+            `Qdrant=${data.qdrantConfigured ? "on" : "off"}`,
+            `Embedding=${data.embeddingConfigured ? "on" : "off"}`,
+            `低置信=${data.autoHandoffThreshold ?? "-"}`,
+            `回答阈值=${data.answerConfidenceThreshold ?? "-"}`,
+            `词面阈值=${data.lexicalMatchMin ?? "-"}`,
+          ].join(" | ");
+          setStatus(true, summary);
+        } catch (err) {
+          setStatus(false, `服务异常: ${err.message}`);
+        }
+      }
+
+      function clearEmpty() {
+        const empty = chatFeed.querySelector(".empty");
+        if (empty) empty.remove();
+      }
+
+      function addMessage(role, text, extra = {}) {
+        clearEmpty();
+        const wrap = document.createElement("div");
+        wrap.className = `msg ${role}`;
+
+        const content = document.createElement("div");
+        content.textContent = text;
+        wrap.appendChild(content);
+
+        if (role === "bot" && Array.isArray(extra.sources) && extra.sources.length) {
+          const sources = document.createElement("div");
+          sources.className = "sources";
+          extra.sources.forEach((s, i) => {
+            const item = document.createElement("div");
+            item.className = "source-item";
+            item.textContent = `${i + 1}. score=${s.score} d=${s.dense_score ?? "-"} b=${s.bm25_score ?? "-"} l=${s.lexical_match ?? "-"} | ${s.faq_id || "-"} | ${s.question || "-"}`;
+            sources.appendChild(item);
+          });
+          wrap.appendChild(sources);
+        }
+
+        if (role === "bot" && extra.handoff) {
+          const h = extra.handoff;
+          const handoff = document.createElement("div");
+          handoff.className = "handoff";
+          handoff.textContent = [
+            `handoff.triggered=${h.triggered}`,
+            `needsConfirmation=${h.needsConfirmation}`,
+            `topScore=${typeof h.topScore === "number" ? h.topScore.toFixed(4) : "-"}`,
+            `threshold=${h.threshold ?? "-"}`,
+            h.ticketId ? `ticketId=${h.ticketId}` : "",
+            h.reason ? `reason=${h.reason}` : "",
+          ]
+            .filter(Boolean)
+            .join(" | ");
+          wrap.appendChild(handoff);
+        }
+
+        const meta = document.createElement("div");
+        meta.className = "meta";
+        meta.textContent = `${role === "user" ? "你" : "AI"} · ${nowText()}`;
+        wrap.appendChild(meta);
+
+        chatFeed.appendChild(wrap);
+        chatFeed.scrollTop = chatFeed.scrollHeight;
+      }
+
+      async function sendMessage(rawText) {
+        const text = String(rawText || "").trim();
+        if (!text) return;
+
+        const payload = {
+          userId: userIdInput.value.trim() || randomId("u"),
+          sessionId: sessionIdInput.value.trim() || randomId("s"),
+          message: text,
+          appContext: {
+            platform: platformInput.value,
+            appVersion: appVersionInput.value.trim() || "1.0.0",
+            pageCode: pageCodeInput.value.trim() || "home",
+          },
+        };
+
+        userIdInput.value = payload.userId;
+        sessionIdInput.value = payload.sessionId;
+        addMessage("user", text);
+        sendBtn.disabled = true;
+        sendBtn.textContent = "发送中...";
+
+        try {
+          const resp = await fetch("/api/chat", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(payload),
+          });
+          const data = await resp.json();
+          if (!resp.ok) {
+            throw new Error(data.message || data.error || `HTTP ${resp.status}`);
+          }
+          addMessage("bot", data.reply || "(空回复)", {
+            sources: data.sources,
+            handoff: data.handoff,
+          });
+        } catch (err) {
+          addMessage("bot", `请求失败：${err.message}`);
+        } finally {
+          sendBtn.disabled = false;
+          sendBtn.textContent = "发送";
+        }
+      }
+
+      sendBtn.addEventListener("click", () => {
+        sendMessage(messageInput.value);
+        messageInput.value = "";
+      });
+
+      messageInput.addEventListener("keydown", (event) => {
+        if (event.key === "Enter" && !event.shiftKey) {
+          event.preventDefault();
+          sendBtn.click();
+        }
+      });
+
+      quickYes.addEventListener("click", () => sendMessage("需要"));
+      quickNo.addEventListener("click", () => sendMessage("不需要"));
+      clearBtn.addEventListener("click", () => {
+        chatFeed.innerHTML = '<div class="empty">对话已清空。</div>';
+      });
+      regenIdsBtn.addEventListener("click", initIds);
+      checkHealthBtn.addEventListener("click", checkHealth);
+
+      initIds();
+      checkHealth();
+    </script>
+  </body>
+</html>
