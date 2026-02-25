@@ -5475,5 +5475,705 @@
         }
       ]
     }
+  },
+  {
+    "timestamp": "2026-02-25T07:07:05.606Z",
+    "userId": "u_p5z9jgyswt",
+    "sessionId": "s_x6anc1yswt",
+    "message": "怎么设置电子围栏",
+    "reply": "你可以按这 4 步快速上手：1. 在 App 新建电子围栏，支持多边形或圆形。2. 按日常活动范围保存常用围栏方案（最多 10 组）。3. 在常见活动场景观察边界判定与越界提醒是否符合预期。4. 在 App 查看运动数据和行为模式，按结果持续微调围栏范围。",
+    "appContext": {
+      "platform": "webview",
+      "appVersion": "1.0.0",
+      "pageCode": "h5_chat"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 1.222828,
+      "topDenseScore": 0.82714194,
+      "threshold": 0.6,
+      "lexicalMatch": 1,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "product_usage",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 1.222828,
+          "faq_id": "GF-019",
+          "question": "F860 怎么快速上手使用？"
+        },
+        {
+          "score": 1.178582,
+          "faq_id": "GF-006",
+          "question": "F860 的定位与边界判定能力如何？"
+        },
+        {
+          "score": 1.155818,
+          "faq_id": "GF-005",
+          "question": "围栏能自定义吗？最多可以保存多少组？"
+        },
+        {
+          "score": 0.746875,
+          "faq_id": "GF-003",
+          "question": "F860 能解决什么核心问题？"
+        },
+        {
+          "score": 0.727425,
+          "faq_id": "GF-020",
+          "question": "F860 相比传统方案有哪些优势？"
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-02-25T07:07:07.915Z",
+    "userId": "u_p5z9jgyswt",
+    "sessionId": "s_x6anc1yswt",
+    "message": "支持哪些语言",
+    "reply": "系统支持中文、英文、法文三种语言。",
+    "appContext": {
+      "platform": "webview",
+      "appVersion": "1.0.0",
+      "pageCode": "h5_chat"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 1.157987,
+      "topDenseScore": 0.722559,
+      "threshold": 0.6,
+      "lexicalMatch": 1,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "language_support",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 1.157987,
+          "faq_id": "GF-014",
+          "question": "系统支持哪些语言？"
+        },
+        {
+          "score": 0.511611,
+          "faq_id": "GF-020",
+          "question": "F860 相比传统方案有哪些优势？"
+        },
+        {
+          "score": 0.502137,
+          "faq_id": "GF-016",
+          "question": "Wellturn 是什么公司？"
+        },
+        {
+          "score": 0.501922,
+          "faq_id": "GF-019",
+          "question": "F860 怎么快速上手使用？"
+        },
+        {
+          "score": 0.498625,
+          "faq_id": "GF-013",
+          "question": "B 端后台具体有哪些能力？"
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-02-25T07:07:12.267Z",
+    "userId": "u_p5z9jgyswt",
+    "sessionId": "s_x6anc1yswt",
+    "message": "需要订阅费吗",
+    "reply": "不需要。F860 为“零订阅离线 GPS 电子围栏”。",
+    "appContext": {
+      "platform": "webview",
+      "appVersion": "1.0.0",
+      "pageCode": "h5_chat"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 1.218892,
+      "topDenseScore": 0.8212666,
+      "threshold": 0.6,
+      "lexicalMatch": 1,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "subscription_fee",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 1.218892,
+          "faq_id": "GF-002",
+          "question": "F860 需要订阅费吗？"
+        },
+        {
+          "score": 1.160738,
+          "faq_id": "GF-001",
+          "question": "F860 是什么产品？"
+        },
+        {
+          "score": 0.68024,
+          "faq_id": "GF-020",
+          "question": "F860 相比传统方案有哪些优势？"
+        },
+        {
+          "score": 0.673797,
+          "faq_id": "GF-012",
+          "question": "F860 是否支持品牌方/B 端合作？"
+        },
+        {
+          "score": 0.667982,
+          "faq_id": "GF-003",
+          "question": "F860 能解决什么核心问题？"
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-02-25T07:07:26.567Z",
+    "userId": "u_qm6xpqz8ch",
+    "sessionId": "s_yfngfkz8ch",
+    "message": "需要订阅费吗",
+    "reply": "不需要。F860 为“零订阅离线 GPS 电子围栏”。",
+    "appContext": {
+      "platform": "webview",
+      "appVersion": "1.0.0",
+      "pageCode": "h5_chat"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 1.218892,
+      "topDenseScore": 0.8212666,
+      "threshold": 0.6,
+      "lexicalMatch": 1,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "subscription_fee",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 1.218892,
+          "faq_id": "GF-002",
+          "question": "F860 需要订阅费吗？"
+        },
+        {
+          "score": 1.160738,
+          "faq_id": "GF-001",
+          "question": "F860 是什么产品？"
+        },
+        {
+          "score": 0.68024,
+          "faq_id": "GF-020",
+          "question": "F860 相比传统方案有哪些优势？"
+        },
+        {
+          "score": 0.673797,
+          "faq_id": "GF-012",
+          "question": "F860 是否支持品牌方/B 端合作？"
+        },
+        {
+          "score": 0.667982,
+          "faq_id": "GF-003",
+          "question": "F860 能解决什么核心问题？"
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-02-25T07:07:31.376Z",
+    "userId": "u_qm6xpqz8ch",
+    "sessionId": "s_yfngfkz8ch",
+    "message": "怎么设置电子围栏",
+    "reply": "你可以按这 4 步快速上手：1. 在 App 新建电子围栏，支持多边形或圆形。2. 按日常活动范围保存常用围栏方案（最多 10 组）。3. 在常见活动场景观察边界判定与越界提醒是否符合预期。4. 在 App 查看运动数据和行为模式，按结果持续微调围栏范围。",
+    "appContext": {
+      "platform": "webview",
+      "appVersion": "1.0.0",
+      "pageCode": "h5_chat"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 1.222828,
+      "topDenseScore": 0.82714194,
+      "threshold": 0.6,
+      "lexicalMatch": 1,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "product_usage",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 1.222828,
+          "faq_id": "GF-019",
+          "question": "F860 怎么快速上手使用？"
+        },
+        {
+          "score": 1.178582,
+          "faq_id": "GF-006",
+          "question": "F860 的定位与边界判定能力如何？"
+        },
+        {
+          "score": 1.155818,
+          "faq_id": "GF-005",
+          "question": "围栏能自定义吗？最多可以保存多少组？"
+        },
+        {
+          "score": 0.746875,
+          "faq_id": "GF-003",
+          "question": "F860 能解决什么核心问题？"
+        },
+        {
+          "score": 0.727425,
+          "faq_id": "GF-020",
+          "question": "F860 相比传统方案有哪些优势？"
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-02-25T07:07:32.644Z",
+    "userId": "u_qm6xpqz8ch",
+    "sessionId": "s_yfngfkz8ch",
+    "message": "支持哪些语言",
+    "reply": "系统支持中文、英文、法文三种语言。",
+    "appContext": {
+      "platform": "webview",
+      "appVersion": "1.0.0",
+      "pageCode": "h5_chat"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 1.157987,
+      "topDenseScore": 0.722559,
+      "threshold": 0.6,
+      "lexicalMatch": 1,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "language_support",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 1.157987,
+          "faq_id": "GF-014",
+          "question": "系统支持哪些语言？"
+        },
+        {
+          "score": 0.511611,
+          "faq_id": "GF-020",
+          "question": "F860 相比传统方案有哪些优势？"
+        },
+        {
+          "score": 0.502137,
+          "faq_id": "GF-016",
+          "question": "Wellturn 是什么公司？"
+        },
+        {
+          "score": 0.501922,
+          "faq_id": "GF-019",
+          "question": "F860 怎么快速上手使用？"
+        },
+        {
+          "score": 0.498625,
+          "faq_id": "GF-013",
+          "question": "B 端后台具体有哪些能力？"
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-02-25T07:07:50.464Z",
+    "userId": "u_tos3z9zqvi",
+    "sessionId": "s_0ptif9zqvi",
+    "message": "需要订阅费吗",
+    "reply": "不需要。F860 为“零订阅离线 GPS 电子围栏”。",
+    "appContext": {
+      "platform": "webview",
+      "appVersion": "1.0.0",
+      "pageCode": "h5_chat"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 1.218892,
+      "topDenseScore": 0.8212666,
+      "threshold": 0.6,
+      "lexicalMatch": 1,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "subscription_fee",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 1.218892,
+          "faq_id": "GF-002",
+          "question": "F860 需要订阅费吗？"
+        },
+        {
+          "score": 1.160738,
+          "faq_id": "GF-001",
+          "question": "F860 是什么产品？"
+        },
+        {
+          "score": 0.68024,
+          "faq_id": "GF-020",
+          "question": "F860 相比传统方案有哪些优势？"
+        },
+        {
+          "score": 0.673797,
+          "faq_id": "GF-012",
+          "question": "F860 是否支持品牌方/B 端合作？"
+        },
+        {
+          "score": 0.667982,
+          "faq_id": "GF-003",
+          "question": "F860 能解决什么核心问题？"
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-02-25T07:07:52.079Z",
+    "userId": "u_tos3z9zqvi",
+    "sessionId": "s_0ptif9zqvi",
+    "message": "怎么设置电子围栏",
+    "reply": "你可以按这 4 步快速上手：1. 在 App 新建电子围栏，支持多边形或圆形。2. 按日常活动范围保存常用围栏方案（最多 10 组）。3. 在常见活动场景观察边界判定与越界提醒是否符合预期。4. 在 App 查看运动数据和行为模式，按结果持续微调围栏范围。",
+    "appContext": {
+      "platform": "webview",
+      "appVersion": "1.0.0",
+      "pageCode": "h5_chat"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 1.222828,
+      "topDenseScore": 0.82714194,
+      "threshold": 0.6,
+      "lexicalMatch": 1,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "product_usage",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 1.222828,
+          "faq_id": "GF-019",
+          "question": "F860 怎么快速上手使用？"
+        },
+        {
+          "score": 1.178582,
+          "faq_id": "GF-006",
+          "question": "F860 的定位与边界判定能力如何？"
+        },
+        {
+          "score": 1.155818,
+          "faq_id": "GF-005",
+          "question": "围栏能自定义吗？最多可以保存多少组？"
+        },
+        {
+          "score": 0.746875,
+          "faq_id": "GF-003",
+          "question": "F860 能解决什么核心问题？"
+        },
+        {
+          "score": 0.727425,
+          "faq_id": "GF-020",
+          "question": "F860 相比传统方案有哪些优势？"
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-02-25T07:07:54.364Z",
+    "userId": "u_tos3z9zqvi",
+    "sessionId": "s_0ptif9zqvi",
+    "message": "支持哪些语言",
+    "reply": "系统支持中文、英文、法文三种语言。",
+    "appContext": {
+      "platform": "webview",
+      "appVersion": "1.0.0",
+      "pageCode": "h5_chat"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 1.157987,
+      "topDenseScore": 0.722559,
+      "threshold": 0.6,
+      "lexicalMatch": 1,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "language_support",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 1.157987,
+          "faq_id": "GF-014",
+          "question": "系统支持哪些语言？"
+        },
+        {
+          "score": 0.511611,
+          "faq_id": "GF-020",
+          "question": "F860 相比传统方案有哪些优势？"
+        },
+        {
+          "score": 0.502137,
+          "faq_id": "GF-016",
+          "question": "Wellturn 是什么公司？"
+        },
+        {
+          "score": 0.501922,
+          "faq_id": "GF-019",
+          "question": "F860 怎么快速上手使用？"
+        },
+        {
+          "score": 0.498625,
+          "faq_id": "GF-013",
+          "question": "B 端后台具体有哪些能力？"
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-02-25T07:08:02.802Z",
+    "userId": "u_tos3z9zqvi",
+    "sessionId": "s_0ptif9zqvi",
+    "message": "产品有什么优势？",
+    "reply": "F860 的核心优势有 4 点：1. 零订阅离线使用，不需要持续会员费用。2. 设备端每秒可处理 74 次以上定位点，并结合 AI 边界判定，延迟和误判更低。3. 可识别室内外环境，减少因信号变化导致的误报。4. 具备 IP67 防水防尘能力，适合庭院、露营、森林、沙滩等复杂户外场景。",
+    "appContext": {
+      "platform": "webview",
+      "appVersion": "1.0.0",
+      "pageCode": "h5_chat"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 1.235976,
+      "topDenseScore": 0.84834886,
+      "threshold": 0.6,
+      "lexicalMatch": 1,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "product_advantages",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 1.235976,
+          "faq_id": "GF-020",
+          "question": "F860 相比传统方案有哪些优势？"
+        },
+        {
+          "score": 1.206795,
+          "faq_id": "GF-003",
+          "question": "F860 能解决什么核心问题？"
+        },
+        {
+          "score": 1.148582,
+          "faq_id": "GF-006",
+          "question": "F860 的定位与边界判定能力如何？"
+        },
+        {
+          "score": 0.785506,
+          "faq_id": "GF-008",
+          "question": "F860 户外环境下防护能力怎么样？"
+        },
+        {
+          "score": 0.715132,
+          "faq_id": "GF-010",
+          "question": "F860 是否提供行为追踪与活动洞察？"
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-02-25T07:08:07.643Z",
+    "userId": "u_tos3z9zqvi",
+    "sessionId": "s_0ptif9zqvi",
+    "message": "防水吗？",
+    "reply": "F860 具备 IP67 防水防尘能力，适用环境包括雨水、泥土、沙尘，以及庭院、森林、沙滩和海边等场景。",
+    "appContext": {
+      "platform": "webview",
+      "appVersion": "1.0.0",
+      "pageCode": "h5_chat"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 1.237694,
+      "topDenseScore": 0.8636945,
+      "threshold": 0.6,
+      "lexicalMatch": 1,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "waterproof_durability",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 1.237694,
+          "faq_id": "GF-008",
+          "question": "F860 户外环境下防护能力怎么样？"
+        },
+        {
+          "score": 0.669986,
+          "faq_id": "GF-020",
+          "question": "F860 相比传统方案有哪些优势？"
+        },
+        {
+          "score": 0.618495,
+          "faq_id": "GF-017",
+          "question": "F860 适用于哪些真实养犬场景？"
+        },
+        {
+          "score": 0.617671,
+          "faq_id": "GF-007",
+          "question": "能否识别室内外环境，减少误报？"
+        },
+        {
+          "score": 0.579231,
+          "faq_id": "GF-019",
+          "question": "F860 怎么快速上手使用？"
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-02-25T07:08:20.558Z",
+    "userId": "u_tos3z9zqvi",
+    "sessionId": "s_0ptif9zqvi",
+    "message": "续航怎么样？",
+    "reply": "抱歉，这个问题我暂时无法回答，你可以联系人工客服获取帮助。",
+    "appContext": {
+      "platform": "webview",
+      "appVersion": "1.0.0",
+      "pageCode": "h5_chat"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 0.678198,
+      "topDenseScore": 0.6583838,
+      "threshold": 0.6,
+      "lexicalMatch": 0.5,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 0.678198,
+          "faq_id": "GF-008",
+          "question": "F860 户外环境下防护能力怎么样？"
+        },
+        {
+          "score": 0.524724,
+          "faq_id": "GF-019",
+          "question": "F860 怎么快速上手使用？"
+        },
+        {
+          "score": 0.436859,
+          "faq_id": "GF-014",
+          "question": "系统支持哪些语言？"
+        },
+        {
+          "score": 0.426335,
+          "faq_id": "GF-020",
+          "question": "F860 相比传统方案有哪些优势？"
+        },
+        {
+          "score": 0.418846,
+          "faq_id": "GF-004",
+          "question": "为什么不只用传统 GPS 围栏或智能项圈？"
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-02-25T07:08:29.790Z",
+    "userId": "u_tos3z9zqvi",
+    "sessionId": "s_0ptif9zqvi",
+    "message": "怎么充电？",
+    "reply": "抱歉，这个问题我暂时无法回答，你可以联系人工客服获取帮助。",
+    "appContext": {
+      "platform": "webview",
+      "appVersion": "1.0.0",
+      "pageCode": "h5_chat"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 0.638736,
+      "topDenseScore": 0.6538757,
+      "threshold": 0.6,
+      "lexicalMatch": 0.3333,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 0.638736,
+          "faq_id": "GF-008",
+          "question": "F860 户外环境下防护能力怎么样？"
+        },
+        {
+          "score": 0.609466,
+          "faq_id": "GF-019",
+          "question": "F860 怎么快速上手使用？"
+        },
+        {
+          "score": 0.434636,
+          "faq_id": "GF-014",
+          "question": "系统支持哪些语言？"
+        },
+        {
+          "score": 0.421861,
+          "faq_id": "GF-020",
+          "question": "F860 相比传统方案有哪些优势？"
+        },
+        {
+          "score": 0.415002,
+          "faq_id": "GF-004",
+          "question": "为什么不只用传统 GPS 围栏或智能项圈？"
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-02-25T07:21:38.628Z",
+    "userId": "u_xxbuwxhim0",
+    "sessionId": "s_djd21lhim0",
+    "message": "需要订阅费吗",
+    "reply": "不需要。F860 为“零订阅离线 GPS 电子围栏”。",
+    "appContext": {
+      "platform": "webview",
+      "appVersion": "1.0.0",
+      "pageCode": "h5_chat"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 1.218892,
+      "topDenseScore": 0.8212666,
+      "threshold": 0.6,
+      "lexicalMatch": 1,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "subscription_fee",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 1.218892,
+          "faq_id": "GF-002",
+          "question": "F860 需要订阅费吗？"
+        },
+        {
+          "score": 1.160738,
+          "faq_id": "GF-001",
+          "question": "F860 是什么产品？"
+        },
+        {
+          "score": 0.68024,
+          "faq_id": "GF-020",
+          "question": "F860 相比传统方案有哪些优势？"
+        },
+        {
+          "score": 0.673797,
+          "faq_id": "GF-012",
+          "question": "F860 是否支持品牌方/B 端合作？"
+        },
+        {
+          "score": 0.667982,
+          "faq_id": "GF-003",
+          "question": "F860 能解决什么核心问题？"
+        }
+      ]
+    }
   }
 ]
