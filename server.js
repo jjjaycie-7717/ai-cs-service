@@ -25,7 +25,16 @@ const chunksFilePath = path.resolve(
   __dirname,
   process.env.CHUNKS_FILE || "faq_chunks.jsonl",
 );
+const llmProvider = String(process.env.LLM_PROVIDER || "auto")
+  .trim()
+  .toLowerCase();
 const chatModel = process.env.CHAT_MODEL || "gpt-4o-mini";
+const ollamaBaseUrl = (
+  process.env.OLLAMA_BASE_URL || "http://127.0.0.1:11434"
+).replace(/\/$/, "");
+const ollamaModel = process.env.OLLAMA_MODEL || "qwen3:4b";
+const llmTemperature = envNumber("LLM_TEMPERATURE", 0.2);
+const llmTimeoutMs = envNumber("LLM_TIMEOUT_MS", 20000);
 
 const embeddingBaseUrl = (
   process.env.EMBEDDING_BASE_URL || "http://127.0.0.1:1234/v1"
@@ -918,10 +927,156 @@ function buildIntentPresetReply(intentName, hits) {
   return "";
 }
 
+function resolveLlmProvider() {
+  if (llmProvider === "none") {
+    return "none";
+  }
+
+  if (llmProvider === "openai") {
+    return openaiClient ? "openai" : "none";
+  }
+
+  if (llmProvider === "ollama") {
+    return ollamaBaseUrl ? "ollama" : "none";
+  }
+
+  if (llmProvider === "auto") {
+    if (openaiClient) return "openai";
+    if (ollamaBaseUrl) return "ollama";
+    return "none";
+  }
+
+  return "none";
+}
+
+function buildLlmMessages({
+  contextText = "",
+  message = "",
+  normalizedMessage = "",
+  hits = [],
+}) {
+  return [
+    {
+      role: "system",
+      content: assistantSystemPrompt,
+    },
+    {
+      role: "user",
+      content: [
+        `App context: ${contextText}`,
+        `User question: ${message}`,
+        `Normalized question: ${normalizedMessage}`,
+        `Knowledge base context:\n${formatFaqContext(hits)}`,
+      ].join("\n\n"),
+    },
+  ];
+}
+
+async function generateReplyWithOpenAI(messages) {
+  if (!openaiClient) {
+    return "";
+  }
+
+  try {
+    const completion = await openaiClient.chat.completions.create({
+      model: chatModel,
+      temperature: llmTemperature,
+      messages,
+    });
+    return String(completion.choices?.[0]?.message?.content || "").trim();
+  } catch (err) {
+    console.error("chat_completion_failed", err);
+    return "";
+  }
+}
+
+async function generateReplyWithOllama(messages) {
+  if (!ollamaBaseUrl) {
+    return "";
+  }
+
+  const controller = new AbortController();
+  const timeoutId =
+    llmTimeoutMs > 0 ? setTimeout(() => controller.abort(), llmTimeoutMs) : null;
+
+  try {
+    const body = {
+      model: ollamaModel,
+      messages,
+      stream: false,
+      options: {
+        temperature: llmTemperature,
+      },
+    };
+
+    const resp = await fetch(`${ollamaBaseUrl}/api/chat`, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(body),
+      signal: controller.signal,
+    });
+
+    if (!resp.ok) {
+      const text = await resp.text();
+      console.error(
+        "ollama_chat_failed",
+        `status=${resp.status}`,
+        `statusText=${resp.statusText}`,
+        text,
+      );
+      return "";
+    }
+
+    const json = await resp.json();
+    return String(json?.message?.content || "").trim();
+  } catch (err) {
+    if (err?.name === "AbortError") {
+      console.error("ollama_chat_timeout", `${llmTimeoutMs}ms`);
+      return "";
+    }
+    console.error("ollama_chat_failed", err);
+    return "";
+  } finally {
+    if (timeoutId) {
+      clearTimeout(timeoutId);
+    }
+  }
+}
+
+async function generateReplyWithLlm(input) {
+  const provider = resolveLlmProvider();
+  if (provider === "none") {
+    return "";
+  }
+
+  const messages = buildLlmMessages(input);
+  if (provider === "openai") {
+    const openaiReply = await generateReplyWithOpenAI(messages);
+    if (openaiReply) return openaiReply;
+
+    if (llmProvider === "auto") {
+      return generateReplyWithOllama(messages);
+    }
+    return "";
+  }
+
+  return generateReplyWithOllama(messages);
+}
+
 app.get("/health", (req, res) => {
   res.json({
     ok: true,
     service: "ai-cs-service",
+    llmProviderSetting: llmProvider,
+    llmProviderResolved: resolveLlmProvider(),
+    chatModel,
+    ollamaConfigured: Boolean(ollamaBaseUrl && ollamaModel),
+    ollamaBaseUrl,
+    ollamaModel,
+    llmTemperature,
+    llmTimeoutMs,
     openaiConfigured: Boolean(process.env.OPENAI_API_KEY),
     qdrantConfigured: Boolean(qdrantUrl),
     embeddingConfigured: Boolean(embeddingBaseUrl && embeddingModel),
@@ -1131,34 +1286,12 @@ app.post("/api/chat", async (req, res) => {
       console.error("retrieval_failed", err);
     }
 
-    let reply = "";
-    if (openaiClient) {
-      try {
-        const completion = await openaiClient.chat.completions.create({
-          model: chatModel,
-          temperature: 0.2,
-          messages: [
-            {
-              role: "system",
-              content: assistantSystemPrompt,
-            },
-            {
-              role: "user",
-              content: [
-                `App context: ${contextText}`,
-                `User question: ${message}`,
-                `Normalized question: ${normalizedMessage}`,
-                `Knowledge base context:\n${formatFaqContext(hits)}`,
-              ].join("\n\n"),
-            },
-          ],
-        });
-
-        reply = completion.choices?.[0]?.message?.content || "";
-      } catch (err) {
-        console.error("chat_completion_failed", err);
-      }
-    }
+    let reply = await generateReplyWithLlm({
+      contextText,
+      message,
+      normalizedMessage,
+      hits,
+    });
 
     if (!reply) {
       const presetReply = buildIntentPresetReply(queryIntent?.name || "", hits);

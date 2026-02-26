@@ -14,7 +14,14 @@ Edit `.env`:
 
 ```env
 PORT=3001
-OPENAI_API_KEY=your_real_key_optional
+LLM_PROVIDER=ollama
+OLLAMA_BASE_URL=http://127.0.0.1:11434
+OLLAMA_MODEL=qwen3:4b
+LLM_TEMPERATURE=0.2
+LLM_TIMEOUT_MS=20000
+OPENAI_API_KEY=
+OPENAI_BASE_URL=
+CHAT_MODEL=gpt-4o-mini
 EMBEDDING_BASE_URL=http://127.0.0.1:1234/v1
 EMBEDDING_MODEL=text-embedding-nomic-embed-text-v1.5
 EMBEDDING_API_KEY=lm-studio
@@ -47,9 +54,21 @@ PENDING_HANDOFF_TTL_MS=600000
 ```
 
 Reason:
-- `OPENAI_API_KEY` is optional now. If configured, server will rewrite/refine answer with LLM.
-- If `OPENAI_API_KEY` is empty, server will still answer directly from Qdrant retrieval result.
+- `LLM_PROVIDER` supports `ollama` / `openai` / `auto` / `none`.
+- For free local LLM, use `LLM_PROVIDER=ollama` and keep `OPENAI_API_KEY` empty.
+- `OPENAI_API_KEY` is optional. If configured, you can set `LLM_PROVIDER=openai` (or `auto`) to use OpenAI.
 - App calls this server through HTTP APIs.
+
+### 1.1) Ollama quick start (free local model)
+
+1. Install Ollama from `https://ollama.com/download`
+2. Pull and run a model:
+
+```bash
+ollama run qwen3:4b
+```
+
+3. Keep Ollama running, then start this service.
 
 ## 2) Run
 
@@ -94,7 +113,7 @@ Behavior:
 - 购买渠道、防水能力、适用场景、语言支持、行为洞察、材质清洁等也使用预设意图直答
 - 对知识库未覆盖主题（如充电/电池）启用拦截，直接返回“暂时无法回答”，避免答非所问
 - medium confidence only asks clarification when top answer is still ambiguous
-- return answer from retrieval directly (or refine with LLM if `OPENAI_API_KEY` is configured) only when confidence is high enough
+- return answer from retrieval directly (or refine with configured LLM: Ollama/OpenAI) only when confidence is high enough
 - when retrieval confidence is low, ask user whether to transfer to human agent
 - only create handoff ticket after user confirms with "需要"
 

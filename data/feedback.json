@@ -30,5 +30,13 @@
     "rating": "up",
     "comment": "ok",
     "messageId": ""
+  },
+  {
+    "timestamp": "2026-02-26T08:33:28.348Z",
+    "userId": "u1",
+    "sessionId": "s1",
+    "rating": "up",
+    "comment": "ok",
+    "messageId": ""
   }
 ]
