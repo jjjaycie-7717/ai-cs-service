@@ -7055,5 +7055,4750 @@
         }
       ]
     }
+  },
+  {
+    "timestamp": "2026-04-02T11:58:11.073Z",
+    "userId": "u1",
+    "sessionId": "s1",
+    "message": "F860 需要订阅费吗？",
+    "reply": "不需要。F860 为“零订阅离线 GPS 电子围栏”。",
+    "appContext": {
+      "platform": "ios",
+      "appVersion": "1.0.0",
+      "pageCode": "home"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 1.038,
+      "topDenseScore": 0.94,
+      "threshold": 0.6,
+      "lexicalMatch": 1,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "subscription_fee",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 1.038,
+          "faq_id": "GF-002",
+          "question": "F860 需要订阅费吗？"
+        },
+        {
+          "score": 0.772,
+          "faq_id": "GF-001",
+          "question": "F860 是什么产品？"
+        },
+        {
+          "score": 0.43,
+          "faq_id": "F860-028",
+          "question": "如何连接接收器？"
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-02T11:58:18.273Z",
+    "userId": "u1",
+    "sessionId": "s1",
+    "message": "F860 需要订阅费吗？",
+    "reply": "不需要。F860 为“零订阅离线 GPS 电子围栏”。",
+    "appContext": {
+      "platform": "ios",
+      "appVersion": "1.0.0",
+      "pageCode": "home"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 1.038,
+      "topDenseScore": 0.94,
+      "threshold": 0.6,
+      "lexicalMatch": 1,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "subscription_fee",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 1.038,
+          "faq_id": "GF-002",
+          "question": "F860 需要订阅费吗？"
+        },
+        {
+          "score": 0.772,
+          "faq_id": "GF-001",
+          "question": "F860 是什么产品？"
+        },
+        {
+          "score": 0.43,
+          "faq_id": "F860-028",
+          "question": "如何连接接收器？"
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-02T11:59:13.369Z",
+    "userId": "u1",
+    "sessionId": "s1",
+    "message": "F860 需要订阅费吗？",
+    "reply": "不需要。F860 为“零订阅离线 GPS 电子围栏”。",
+    "appContext": {
+      "platform": "ios",
+      "appVersion": "1.0.0",
+      "pageCode": "home"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 1.038,
+      "topDenseScore": 0.94,
+      "threshold": 0.6,
+      "lexicalMatch": 1,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "subscription_fee",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 1.038,
+          "faq_id": "GF-002",
+          "question": "F860 需要订阅费吗？"
+        },
+        {
+          "score": 0.772,
+          "faq_id": "GF-001",
+          "question": "F860 是什么产品？"
+        },
+        {
+          "score": 0.43,
+          "faq_id": "F860-028",
+          "question": "如何连接接收器？"
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-02T11:59:13.379Z",
+    "userId": "u2",
+    "sessionId": "s2",
+    "message": "这个设备充不进电怎么办？",
+    "reply": "抱歉，这个问题我暂时无法回答，你可以联系人工客服获取帮助。",
+    "appContext": {
+      "platform": "ios",
+      "appVersion": "1.0.0",
+      "pageCode": "home"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 0.388047,
+      "topDenseScore": 0.72,
+      "threshold": 0.6,
+      "lexicalMatch": 0.0714,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 0.388047,
+          "faq_id": "F860-009",
+          "question": "宠物会对项圈过敏、磨皮肤吗？"
+        },
+        {
+          "score": 0.387214,
+          "faq_id": "GF-008",
+          "question": "F860 户外环境下防护能力怎么样？"
+        },
+        {
+          "score": 0.357143,
+          "faq_id": "F860-028",
+          "question": "如何连接接收器？"
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-02T11:59:13.870Z",
+    "userId": "u4",
+    "sessionId": "s4",
+    "message": "请说一下定价规则",
+    "reply": "抱歉，我暂时无法准确理解您的问题，需要为您转接人工客服吗？",
+    "appContext": {
+      "platform": "ios",
+      "appVersion": "1.0.0",
+      "pageCode": "home"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 0.292857,
+      "topDenseScore": 0,
+      "threshold": 0.95,
+      "lexicalMatch": 0.1429,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 0.292857,
+          "faq_id": "F860-018",
+          "question": "产品耐用性差，使用时间短容易损坏？"
+        },
+        {
+          "score": 0.279,
+          "faq_id": "GF-012",
+          "question": "F860 是否支持品牌方/B 端合作？"
+        },
+        {
+          "score": 0.261,
+          "faq_id": "GF-019",
+          "question": "F860 怎么快速上手使用？"
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-02T11:59:13.876Z",
+    "userId": "u4",
+    "sessionId": "s4",
+    "message": "稍等一下",
+    "reply": "请回复“需要”或“不需要”，我再为你处理是否转接人工客服。",
+    "appContext": {
+      "platform": "ios",
+      "appVersion": "1.0.0",
+      "pageCode": "home"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 0.292857,
+      "topDenseScore": 0,
+      "threshold": 0.95,
+      "lexicalMatch": 0.1429,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 0.292857,
+          "faq_id": "F860-018",
+          "question": "产品耐用性差，使用时间短容易损坏？"
+        },
+        {
+          "score": 0.279,
+          "faq_id": "GF-012",
+          "question": "F860 是否支持品牌方/B 端合作？"
+        },
+        {
+          "score": 0.261,
+          "faq_id": "GF-019",
+          "question": "F860 怎么快速上手使用？"
+        }
+      ]
+    },
+    "handoff": {
+      "triggered": false,
+      "ticketId": "",
+      "reason": "awaiting_handoff_confirmation",
+      "topScore": 0.292857,
+      "threshold": 0.95,
+      "needsConfirmation": true,
+      "options": [
+        "需要",
+        "不需要"
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-02T11:59:13.881Z",
+    "userId": "u4",
+    "sessionId": "s4",
+    "message": "需要",
+    "reply": "好的，已为你转接人工客服，工单号：ticket_1775131153881_564。",
+    "appContext": {
+      "platform": "ios",
+      "appVersion": "1.0.0",
+      "pageCode": "home"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 0.292857,
+      "topDenseScore": 0,
+      "threshold": 0.95,
+      "lexicalMatch": 0.1429,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 0.292857,
+          "faq_id": "F860-018",
+          "question": "产品耐用性差，使用时间短容易损坏？"
+        },
+        {
+          "score": 0.279,
+          "faq_id": "GF-012",
+          "question": "F860 是否支持品牌方/B 端合作？"
+        },
+        {
+          "score": 0.261,
+          "faq_id": "GF-019",
+          "question": "F860 怎么快速上手使用？"
+        }
+      ]
+    },
+    "handoff": {
+      "triggered": true,
+      "ticketId": "ticket_1775131153881_564",
+      "reason": "user_confirmed_handoff",
+      "topScore": 0.292857,
+      "threshold": 0.95,
+      "needsConfirmation": false
+    }
+  },
+  {
+    "timestamp": "2026-04-02T11:59:13.890Z",
+    "userId": "u5",
+    "sessionId": "s5",
+    "message": "请说明企业后台流程",
+    "reply": "抱歉，我暂时无法准确理解您的问题，需要为您转接人工客服吗？",
+    "appContext": {
+      "platform": "ios",
+      "appVersion": "1.0.0",
+      "pageCode": "home"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 0.2875,
+      "topDenseScore": 0,
+      "threshold": 0.95,
+      "lexicalMatch": 0.125,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 0.2875,
+          "faq_id": "F860-029",
+          "question": "围栏界面连接加载失败怎么处理？"
+        },
+        {
+          "score": 0.279,
+          "faq_id": "GF-012",
+          "question": "F860 是否支持品牌方/B 端合作？"
+        },
+        {
+          "score": 0.261,
+          "faq_id": "GF-019",
+          "question": "F860 怎么快速上手使用？"
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-02T11:59:13.893Z",
+    "userId": "u5",
+    "sessionId": "s5",
+    "message": "不需要",
+    "reply": "好的，暂不转接人工。你可以补充更多细节，我继续帮你排查。",
+    "appContext": {
+      "platform": "ios",
+      "appVersion": "1.0.0",
+      "pageCode": "home"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 0.2875,
+      "topDenseScore": 0,
+      "threshold": 0.95,
+      "lexicalMatch": 0.125,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 0.2875,
+          "faq_id": "F860-029",
+          "question": "围栏界面连接加载失败怎么处理？"
+        },
+        {
+          "score": 0.279,
+          "faq_id": "GF-012",
+          "question": "F860 是否支持品牌方/B 端合作？"
+        },
+        {
+          "score": 0.261,
+          "faq_id": "GF-019",
+          "question": "F860 怎么快速上手使用？"
+        }
+      ]
+    },
+    "handoff": {
+      "triggered": false,
+      "ticketId": "",
+      "reason": "user_declined_handoff",
+      "topScore": 0.2875,
+      "threshold": 0.95,
+      "needsConfirmation": false
+    }
+  },
+  {
+    "timestamp": "2026-04-02T12:28:14.158Z",
+    "userId": "u1",
+    "sessionId": "s1",
+    "message": "F860 需要订阅费吗？",
+    "reply": "不需要。F860 为“零订阅离线 GPS 电子围栏”。",
+    "appContext": {
+      "platform": "ios",
+      "appVersion": "1.0.0",
+      "pageCode": "home"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 1.038,
+      "topDenseScore": 0.94,
+      "threshold": 0.6,
+      "lexicalMatch": 1,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "subscription_fee",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 1.038,
+          "faq_id": "GF-002",
+          "question": "F860 需要订阅费吗？"
+        },
+        {
+          "score": 0.772,
+          "faq_id": "GF-001",
+          "question": "F860 是什么产品？"
+        },
+        {
+          "score": 0.43,
+          "faq_id": "F860-028",
+          "question": "如何连接接收器？"
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-02T12:28:14.169Z",
+    "userId": "u2",
+    "sessionId": "s2",
+    "message": "这个设备充不进电怎么办？",
+    "reply": "抱歉，这个问题我暂时无法回答，你可以联系人工客服获取帮助。",
+    "appContext": {
+      "platform": "ios",
+      "appVersion": "1.0.0",
+      "pageCode": "home"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 0.388047,
+      "topDenseScore": 0.72,
+      "threshold": 0.6,
+      "lexicalMatch": 0.0714,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 0.388047,
+          "faq_id": "F860-009",
+          "question": "宠物会对项圈过敏、磨皮肤吗？"
+        },
+        {
+          "score": 0.387214,
+          "faq_id": "GF-008",
+          "question": "F860 户外环境下防护能力怎么样？"
+        },
+        {
+          "score": 0.357143,
+          "faq_id": "F860-028",
+          "question": "如何连接接收器？"
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-02T12:28:14.652Z",
+    "userId": "u4",
+    "sessionId": "s4",
+    "message": "请说一下定价规则",
+    "reply": "抱歉，我暂时无法准确理解您的问题，需要为您转接人工客服吗？",
+    "appContext": {
+      "platform": "ios",
+      "appVersion": "1.0.0",
+      "pageCode": "home"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 0.292857,
+      "topDenseScore": 0,
+      "threshold": 0.95,
+      "lexicalMatch": 0.1429,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 0.292857,
+          "faq_id": "F860-018",
+          "question": "产品耐用性差，使用时间短容易损坏？"
+        },
+        {
+          "score": 0.279,
+          "faq_id": "GF-012",
+          "question": "F860 是否支持品牌方/B 端合作？"
+        },
+        {
+          "score": 0.261,
+          "faq_id": "GF-019",
+          "question": "F860 怎么快速上手使用？"
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-02T12:28:14.661Z",
+    "userId": "u4",
+    "sessionId": "s4",
+    "message": "稍等一下",
+    "reply": "请回复“需要”或“不需要”，我再为你处理是否转接人工客服。",
+    "appContext": {
+      "platform": "ios",
+      "appVersion": "1.0.0",
+      "pageCode": "home"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 0.292857,
+      "topDenseScore": 0,
+      "threshold": 0.95,
+      "lexicalMatch": 0.1429,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 0.292857,
+          "faq_id": "F860-018",
+          "question": "产品耐用性差，使用时间短容易损坏？"
+        },
+        {
+          "score": 0.279,
+          "faq_id": "GF-012",
+          "question": "F860 是否支持品牌方/B 端合作？"
+        },
+        {
+          "score": 0.261,
+          "faq_id": "GF-019",
+          "question": "F860 怎么快速上手使用？"
+        }
+      ]
+    },
+    "handoff": {
+      "triggered": false,
+      "ticketId": "",
+      "reason": "awaiting_handoff_confirmation",
+      "topScore": 0.292857,
+      "threshold": 0.95,
+      "needsConfirmation": true,
+      "options": [
+        "需要",
+        "不需要"
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-02T12:28:14.670Z",
+    "userId": "u4",
+    "sessionId": "s4",
+    "message": "需要",
+    "reply": "好的，已为你转接人工客服，工单号：ticket_1775132894667_465。",
+    "appContext": {
+      "platform": "ios",
+      "appVersion": "1.0.0",
+      "pageCode": "home"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 0.292857,
+      "topDenseScore": 0,
+      "threshold": 0.95,
+      "lexicalMatch": 0.1429,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 0.292857,
+          "faq_id": "F860-018",
+          "question": "产品耐用性差，使用时间短容易损坏？"
+        },
+        {
+          "score": 0.279,
+          "faq_id": "GF-012",
+          "question": "F860 是否支持品牌方/B 端合作？"
+        },
+        {
+          "score": 0.261,
+          "faq_id": "GF-019",
+          "question": "F860 怎么快速上手使用？"
+        }
+      ]
+    },
+    "handoff": {
+      "triggered": true,
+      "ticketId": "ticket_1775132894667_465",
+      "reason": "user_confirmed_handoff",
+      "topScore": 0.292857,
+      "threshold": 0.95,
+      "needsConfirmation": false
+    }
+  },
+  {
+    "timestamp": "2026-04-02T12:28:14.679Z",
+    "userId": "u5",
+    "sessionId": "s5",
+    "message": "请说明企业后台流程",
+    "reply": "抱歉，我暂时无法准确理解您的问题，需要为您转接人工客服吗？",
+    "appContext": {
+      "platform": "ios",
+      "appVersion": "1.0.0",
+      "pageCode": "home"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 0.2875,
+      "topDenseScore": 0,
+      "threshold": 0.95,
+      "lexicalMatch": 0.125,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 0.2875,
+          "faq_id": "F860-029",
+          "question": "围栏界面连接加载失败怎么处理？"
+        },
+        {
+          "score": 0.279,
+          "faq_id": "GF-012",
+          "question": "F860 是否支持品牌方/B 端合作？"
+        },
+        {
+          "score": 0.261,
+          "faq_id": "GF-019",
+          "question": "F860 怎么快速上手使用？"
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-02T12:28:14.683Z",
+    "userId": "u5",
+    "sessionId": "s5",
+    "message": "不需要",
+    "reply": "好的，暂不转接人工。你可以补充更多细节，我继续帮你排查。",
+    "appContext": {
+      "platform": "ios",
+      "appVersion": "1.0.0",
+      "pageCode": "home"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 0.2875,
+      "topDenseScore": 0,
+      "threshold": 0.95,
+      "lexicalMatch": 0.125,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 0.2875,
+          "faq_id": "F860-029",
+          "question": "围栏界面连接加载失败怎么处理？"
+        },
+        {
+          "score": 0.279,
+          "faq_id": "GF-012",
+          "question": "F860 是否支持品牌方/B 端合作？"
+        },
+        {
+          "score": 0.261,
+          "faq_id": "GF-019",
+          "question": "F860 怎么快速上手使用？"
+        }
+      ]
+    },
+    "handoff": {
+      "triggered": false,
+      "ticketId": "",
+      "reason": "user_declined_handoff",
+      "topScore": 0.2875,
+      "threshold": 0.95,
+      "needsConfirmation": false
+    }
+  },
+  {
+    "timestamp": "2026-04-02T12:29:11.187Z",
+    "userId": "u_live_1",
+    "sessionId": "s_live_1",
+    "message": "F860 需要订阅费吗？",
+    "reply": "【排查步骤：先确认连接流程正确】\n检查连接方式（最常见错误）\n① 接收器：在关闭状态下，短按开机。\n② 打开应用APP：点击设置打开蓝牙，点击添加设备，选择F860设备，添加连接。\n③ 连接成功：主页显示F860设备，点击设备进入围栏设备主页。\n④ 创建围栏：在围栏设置页面，点击“创建围栏”进入绘制界面。\n⑤ 绘制边界：在地图上，点击或拖动点来绘制边界，根据需要选择圆形、多边形或手绘模式，对于多边形围栏，您最多可以设置10个点。绘制完成后，系统会自动将该形状闭合为一个封闭区域。\n⑥ 保存并启用围栏：绘制完成后，点击“保存”，围栏成功保存后，您可以立即启用它。\n\n【快速总结】开机→连接APP→绘制围栏→启用围栏",
+    "appContext": {},
+    "retrieval": {
+      "error": "",
+      "topScore": 0.700351,
+      "topDenseScore": 0.6179677,
+      "threshold": 0.6,
+      "lexicalMatch": 0.5,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "subscription_fee",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 0.700351,
+          "faq_id": "F860-028",
+          "question": "如何连接接收器？"
+        },
+        {
+          "score": 0.568746,
+          "faq_id": "F860-011",
+          "question": "产品是什么，能解决什么问题？"
+        },
+        {
+          "score": 0.399289,
+          "faq_id": "F860-021",
+          "question": "充电时间过长/充不满"
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-02T12:31:13.782Z",
+    "userId": "u1",
+    "sessionId": "s1",
+    "message": "F860 需要订阅费吗？",
+    "reply": "不需要。F860 为“零订阅离线 GPS 电子围栏”。",
+    "appContext": {
+      "platform": "ios",
+      "appVersion": "1.0.0",
+      "pageCode": "home"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 1.038,
+      "topDenseScore": 0.94,
+      "threshold": 0.6,
+      "lexicalMatch": 1,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "subscription_fee",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 1.038,
+          "faq_id": "GF-002",
+          "question": "F860 需要订阅费吗？"
+        },
+        {
+          "score": 0.772,
+          "faq_id": "GF-001",
+          "question": "F860 是什么产品？"
+        },
+        {
+          "score": 0.43,
+          "faq_id": "F860-028",
+          "question": "如何连接接收器？"
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-02T12:31:13.791Z",
+    "userId": "u2",
+    "sessionId": "s2",
+    "message": "这个设备充不进电怎么办？",
+    "reply": "抱歉，这个问题我暂时无法回答，你可以联系人工客服获取帮助。",
+    "appContext": {
+      "platform": "ios",
+      "appVersion": "1.0.0",
+      "pageCode": "home"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 0.388047,
+      "topDenseScore": 0.72,
+      "threshold": 0.6,
+      "lexicalMatch": 0.0714,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 0.388047,
+          "faq_id": "F860-009",
+          "question": "宠物会对项圈过敏、磨皮肤吗？"
+        },
+        {
+          "score": 0.387214,
+          "faq_id": "GF-008",
+          "question": "F860 户外环境下防护能力怎么样？"
+        },
+        {
+          "score": 0.357143,
+          "faq_id": "F860-028",
+          "question": "如何连接接收器？"
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-02T12:31:14.250Z",
+    "userId": "u4",
+    "sessionId": "s4",
+    "message": "请说一下定价规则",
+    "reply": "抱歉，我暂时无法准确理解您的问题，需要为您转接人工客服吗？",
+    "appContext": {
+      "platform": "ios",
+      "appVersion": "1.0.0",
+      "pageCode": "home"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 0.292857,
+      "topDenseScore": 0,
+      "threshold": 0.95,
+      "lexicalMatch": 0.1429,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 0.292857,
+          "faq_id": "F860-018",
+          "question": "产品耐用性差，使用时间短容易损坏？"
+        },
+        {
+          "score": 0.279,
+          "faq_id": "GF-012",
+          "question": "F860 是否支持品牌方/B 端合作？"
+        },
+        {
+          "score": 0.261,
+          "faq_id": "GF-019",
+          "question": "F860 怎么快速上手使用？"
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-02T12:31:14.260Z",
+    "userId": "u4",
+    "sessionId": "s4",
+    "message": "稍等一下",
+    "reply": "请回复“需要”或“不需要”，我再为你处理是否转接人工客服。",
+    "appContext": {
+      "platform": "ios",
+      "appVersion": "1.0.0",
+      "pageCode": "home"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 0.292857,
+      "topDenseScore": 0,
+      "threshold": 0.95,
+      "lexicalMatch": 0.1429,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 0.292857,
+          "faq_id": "F860-018",
+          "question": "产品耐用性差，使用时间短容易损坏？"
+        },
+        {
+          "score": 0.279,
+          "faq_id": "GF-012",
+          "question": "F860 是否支持品牌方/B 端合作？"
+        },
+        {
+          "score": 0.261,
+          "faq_id": "GF-019",
+          "question": "F860 怎么快速上手使用？"
+        }
+      ]
+    },
+    "handoff": {
+      "triggered": false,
+      "ticketId": "",
+      "reason": "awaiting_handoff_confirmation",
+      "topScore": 0.292857,
+      "threshold": 0.95,
+      "needsConfirmation": true,
+      "options": [
+        "需要",
+        "不需要"
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-02T12:31:14.268Z",
+    "userId": "u4",
+    "sessionId": "s4",
+    "message": "需要",
+    "reply": "好的，已为你转接人工客服，工单号：ticket_1775133074267_71。",
+    "appContext": {
+      "platform": "ios",
+      "appVersion": "1.0.0",
+      "pageCode": "home"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 0.292857,
+      "topDenseScore": 0,
+      "threshold": 0.95,
+      "lexicalMatch": 0.1429,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 0.292857,
+          "faq_id": "F860-018",
+          "question": "产品耐用性差，使用时间短容易损坏？"
+        },
+        {
+          "score": 0.279,
+          "faq_id": "GF-012",
+          "question": "F860 是否支持品牌方/B 端合作？"
+        },
+        {
+          "score": 0.261,
+          "faq_id": "GF-019",
+          "question": "F860 怎么快速上手使用？"
+        }
+      ]
+    },
+    "handoff": {
+      "triggered": true,
+      "ticketId": "ticket_1775133074267_71",
+      "reason": "user_confirmed_handoff",
+      "topScore": 0.292857,
+      "threshold": 0.95,
+      "needsConfirmation": false
+    }
+  },
+  {
+    "timestamp": "2026-04-02T12:31:14.277Z",
+    "userId": "u5",
+    "sessionId": "s5",
+    "message": "请说明企业后台流程",
+    "reply": "抱歉，我暂时无法准确理解您的问题，需要为您转接人工客服吗？",
+    "appContext": {
+      "platform": "ios",
+      "appVersion": "1.0.0",
+      "pageCode": "home"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 0.2875,
+      "topDenseScore": 0,
+      "threshold": 0.95,
+      "lexicalMatch": 0.125,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 0.2875,
+          "faq_id": "F860-029",
+          "question": "围栏界面连接加载失败怎么处理？"
+        },
+        {
+          "score": 0.279,
+          "faq_id": "GF-012",
+          "question": "F860 是否支持品牌方/B 端合作？"
+        },
+        {
+          "score": 0.261,
+          "faq_id": "GF-019",
+          "question": "F860 怎么快速上手使用？"
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-02T12:31:14.282Z",
+    "userId": "u5",
+    "sessionId": "s5",
+    "message": "不需要",
+    "reply": "好的，暂不转接人工。你可以补充更多细节，我继续帮你排查。",
+    "appContext": {
+      "platform": "ios",
+      "appVersion": "1.0.0",
+      "pageCode": "home"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 0.2875,
+      "topDenseScore": 0,
+      "threshold": 0.95,
+      "lexicalMatch": 0.125,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 0.2875,
+          "faq_id": "F860-029",
+          "question": "围栏界面连接加载失败怎么处理？"
+        },
+        {
+          "score": 0.279,
+          "faq_id": "GF-012",
+          "question": "F860 是否支持品牌方/B 端合作？"
+        },
+        {
+          "score": 0.261,
+          "faq_id": "GF-019",
+          "question": "F860 怎么快速上手使用？"
+        }
+      ]
+    },
+    "handoff": {
+      "triggered": false,
+      "ticketId": "",
+      "reason": "user_declined_handoff",
+      "topScore": 0.2875,
+      "threshold": 0.95,
+      "needsConfirmation": false
+    }
+  },
+  {
+    "timestamp": "2026-04-02T12:31:14.737Z",
+    "userId": "u_stale_intent",
+    "sessionId": "s_stale_intent",
+    "message": "F860 需要订阅费吗？",
+    "reply": "【排查步骤：先确认连接流程正确】\n检查连接方式（最常见错误）\n① 接收器：在关闭状态下，短按开机。\n② 打开应用APP：点击设置打开蓝牙，点击添加设备，选择F860设备，添加连接。\n③ 连接成功：主页显示F860设备，点击设备进入围栏设备主页。\n④ 创建围栏：在围栏设置页面，点击“创建围栏”进入绘制界面。\n⑤ 绘制边界：在地图上，点击或拖动点来绘制边界，根据需要选择圆形、多边形或手绘模式，对于多边形围栏，您最多可以设置10个点。绘制完成后，系统会自动将该形状闭合为一个封闭区域。\n⑥ 保存并启用围栏：绘制完成后，点击“保存”，围栏成功保存后，您可以立即启用它。\n\n【快速总结】开机→连接APP→绘制围栏→启用围栏",
+    "appContext": {
+      "platform": "ios",
+      "appVersion": "1.0.0",
+      "pageCode": "home"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 0.728333,
+      "topDenseScore": 0.7,
+      "threshold": 0.6,
+      "lexicalMatch": 0.5,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "subscription_fee",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 0.728333,
+          "faq_id": "F860-028",
+          "question": "如何连接接收器？"
+        },
+        {
+          "score": 0.375346,
+          "faq_id": "F860-011",
+          "question": "产品是什么，能解决什么问题？"
+        },
+        {
+          "score": 0.187911,
+          "faq_id": "F860-014",
+          "question": "产品有哪些核心特点？"
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-02T12:32:23.569Z",
+    "userId": "u1",
+    "sessionId": "s1",
+    "message": "F860 需要订阅费吗？",
+    "reply": "不需要。F860 为“零订阅离线 GPS 电子围栏”。",
+    "appContext": {
+      "platform": "ios",
+      "appVersion": "1.0.0",
+      "pageCode": "home"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 0.723,
+      "topDenseScore": 0.94,
+      "threshold": 0.6,
+      "lexicalMatch": 1,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 0.723,
+          "faq_id": "GF-002",
+          "question": "F860 需要订阅费吗？"
+        },
+        {
+          "score": 0.487,
+          "faq_id": "GF-001",
+          "question": "F860 是什么产品？"
+        },
+        {
+          "score": 0.383333,
+          "faq_id": "F860-028",
+          "question": "如何连接接收器？"
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-02T12:32:23.582Z",
+    "userId": "u2",
+    "sessionId": "s2",
+    "message": "这个设备充不进电怎么办？",
+    "reply": "抱歉，这个问题我暂时无法回答，你可以联系人工客服获取帮助。",
+    "appContext": {
+      "platform": "ios",
+      "appVersion": "1.0.0",
+      "pageCode": "home"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 0.388047,
+      "topDenseScore": 0.72,
+      "threshold": 0.6,
+      "lexicalMatch": 0.0714,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 0.388047,
+          "faq_id": "F860-009",
+          "question": "宠物会对项圈过敏、磨皮肤吗？"
+        },
+        {
+          "score": 0.387214,
+          "faq_id": "GF-008",
+          "question": "F860 户外环境下防护能力怎么样？"
+        },
+        {
+          "score": 0.357143,
+          "faq_id": "F860-028",
+          "question": "如何连接接收器？"
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-02T12:32:24.090Z",
+    "userId": "u4",
+    "sessionId": "s4",
+    "message": "请说一下定价规则",
+    "reply": "抱歉，我暂时无法准确理解您的问题，需要为您转接人工客服吗？",
+    "appContext": {
+      "platform": "ios",
+      "appVersion": "1.0.0",
+      "pageCode": "home"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 0.292857,
+      "topDenseScore": 0,
+      "threshold": 0.95,
+      "lexicalMatch": 0.1429,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 0.292857,
+          "faq_id": "F860-018",
+          "question": "产品耐用性差，使用时间短容易损坏？"
+        },
+        {
+          "score": 0.279,
+          "faq_id": "GF-012",
+          "question": "F860 是否支持品牌方/B 端合作？"
+        },
+        {
+          "score": 0.261,
+          "faq_id": "GF-019",
+          "question": "F860 怎么快速上手使用？"
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-02T12:32:24.098Z",
+    "userId": "u4",
+    "sessionId": "s4",
+    "message": "稍等一下",
+    "reply": "请回复“需要”或“不需要”，我再为你处理是否转接人工客服。",
+    "appContext": {
+      "platform": "ios",
+      "appVersion": "1.0.0",
+      "pageCode": "home"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 0.292857,
+      "topDenseScore": 0,
+      "threshold": 0.95,
+      "lexicalMatch": 0.1429,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 0.292857,
+          "faq_id": "F860-018",
+          "question": "产品耐用性差，使用时间短容易损坏？"
+        },
+        {
+          "score": 0.279,
+          "faq_id": "GF-012",
+          "question": "F860 是否支持品牌方/B 端合作？"
+        },
+        {
+          "score": 0.261,
+          "faq_id": "GF-019",
+          "question": "F860 怎么快速上手使用？"
+        }
+      ]
+    },
+    "handoff": {
+      "triggered": false,
+      "ticketId": "",
+      "reason": "awaiting_handoff_confirmation",
+      "topScore": 0.292857,
+      "threshold": 0.95,
+      "needsConfirmation": true,
+      "options": [
+        "需要",
+        "不需要"
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-02T12:32:24.109Z",
+    "userId": "u4",
+    "sessionId": "s4",
+    "message": "需要",
+    "reply": "好的，已为你转接人工客服，工单号：ticket_1775133144108_968。",
+    "appContext": {
+      "platform": "ios",
+      "appVersion": "1.0.0",
+      "pageCode": "home"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 0.292857,
+      "topDenseScore": 0,
+      "threshold": 0.95,
+      "lexicalMatch": 0.1429,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 0.292857,
+          "faq_id": "F860-018",
+          "question": "产品耐用性差，使用时间短容易损坏？"
+        },
+        {
+          "score": 0.279,
+          "faq_id": "GF-012",
+          "question": "F860 是否支持品牌方/B 端合作？"
+        },
+        {
+          "score": 0.261,
+          "faq_id": "GF-019",
+          "question": "F860 怎么快速上手使用？"
+        }
+      ]
+    },
+    "handoff": {
+      "triggered": true,
+      "ticketId": "ticket_1775133144108_968",
+      "reason": "user_confirmed_handoff",
+      "topScore": 0.292857,
+      "threshold": 0.95,
+      "needsConfirmation": false
+    }
+  },
+  {
+    "timestamp": "2026-04-02T12:32:24.121Z",
+    "userId": "u5",
+    "sessionId": "s5",
+    "message": "请说明企业后台流程",
+    "reply": "抱歉，我暂时无法准确理解您的问题，需要为您转接人工客服吗？",
+    "appContext": {
+      "platform": "ios",
+      "appVersion": "1.0.0",
+      "pageCode": "home"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 0.2875,
+      "topDenseScore": 0,
+      "threshold": 0.95,
+      "lexicalMatch": 0.125,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 0.2875,
+          "faq_id": "F860-029",
+          "question": "围栏界面连接加载失败怎么处理？"
+        },
+        {
+          "score": 0.279,
+          "faq_id": "GF-012",
+          "question": "F860 是否支持品牌方/B 端合作？"
+        },
+        {
+          "score": 0.261,
+          "faq_id": "GF-019",
+          "question": "F860 怎么快速上手使用？"
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-02T12:32:24.126Z",
+    "userId": "u5",
+    "sessionId": "s5",
+    "message": "不需要",
+    "reply": "好的，暂不转接人工。你可以补充更多细节，我继续帮你排查。",
+    "appContext": {
+      "platform": "ios",
+      "appVersion": "1.0.0",
+      "pageCode": "home"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 0.2875,
+      "topDenseScore": 0,
+      "threshold": 0.95,
+      "lexicalMatch": 0.125,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 0.2875,
+          "faq_id": "F860-029",
+          "question": "围栏界面连接加载失败怎么处理？"
+        },
+        {
+          "score": 0.279,
+          "faq_id": "GF-012",
+          "question": "F860 是否支持品牌方/B 端合作？"
+        },
+        {
+          "score": 0.261,
+          "faq_id": "GF-019",
+          "question": "F860 怎么快速上手使用？"
+        }
+      ]
+    },
+    "handoff": {
+      "triggered": false,
+      "ticketId": "",
+      "reason": "user_declined_handoff",
+      "topScore": 0.2875,
+      "threshold": 0.95,
+      "needsConfirmation": false
+    }
+  },
+  {
+    "timestamp": "2026-04-02T12:32:24.580Z",
+    "userId": "u_stale_intent",
+    "sessionId": "s_stale_intent",
+    "message": "F860 需要订阅费吗？",
+    "reply": "【排查步骤：先确认连接流程正确】\n检查连接方式（最常见错误）\n① 接收器：在关闭状态下，短按开机。\n② 打开应用APP：点击设置打开蓝牙，点击添加设备，选择F860设备，添加连接。\n③ 连接成功：主页显示F860设备，点击设备进入围栏设备主页。\n④ 创建围栏：在围栏设置页面，点击“创建围栏”进入绘制界面。\n⑤ 绘制边界：在地图上，点击或拖动点来绘制边界，根据需要选择圆形、多边形或手绘模式，对于多边形围栏，您最多可以设置10个点。绘制完成后，系统会自动将该形状闭合为一个封闭区域。\n⑥ 保存并启用围栏：绘制完成后，点击“保存”，围栏成功保存后，您可以立即启用它。\n\n【快速总结】开机→连接APP→绘制围栏→启用围栏",
+    "appContext": {
+      "platform": "ios",
+      "appVersion": "1.0.0",
+      "pageCode": "home"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 0.698333,
+      "topDenseScore": 0.7,
+      "threshold": 0.6,
+      "lexicalMatch": 0.4444,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 0.698333,
+          "faq_id": "F860-028",
+          "question": "如何连接接收器？"
+        },
+        {
+          "score": 0.2835,
+          "faq_id": "F860-011",
+          "question": "产品是什么，能解决什么问题？"
+        },
+        {
+          "score": 0.08121,
+          "faq_id": "F860-037",
+          "question": "创建围栏时，设备是否需要宠物佩戴？"
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-02T12:32:45.257Z",
+    "userId": "u1",
+    "sessionId": "s1",
+    "message": "F860 需要订阅费吗？",
+    "reply": "不需要。F860 为“零订阅离线 GPS 电子围栏”。",
+    "appContext": {
+      "platform": "ios",
+      "appVersion": "1.0.0",
+      "pageCode": "home"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 0.723,
+      "topDenseScore": 0.94,
+      "threshold": 0.6,
+      "lexicalMatch": 1,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 0.723,
+          "faq_id": "GF-002",
+          "question": "F860 需要订阅费吗？"
+        },
+        {
+          "score": 0.487,
+          "faq_id": "GF-001",
+          "question": "F860 是什么产品？"
+        },
+        {
+          "score": 0.383333,
+          "faq_id": "F860-028",
+          "question": "如何连接接收器？"
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-02T12:32:45.267Z",
+    "userId": "u2",
+    "sessionId": "s2",
+    "message": "这个设备充不进电怎么办？",
+    "reply": "抱歉，这个问题我暂时无法回答，你可以联系人工客服获取帮助。",
+    "appContext": {
+      "platform": "ios",
+      "appVersion": "1.0.0",
+      "pageCode": "home"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 0.388047,
+      "topDenseScore": 0.72,
+      "threshold": 0.6,
+      "lexicalMatch": 0.0714,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 0.388047,
+          "faq_id": "F860-009",
+          "question": "宠物会对项圈过敏、磨皮肤吗？"
+        },
+        {
+          "score": 0.387214,
+          "faq_id": "GF-008",
+          "question": "F860 户外环境下防护能力怎么样？"
+        },
+        {
+          "score": 0.357143,
+          "faq_id": "F860-028",
+          "question": "如何连接接收器？"
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-02T12:32:45.730Z",
+    "userId": "u4",
+    "sessionId": "s4",
+    "message": "请说一下定价规则",
+    "reply": "抱歉，我暂时无法准确理解您的问题，需要为您转接人工客服吗？",
+    "appContext": {
+      "platform": "ios",
+      "appVersion": "1.0.0",
+      "pageCode": "home"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 0.292857,
+      "topDenseScore": 0,
+      "threshold": 0.95,
+      "lexicalMatch": 0.1429,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 0.292857,
+          "faq_id": "F860-018",
+          "question": "产品耐用性差，使用时间短容易损坏？"
+        },
+        {
+          "score": 0.279,
+          "faq_id": "GF-012",
+          "question": "F860 是否支持品牌方/B 端合作？"
+        },
+        {
+          "score": 0.261,
+          "faq_id": "GF-019",
+          "question": "F860 怎么快速上手使用？"
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-02T12:32:45.741Z",
+    "userId": "u4",
+    "sessionId": "s4",
+    "message": "稍等一下",
+    "reply": "请回复“需要”或“不需要”，我再为你处理是否转接人工客服。",
+    "appContext": {
+      "platform": "ios",
+      "appVersion": "1.0.0",
+      "pageCode": "home"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 0.292857,
+      "topDenseScore": 0,
+      "threshold": 0.95,
+      "lexicalMatch": 0.1429,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 0.292857,
+          "faq_id": "F860-018",
+          "question": "产品耐用性差，使用时间短容易损坏？"
+        },
+        {
+          "score": 0.279,
+          "faq_id": "GF-012",
+          "question": "F860 是否支持品牌方/B 端合作？"
+        },
+        {
+          "score": 0.261,
+          "faq_id": "GF-019",
+          "question": "F860 怎么快速上手使用？"
+        }
+      ]
+    },
+    "handoff": {
+      "triggered": false,
+      "ticketId": "",
+      "reason": "awaiting_handoff_confirmation",
+      "topScore": 0.292857,
+      "threshold": 0.95,
+      "needsConfirmation": true,
+      "options": [
+        "需要",
+        "不需要"
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-02T12:32:45.749Z",
+    "userId": "u4",
+    "sessionId": "s4",
+    "message": "需要",
+    "reply": "好的，已为你转接人工客服，工单号：ticket_1775133165746_841。",
+    "appContext": {
+      "platform": "ios",
+      "appVersion": "1.0.0",
+      "pageCode": "home"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 0.292857,
+      "topDenseScore": 0,
+      "threshold": 0.95,
+      "lexicalMatch": 0.1429,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 0.292857,
+          "faq_id": "F860-018",
+          "question": "产品耐用性差，使用时间短容易损坏？"
+        },
+        {
+          "score": 0.279,
+          "faq_id": "GF-012",
+          "question": "F860 是否支持品牌方/B 端合作？"
+        },
+        {
+          "score": 0.261,
+          "faq_id": "GF-019",
+          "question": "F860 怎么快速上手使用？"
+        }
+      ]
+    },
+    "handoff": {
+      "triggered": true,
+      "ticketId": "ticket_1775133165746_841",
+      "reason": "user_confirmed_handoff",
+      "topScore": 0.292857,
+      "threshold": 0.95,
+      "needsConfirmation": false
+    }
+  },
+  {
+    "timestamp": "2026-04-02T12:32:45.761Z",
+    "userId": "u5",
+    "sessionId": "s5",
+    "message": "请说明企业后台流程",
+    "reply": "抱歉，我暂时无法准确理解您的问题，需要为您转接人工客服吗？",
+    "appContext": {
+      "platform": "ios",
+      "appVersion": "1.0.0",
+      "pageCode": "home"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 0.2875,
+      "topDenseScore": 0,
+      "threshold": 0.95,
+      "lexicalMatch": 0.125,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 0.2875,
+          "faq_id": "F860-029",
+          "question": "围栏界面连接加载失败怎么处理？"
+        },
+        {
+          "score": 0.279,
+          "faq_id": "GF-012",
+          "question": "F860 是否支持品牌方/B 端合作？"
+        },
+        {
+          "score": 0.261,
+          "faq_id": "GF-019",
+          "question": "F860 怎么快速上手使用？"
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-02T12:32:45.767Z",
+    "userId": "u5",
+    "sessionId": "s5",
+    "message": "不需要",
+    "reply": "好的，暂不转接人工。你可以补充更多细节，我继续帮你排查。",
+    "appContext": {
+      "platform": "ios",
+      "appVersion": "1.0.0",
+      "pageCode": "home"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 0.2875,
+      "topDenseScore": 0,
+      "threshold": 0.95,
+      "lexicalMatch": 0.125,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 0.2875,
+          "faq_id": "F860-029",
+          "question": "围栏界面连接加载失败怎么处理？"
+        },
+        {
+          "score": 0.279,
+          "faq_id": "GF-012",
+          "question": "F860 是否支持品牌方/B 端合作？"
+        },
+        {
+          "score": 0.261,
+          "faq_id": "GF-019",
+          "question": "F860 怎么快速上手使用？"
+        }
+      ]
+    },
+    "handoff": {
+      "triggered": false,
+      "ticketId": "",
+      "reason": "user_declined_handoff",
+      "topScore": 0.2875,
+      "threshold": 0.95,
+      "needsConfirmation": false
+    }
+  },
+  {
+    "timestamp": "2026-04-02T12:32:46.221Z",
+    "userId": "u_stale_intent",
+    "sessionId": "s_stale_intent",
+    "message": "F860 需要订阅费吗？",
+    "reply": "【排查步骤：先确认连接流程正确】\n检查连接方式（最常见错误）\n① 接收器：在关闭状态下，短按开机。\n② 打开应用APP：点击设置打开蓝牙，点击添加设备，选择F860设备，添加连接。\n③ 连接成功：主页显示F860设备，点击设备进入围栏设备主页。\n④ 创建围栏：在围栏设置页面，点击“创建围栏”进入绘制界面。\n⑤ 绘制边界：在地图上，点击或拖动点来绘制边界，根据需要选择圆形、多边形或手绘模式，对于多边形围栏，您最多可以设置10个点。绘制完成后，系统会自动将该形状闭合为一个封闭区域。\n⑥ 保存并启用围栏：绘制完成后，点击“保存”，围栏成功保存后，您可以立即启用它。\n\n【快速总结】开机→连接APP→绘制围栏→启用围栏",
+    "appContext": {
+      "platform": "ios",
+      "appVersion": "1.0.0",
+      "pageCode": "home"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 0.698333,
+      "topDenseScore": 0.7,
+      "threshold": 0.6,
+      "lexicalMatch": 0.4444,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 0.698333,
+          "faq_id": "F860-028",
+          "question": "如何连接接收器？"
+        },
+        {
+          "score": 0.2835,
+          "faq_id": "F860-011",
+          "question": "产品是什么，能解决什么问题？"
+        },
+        {
+          "score": 0.08121,
+          "faq_id": "F860-037",
+          "question": "创建围栏时，设备是否需要宠物佩戴？"
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-02T12:33:00.926Z",
+    "userId": "u1",
+    "sessionId": "s1",
+    "message": "F860 需要订阅费吗？",
+    "reply": "不需要。F860 为“零订阅离线 GPS 电子围栏”。",
+    "appContext": {
+      "platform": "ios",
+      "appVersion": "1.0.0",
+      "pageCode": "home"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 0.723,
+      "topDenseScore": 0.94,
+      "threshold": 0.6,
+      "lexicalMatch": 1,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 0.723,
+          "faq_id": "GF-002",
+          "question": "F860 需要订阅费吗？"
+        },
+        {
+          "score": 0.487,
+          "faq_id": "GF-001",
+          "question": "F860 是什么产品？"
+        },
+        {
+          "score": 0.383333,
+          "faq_id": "F860-028",
+          "question": "如何连接接收器？"
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-02T12:33:00.938Z",
+    "userId": "u2",
+    "sessionId": "s2",
+    "message": "这个设备充不进电怎么办？",
+    "reply": "抱歉，这个问题我暂时无法回答，你可以联系人工客服获取帮助。",
+    "appContext": {
+      "platform": "ios",
+      "appVersion": "1.0.0",
+      "pageCode": "home"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 0.388047,
+      "topDenseScore": 0.72,
+      "threshold": 0.6,
+      "lexicalMatch": 0.0714,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 0.388047,
+          "faq_id": "F860-009",
+          "question": "宠物会对项圈过敏、磨皮肤吗？"
+        },
+        {
+          "score": 0.387214,
+          "faq_id": "GF-008",
+          "question": "F860 户外环境下防护能力怎么样？"
+        },
+        {
+          "score": 0.357143,
+          "faq_id": "F860-028",
+          "question": "如何连接接收器？"
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-02T12:33:01.396Z",
+    "userId": "u4",
+    "sessionId": "s4",
+    "message": "请说一下定价规则",
+    "reply": "抱歉，我暂时无法准确理解您的问题，需要为您转接人工客服吗？",
+    "appContext": {
+      "platform": "ios",
+      "appVersion": "1.0.0",
+      "pageCode": "home"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 0.292857,
+      "topDenseScore": 0,
+      "threshold": 0.95,
+      "lexicalMatch": 0.1429,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 0.292857,
+          "faq_id": "F860-018",
+          "question": "产品耐用性差，使用时间短容易损坏？"
+        },
+        {
+          "score": 0.279,
+          "faq_id": "GF-012",
+          "question": "F860 是否支持品牌方/B 端合作？"
+        },
+        {
+          "score": 0.261,
+          "faq_id": "GF-019",
+          "question": "F860 怎么快速上手使用？"
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-02T12:33:01.404Z",
+    "userId": "u4",
+    "sessionId": "s4",
+    "message": "稍等一下",
+    "reply": "请回复“需要”或“不需要”，我再为你处理是否转接人工客服。",
+    "appContext": {
+      "platform": "ios",
+      "appVersion": "1.0.0",
+      "pageCode": "home"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 0.292857,
+      "topDenseScore": 0,
+      "threshold": 0.95,
+      "lexicalMatch": 0.1429,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 0.292857,
+          "faq_id": "F860-018",
+          "question": "产品耐用性差，使用时间短容易损坏？"
+        },
+        {
+          "score": 0.279,
+          "faq_id": "GF-012",
+          "question": "F860 是否支持品牌方/B 端合作？"
+        },
+        {
+          "score": 0.261,
+          "faq_id": "GF-019",
+          "question": "F860 怎么快速上手使用？"
+        }
+      ]
+    },
+    "handoff": {
+      "triggered": false,
+      "ticketId": "",
+      "reason": "awaiting_handoff_confirmation",
+      "topScore": 0.292857,
+      "threshold": 0.95,
+      "needsConfirmation": true,
+      "options": [
+        "需要",
+        "不需要"
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-02T12:33:01.414Z",
+    "userId": "u4",
+    "sessionId": "s4",
+    "message": "需要",
+    "reply": "好的，已为你转接人工客服，工单号：ticket_1775133181412_632。",
+    "appContext": {
+      "platform": "ios",
+      "appVersion": "1.0.0",
+      "pageCode": "home"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 0.292857,
+      "topDenseScore": 0,
+      "threshold": 0.95,
+      "lexicalMatch": 0.1429,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 0.292857,
+          "faq_id": "F860-018",
+          "question": "产品耐用性差，使用时间短容易损坏？"
+        },
+        {
+          "score": 0.279,
+          "faq_id": "GF-012",
+          "question": "F860 是否支持品牌方/B 端合作？"
+        },
+        {
+          "score": 0.261,
+          "faq_id": "GF-019",
+          "question": "F860 怎么快速上手使用？"
+        }
+      ]
+    },
+    "handoff": {
+      "triggered": true,
+      "ticketId": "ticket_1775133181412_632",
+      "reason": "user_confirmed_handoff",
+      "topScore": 0.292857,
+      "threshold": 0.95,
+      "needsConfirmation": false
+    }
+  },
+  {
+    "timestamp": "2026-04-02T12:33:01.423Z",
+    "userId": "u5",
+    "sessionId": "s5",
+    "message": "请说明企业后台流程",
+    "reply": "抱歉，我暂时无法准确理解您的问题，需要为您转接人工客服吗？",
+    "appContext": {
+      "platform": "ios",
+      "appVersion": "1.0.0",
+      "pageCode": "home"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 0.2875,
+      "topDenseScore": 0,
+      "threshold": 0.95,
+      "lexicalMatch": 0.125,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 0.2875,
+          "faq_id": "F860-029",
+          "question": "围栏界面连接加载失败怎么处理？"
+        },
+        {
+          "score": 0.279,
+          "faq_id": "GF-012",
+          "question": "F860 是否支持品牌方/B 端合作？"
+        },
+        {
+          "score": 0.261,
+          "faq_id": "GF-019",
+          "question": "F860 怎么快速上手使用？"
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-02T12:33:01.427Z",
+    "userId": "u5",
+    "sessionId": "s5",
+    "message": "不需要",
+    "reply": "好的，暂不转接人工。你可以补充更多细节，我继续帮你排查。",
+    "appContext": {
+      "platform": "ios",
+      "appVersion": "1.0.0",
+      "pageCode": "home"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 0.2875,
+      "topDenseScore": 0,
+      "threshold": 0.95,
+      "lexicalMatch": 0.125,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 0.2875,
+          "faq_id": "F860-029",
+          "question": "围栏界面连接加载失败怎么处理？"
+        },
+        {
+          "score": 0.279,
+          "faq_id": "GF-012",
+          "question": "F860 是否支持品牌方/B 端合作？"
+        },
+        {
+          "score": 0.261,
+          "faq_id": "GF-019",
+          "question": "F860 怎么快速上手使用？"
+        }
+      ]
+    },
+    "handoff": {
+      "triggered": false,
+      "ticketId": "",
+      "reason": "user_declined_handoff",
+      "topScore": 0.2875,
+      "threshold": 0.95,
+      "needsConfirmation": false
+    }
+  },
+  {
+    "timestamp": "2026-04-02T12:33:01.878Z",
+    "userId": "u_stale_intent",
+    "sessionId": "s_stale_intent",
+    "message": "F860 需要订阅费吗？",
+    "reply": "【排查步骤：先确认连接流程正确】\n检查连接方式（最常见错误）\n① 接收器：在关闭状态下，短按开机。\n② 打开应用APP：点击设置打开蓝牙，点击添加设备，选择F860设备，添加连接。\n③ 连接成功：主页显示F860设备，点击设备进入围栏设备主页。\n④ 创建围栏：在围栏设置页面，点击“创建围栏”进入绘制界面。\n⑤ 绘制边界：在地图上，点击或拖动点来绘制边界，根据需要选择圆形、多边形或手绘模式，对于多边形围栏，您最多可以设置10个点。绘制完成后，系统会自动将该形状闭合为一个封闭区域。\n⑥ 保存并启用围栏：绘制完成后，点击“保存”，围栏成功保存后，您可以立即启用它。\n\n【快速总结】开机→连接APP→绘制围栏→启用围栏",
+    "appContext": {
+      "platform": "ios",
+      "appVersion": "1.0.0",
+      "pageCode": "home"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 0.698333,
+      "topDenseScore": 0.7,
+      "threshold": 0.6,
+      "lexicalMatch": 0.4444,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 0.698333,
+          "faq_id": "F860-028",
+          "question": "如何连接接收器？"
+        },
+        {
+          "score": 0.2835,
+          "faq_id": "F860-011",
+          "question": "产品是什么，能解决什么问题？"
+        },
+        {
+          "score": 0.08121,
+          "faq_id": "F860-037",
+          "question": "创建围栏时，设备是否需要宠物佩戴？"
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-02T12:34:53.581Z",
+    "userId": "u1",
+    "sessionId": "s1",
+    "message": "F860 需要订阅费吗？",
+    "reply": "不需要。F860 为“零订阅离线 GPS 电子围栏”。",
+    "appContext": {
+      "platform": "ios",
+      "appVersion": "1.0.0",
+      "pageCode": "home"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 0.723,
+      "topDenseScore": 0.94,
+      "threshold": 0.6,
+      "lexicalMatch": 1,
+      "topicLexicalMatch": 1,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 0.723,
+          "faq_id": "GF-002",
+          "question": "F860 需要订阅费吗？"
+        },
+        {
+          "score": 0.487,
+          "faq_id": "GF-001",
+          "question": "F860 是什么产品？"
+        },
+        {
+          "score": 0.383333,
+          "faq_id": "F860-028",
+          "question": "如何连接接收器？"
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-02T12:34:53.808Z",
+    "userId": "u2",
+    "sessionId": "s2",
+    "message": "这个设备充不进电怎么办？",
+    "reply": "抱歉，这个问题我暂时无法回答，你可以联系人工客服获取帮助。",
+    "appContext": {
+      "platform": "ios",
+      "appVersion": "1.0.0",
+      "pageCode": "home"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 0.388047,
+      "topDenseScore": 0.72,
+      "threshold": 0.6,
+      "lexicalMatch": 0,
+      "topicLexicalMatch": 0,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 0.388047,
+          "faq_id": "F860-009",
+          "question": "宠物会对项圈过敏、磨皮肤吗？"
+        },
+        {
+          "score": 0.387214,
+          "faq_id": "GF-008",
+          "question": "F860 户外环境下防护能力怎么样？"
+        },
+        {
+          "score": 0.357143,
+          "faq_id": "F860-028",
+          "question": "如何连接接收器？"
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-02T12:34:54.402Z",
+    "userId": "u4",
+    "sessionId": "s4",
+    "message": "请说一下定价规则",
+    "reply": "抱歉，我暂时无法准确理解您的问题，需要为您转接人工客服吗？",
+    "appContext": {
+      "platform": "ios",
+      "appVersion": "1.0.0",
+      "pageCode": "home"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 0.292857,
+      "topDenseScore": 0,
+      "threshold": 0.95,
+      "lexicalMatch": 0,
+      "topicLexicalMatch": 0,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 0.292857,
+          "faq_id": "F860-018",
+          "question": "产品耐用性差，使用时间短容易损坏？"
+        },
+        {
+          "score": 0.279,
+          "faq_id": "GF-012",
+          "question": "F860 是否支持品牌方/B 端合作？"
+        },
+        {
+          "score": 0.261,
+          "faq_id": "GF-019",
+          "question": "F860 怎么快速上手使用？"
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-02T12:34:54.418Z",
+    "userId": "u4",
+    "sessionId": "s4",
+    "message": "稍等一下",
+    "reply": "请回复“需要”或“不需要”，我再为你处理是否转接人工客服。",
+    "appContext": {
+      "platform": "ios",
+      "appVersion": "1.0.0",
+      "pageCode": "home"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 0.292857,
+      "topDenseScore": 0,
+      "threshold": 0.95,
+      "lexicalMatch": 0,
+      "topicLexicalMatch": 0,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 0.292857,
+          "faq_id": "F860-018",
+          "question": "产品耐用性差，使用时间短容易损坏？"
+        },
+        {
+          "score": 0.279,
+          "faq_id": "GF-012",
+          "question": "F860 是否支持品牌方/B 端合作？"
+        },
+        {
+          "score": 0.261,
+          "faq_id": "GF-019",
+          "question": "F860 怎么快速上手使用？"
+        }
+      ]
+    },
+    "handoff": {
+      "triggered": false,
+      "ticketId": "",
+      "reason": "awaiting_handoff_confirmation",
+      "topScore": 0.292857,
+      "threshold": 0.95,
+      "needsConfirmation": true,
+      "options": [
+        "需要",
+        "不需要"
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-02T12:34:54.443Z",
+    "userId": "u4",
+    "sessionId": "s4",
+    "message": "需要",
+    "reply": "好的，已为你转接人工客服，工单号：ticket_1775133294442_540。",
+    "appContext": {
+      "platform": "ios",
+      "appVersion": "1.0.0",
+      "pageCode": "home"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 0.292857,
+      "topDenseScore": 0,
+      "threshold": 0.95,
+      "lexicalMatch": 0,
+      "topicLexicalMatch": 0,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 0.292857,
+          "faq_id": "F860-018",
+          "question": "产品耐用性差，使用时间短容易损坏？"
+        },
+        {
+          "score": 0.279,
+          "faq_id": "GF-012",
+          "question": "F860 是否支持品牌方/B 端合作？"
+        },
+        {
+          "score": 0.261,
+          "faq_id": "GF-019",
+          "question": "F860 怎么快速上手使用？"
+        }
+      ]
+    },
+    "handoff": {
+      "triggered": true,
+      "ticketId": "ticket_1775133294442_540",
+      "reason": "user_confirmed_handoff",
+      "topScore": 0.292857,
+      "threshold": 0.95,
+      "needsConfirmation": false
+    }
+  },
+  {
+    "timestamp": "2026-04-02T12:34:54.464Z",
+    "userId": "u5",
+    "sessionId": "s5",
+    "message": "请说明企业后台流程",
+    "reply": "抱歉，我暂时无法准确理解您的问题，需要为您转接人工客服吗？",
+    "appContext": {
+      "platform": "ios",
+      "appVersion": "1.0.0",
+      "pageCode": "home"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 0.2875,
+      "topDenseScore": 0,
+      "threshold": 0.95,
+      "lexicalMatch": 0.125,
+      "topicLexicalMatch": 0.125,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 0.2875,
+          "faq_id": "F860-029",
+          "question": "围栏界面连接加载失败怎么处理？"
+        },
+        {
+          "score": 0.279,
+          "faq_id": "GF-012",
+          "question": "F860 是否支持品牌方/B 端合作？"
+        },
+        {
+          "score": 0.261,
+          "faq_id": "GF-019",
+          "question": "F860 怎么快速上手使用？"
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-02T12:34:54.475Z",
+    "userId": "u5",
+    "sessionId": "s5",
+    "message": "不需要",
+    "reply": "好的，暂不转接人工。你可以补充更多细节，我继续帮你排查。",
+    "appContext": {
+      "platform": "ios",
+      "appVersion": "1.0.0",
+      "pageCode": "home"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 0.2875,
+      "topDenseScore": 0,
+      "threshold": 0.95,
+      "lexicalMatch": 0.125,
+      "topicLexicalMatch": 0.125,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 0.2875,
+          "faq_id": "F860-029",
+          "question": "围栏界面连接加载失败怎么处理？"
+        },
+        {
+          "score": 0.279,
+          "faq_id": "GF-012",
+          "question": "F860 是否支持品牌方/B 端合作？"
+        },
+        {
+          "score": 0.261,
+          "faq_id": "GF-019",
+          "question": "F860 怎么快速上手使用？"
+        }
+      ]
+    },
+    "handoff": {
+      "triggered": false,
+      "ticketId": "",
+      "reason": "user_declined_handoff",
+      "topScore": 0.2875,
+      "threshold": 0.95,
+      "needsConfirmation": false
+    }
+  },
+  {
+    "timestamp": "2026-04-02T12:34:54.935Z",
+    "userId": "u_stale_intent",
+    "sessionId": "s_stale_intent",
+    "message": "F860 需要订阅费吗？",
+    "reply": "【排查步骤：先确认连接流程正确】\n检查连接方式（最常见错误）\n① 接收器：在关闭状态下，短按开机。\n② 打开应用APP：点击设置打开蓝牙，点击添加设备，选择F860设备，添加连接。\n③ 连接成功：主页显示F860设备，点击设备进入围栏设备主页。\n④ 创建围栏：在围栏设置页面，点击“创建围栏”进入绘制界面。\n⑤ 绘制边界：在地图上，点击或拖动点来绘制边界，根据需要选择圆形、多边形或手绘模式，对于多边形围栏，您最多可以设置10个点。绘制完成后，系统会自动将该形状闭合为一个封闭区域。\n⑥ 保存并启用围栏：绘制完成后，点击“保存”，围栏成功保存后，您可以立即启用它。\n\n【快速总结】开机→连接APP→绘制围栏→启用围栏",
+    "appContext": {
+      "platform": "ios",
+      "appVersion": "1.0.0",
+      "pageCode": "home"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 0.698333,
+      "topDenseScore": 0.7,
+      "threshold": 0.6,
+      "lexicalMatch": 0.25,
+      "topicLexicalMatch": 0.25,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 0.698333,
+          "faq_id": "F860-028",
+          "question": "如何连接接收器？"
+        },
+        {
+          "score": 0.2835,
+          "faq_id": "F860-011",
+          "question": "产品是什么，能解决什么问题？"
+        },
+        {
+          "score": 0.08121,
+          "faq_id": "F860-037",
+          "question": "创建围栏时，设备是否需要宠物佩戴？"
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-02T12:35:07.487Z",
+    "userId": "u1",
+    "sessionId": "s1",
+    "message": "F860 需要订阅费吗？",
+    "reply": "不需要。F860 为“零订阅离线 GPS 电子围栏”。",
+    "appContext": {
+      "platform": "ios",
+      "appVersion": "1.0.0",
+      "pageCode": "home"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 0.723,
+      "topDenseScore": 0.94,
+      "threshold": 0.6,
+      "lexicalMatch": 1,
+      "topicLexicalMatch": 1,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 0.723,
+          "faq_id": "GF-002",
+          "question": "F860 需要订阅费吗？"
+        },
+        {
+          "score": 0.487,
+          "faq_id": "GF-001",
+          "question": "F860 是什么产品？"
+        },
+        {
+          "score": 0.383333,
+          "faq_id": "F860-028",
+          "question": "如何连接接收器？"
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-02T12:35:07.503Z",
+    "userId": "u2",
+    "sessionId": "s2",
+    "message": "这个设备充不进电怎么办？",
+    "reply": "抱歉，这个问题我暂时无法回答，你可以联系人工客服获取帮助。",
+    "appContext": {
+      "platform": "ios",
+      "appVersion": "1.0.0",
+      "pageCode": "home"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 0.388047,
+      "topDenseScore": 0.72,
+      "threshold": 0.6,
+      "lexicalMatch": 0,
+      "topicLexicalMatch": 0,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 0.388047,
+          "faq_id": "F860-009",
+          "question": "宠物会对项圈过敏、磨皮肤吗？"
+        },
+        {
+          "score": 0.387214,
+          "faq_id": "GF-008",
+          "question": "F860 户外环境下防护能力怎么样？"
+        },
+        {
+          "score": 0.357143,
+          "faq_id": "F860-028",
+          "question": "如何连接接收器？"
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-02T12:35:07.965Z",
+    "userId": "u4",
+    "sessionId": "s4",
+    "message": "请说一下定价规则",
+    "reply": "抱歉，我暂时无法准确理解您的问题，需要为您转接人工客服吗？",
+    "appContext": {
+      "platform": "ios",
+      "appVersion": "1.0.0",
+      "pageCode": "home"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 0.292857,
+      "topDenseScore": 0,
+      "threshold": 0.95,
+      "lexicalMatch": 0,
+      "topicLexicalMatch": 0,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 0.292857,
+          "faq_id": "F860-018",
+          "question": "产品耐用性差，使用时间短容易损坏？"
+        },
+        {
+          "score": 0.279,
+          "faq_id": "GF-012",
+          "question": "F860 是否支持品牌方/B 端合作？"
+        },
+        {
+          "score": 0.261,
+          "faq_id": "GF-019",
+          "question": "F860 怎么快速上手使用？"
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-02T12:35:07.973Z",
+    "userId": "u4",
+    "sessionId": "s4",
+    "message": "稍等一下",
+    "reply": "请回复“需要”或“不需要”，我再为你处理是否转接人工客服。",
+    "appContext": {
+      "platform": "ios",
+      "appVersion": "1.0.0",
+      "pageCode": "home"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 0.292857,
+      "topDenseScore": 0,
+      "threshold": 0.95,
+      "lexicalMatch": 0,
+      "topicLexicalMatch": 0,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 0.292857,
+          "faq_id": "F860-018",
+          "question": "产品耐用性差，使用时间短容易损坏？"
+        },
+        {
+          "score": 0.279,
+          "faq_id": "GF-012",
+          "question": "F860 是否支持品牌方/B 端合作？"
+        },
+        {
+          "score": 0.261,
+          "faq_id": "GF-019",
+          "question": "F860 怎么快速上手使用？"
+        }
+      ]
+    },
+    "handoff": {
+      "triggered": false,
+      "ticketId": "",
+      "reason": "awaiting_handoff_confirmation",
+      "topScore": 0.292857,
+      "threshold": 0.95,
+      "needsConfirmation": true,
+      "options": [
+        "需要",
+        "不需要"
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-02T12:35:07.983Z",
+    "userId": "u4",
+    "sessionId": "s4",
+    "message": "需要",
+    "reply": "好的，已为你转接人工客服，工单号：ticket_1775133307978_28。",
+    "appContext": {
+      "platform": "ios",
+      "appVersion": "1.0.0",
+      "pageCode": "home"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 0.292857,
+      "topDenseScore": 0,
+      "threshold": 0.95,
+      "lexicalMatch": 0,
+      "topicLexicalMatch": 0,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 0.292857,
+          "faq_id": "F860-018",
+          "question": "产品耐用性差，使用时间短容易损坏？"
+        },
+        {
+          "score": 0.279,
+          "faq_id": "GF-012",
+          "question": "F860 是否支持品牌方/B 端合作？"
+        },
+        {
+          "score": 0.261,
+          "faq_id": "GF-019",
+          "question": "F860 怎么快速上手使用？"
+        }
+      ]
+    },
+    "handoff": {
+      "triggered": true,
+      "ticketId": "ticket_1775133307978_28",
+      "reason": "user_confirmed_handoff",
+      "topScore": 0.292857,
+      "threshold": 0.95,
+      "needsConfirmation": false
+    }
+  },
+  {
+    "timestamp": "2026-04-02T12:35:07.995Z",
+    "userId": "u5",
+    "sessionId": "s5",
+    "message": "请说明企业后台流程",
+    "reply": "抱歉，我暂时无法准确理解您的问题，需要为您转接人工客服吗？",
+    "appContext": {
+      "platform": "ios",
+      "appVersion": "1.0.0",
+      "pageCode": "home"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 0.2875,
+      "topDenseScore": 0,
+      "threshold": 0.95,
+      "lexicalMatch": 0.125,
+      "topicLexicalMatch": 0.125,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 0.2875,
+          "faq_id": "F860-029",
+          "question": "围栏界面连接加载失败怎么处理？"
+        },
+        {
+          "score": 0.279,
+          "faq_id": "GF-012",
+          "question": "F860 是否支持品牌方/B 端合作？"
+        },
+        {
+          "score": 0.261,
+          "faq_id": "GF-019",
+          "question": "F860 怎么快速上手使用？"
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-02T12:35:07.999Z",
+    "userId": "u5",
+    "sessionId": "s5",
+    "message": "不需要",
+    "reply": "好的，暂不转接人工。你可以补充更多细节，我继续帮你排查。",
+    "appContext": {
+      "platform": "ios",
+      "appVersion": "1.0.0",
+      "pageCode": "home"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 0.2875,
+      "topDenseScore": 0,
+      "threshold": 0.95,
+      "lexicalMatch": 0.125,
+      "topicLexicalMatch": 0.125,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 0.2875,
+          "faq_id": "F860-029",
+          "question": "围栏界面连接加载失败怎么处理？"
+        },
+        {
+          "score": 0.279,
+          "faq_id": "GF-012",
+          "question": "F860 是否支持品牌方/B 端合作？"
+        },
+        {
+          "score": 0.261,
+          "faq_id": "GF-019",
+          "question": "F860 怎么快速上手使用？"
+        }
+      ]
+    },
+    "handoff": {
+      "triggered": false,
+      "ticketId": "",
+      "reason": "user_declined_handoff",
+      "topScore": 0.2875,
+      "threshold": 0.95,
+      "needsConfirmation": false
+    }
+  },
+  {
+    "timestamp": "2026-04-02T12:35:08.464Z",
+    "userId": "u_stale_intent",
+    "sessionId": "s_stale_intent",
+    "message": "F860 需要订阅费吗？",
+    "reply": "抱歉，我暂时无法准确理解您的问题，需要为您转接人工客服吗？",
+    "appContext": {
+      "platform": "ios",
+      "appVersion": "1.0.0",
+      "pageCode": "home"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 0.698333,
+      "topDenseScore": 0.7,
+      "threshold": 0.6,
+      "lexicalMatch": 0,
+      "topicLexicalMatch": 0,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 0.698333,
+          "faq_id": "F860-028",
+          "question": "如何连接接收器？"
+        },
+        {
+          "score": 0.2835,
+          "faq_id": "F860-011",
+          "question": "产品是什么，能解决什么问题？"
+        },
+        {
+          "score": 0.08121,
+          "faq_id": "F860-037",
+          "question": "创建围栏时，设备是否需要宠物佩戴？"
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-02T12:35:25.065Z",
+    "userId": "u1",
+    "sessionId": "s1",
+    "message": "F860 需要订阅费吗？",
+    "reply": "不需要。F860 为“零订阅离线 GPS 电子围栏”。",
+    "appContext": {
+      "platform": "ios",
+      "appVersion": "1.0.0",
+      "pageCode": "home"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 0.723,
+      "topDenseScore": 0.94,
+      "threshold": 0.6,
+      "lexicalMatch": 1,
+      "topicLexicalMatch": 1,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 0.723,
+          "faq_id": "GF-002",
+          "question": "F860 需要订阅费吗？"
+        },
+        {
+          "score": 0.487,
+          "faq_id": "GF-001",
+          "question": "F860 是什么产品？"
+        },
+        {
+          "score": 0.383333,
+          "faq_id": "F860-028",
+          "question": "如何连接接收器？"
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-02T12:35:25.079Z",
+    "userId": "u2",
+    "sessionId": "s2",
+    "message": "这个设备充不进电怎么办？",
+    "reply": "抱歉，这个问题我暂时无法回答，你可以联系人工客服获取帮助。",
+    "appContext": {
+      "platform": "ios",
+      "appVersion": "1.0.0",
+      "pageCode": "home"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 0.388047,
+      "topDenseScore": 0.72,
+      "threshold": 0.6,
+      "lexicalMatch": 0,
+      "topicLexicalMatch": 0,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 0.388047,
+          "faq_id": "F860-009",
+          "question": "宠物会对项圈过敏、磨皮肤吗？"
+        },
+        {
+          "score": 0.387214,
+          "faq_id": "GF-008",
+          "question": "F860 户外环境下防护能力怎么样？"
+        },
+        {
+          "score": 0.357143,
+          "faq_id": "F860-028",
+          "question": "如何连接接收器？"
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-02T12:35:25.542Z",
+    "userId": "u4",
+    "sessionId": "s4",
+    "message": "请说一下定价规则",
+    "reply": "抱歉，我暂时无法准确理解您的问题，需要为您转接人工客服吗？",
+    "appContext": {
+      "platform": "ios",
+      "appVersion": "1.0.0",
+      "pageCode": "home"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 0.292857,
+      "topDenseScore": 0,
+      "threshold": 0.95,
+      "lexicalMatch": 0,
+      "topicLexicalMatch": 0,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 0.292857,
+          "faq_id": "F860-018",
+          "question": "产品耐用性差，使用时间短容易损坏？"
+        },
+        {
+          "score": 0.279,
+          "faq_id": "GF-012",
+          "question": "F860 是否支持品牌方/B 端合作？"
+        },
+        {
+          "score": 0.261,
+          "faq_id": "GF-019",
+          "question": "F860 怎么快速上手使用？"
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-02T12:35:25.552Z",
+    "userId": "u4",
+    "sessionId": "s4",
+    "message": "稍等一下",
+    "reply": "请回复“需要”或“不需要”，我再为你处理是否转接人工客服。",
+    "appContext": {
+      "platform": "ios",
+      "appVersion": "1.0.0",
+      "pageCode": "home"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 0.292857,
+      "topDenseScore": 0,
+      "threshold": 0.95,
+      "lexicalMatch": 0,
+      "topicLexicalMatch": 0,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 0.292857,
+          "faq_id": "F860-018",
+          "question": "产品耐用性差，使用时间短容易损坏？"
+        },
+        {
+          "score": 0.279,
+          "faq_id": "GF-012",
+          "question": "F860 是否支持品牌方/B 端合作？"
+        },
+        {
+          "score": 0.261,
+          "faq_id": "GF-019",
+          "question": "F860 怎么快速上手使用？"
+        }
+      ]
+    },
+    "handoff": {
+      "triggered": false,
+      "ticketId": "",
+      "reason": "awaiting_handoff_confirmation",
+      "topScore": 0.292857,
+      "threshold": 0.95,
+      "needsConfirmation": true,
+      "options": [
+        "需要",
+        "不需要"
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-02T12:35:25.559Z",
+    "userId": "u4",
+    "sessionId": "s4",
+    "message": "需要",
+    "reply": "好的，已为你转接人工客服，工单号：ticket_1775133325558_65。",
+    "appContext": {
+      "platform": "ios",
+      "appVersion": "1.0.0",
+      "pageCode": "home"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 0.292857,
+      "topDenseScore": 0,
+      "threshold": 0.95,
+      "lexicalMatch": 0,
+      "topicLexicalMatch": 0,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 0.292857,
+          "faq_id": "F860-018",
+          "question": "产品耐用性差，使用时间短容易损坏？"
+        },
+        {
+          "score": 0.279,
+          "faq_id": "GF-012",
+          "question": "F860 是否支持品牌方/B 端合作？"
+        },
+        {
+          "score": 0.261,
+          "faq_id": "GF-019",
+          "question": "F860 怎么快速上手使用？"
+        }
+      ]
+    },
+    "handoff": {
+      "triggered": true,
+      "ticketId": "ticket_1775133325558_65",
+      "reason": "user_confirmed_handoff",
+      "topScore": 0.292857,
+      "threshold": 0.95,
+      "needsConfirmation": false
+    }
+  },
+  {
+    "timestamp": "2026-04-02T12:35:25.569Z",
+    "userId": "u5",
+    "sessionId": "s5",
+    "message": "请说明企业后台流程",
+    "reply": "抱歉，我暂时无法准确理解您的问题，需要为您转接人工客服吗？",
+    "appContext": {
+      "platform": "ios",
+      "appVersion": "1.0.0",
+      "pageCode": "home"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 0.2875,
+      "topDenseScore": 0,
+      "threshold": 0.95,
+      "lexicalMatch": 0.125,
+      "topicLexicalMatch": 0.125,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 0.2875,
+          "faq_id": "F860-029",
+          "question": "围栏界面连接加载失败怎么处理？"
+        },
+        {
+          "score": 0.279,
+          "faq_id": "GF-012",
+          "question": "F860 是否支持品牌方/B 端合作？"
+        },
+        {
+          "score": 0.261,
+          "faq_id": "GF-019",
+          "question": "F860 怎么快速上手使用？"
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-02T12:35:25.575Z",
+    "userId": "u5",
+    "sessionId": "s5",
+    "message": "不需要",
+    "reply": "好的，暂不转接人工。你可以补充更多细节，我继续帮你排查。",
+    "appContext": {
+      "platform": "ios",
+      "appVersion": "1.0.0",
+      "pageCode": "home"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 0.2875,
+      "topDenseScore": 0,
+      "threshold": 0.95,
+      "lexicalMatch": 0.125,
+      "topicLexicalMatch": 0.125,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 0.2875,
+          "faq_id": "F860-029",
+          "question": "围栏界面连接加载失败怎么处理？"
+        },
+        {
+          "score": 0.279,
+          "faq_id": "GF-012",
+          "question": "F860 是否支持品牌方/B 端合作？"
+        },
+        {
+          "score": 0.261,
+          "faq_id": "GF-019",
+          "question": "F860 怎么快速上手使用？"
+        }
+      ]
+    },
+    "handoff": {
+      "triggered": false,
+      "ticketId": "",
+      "reason": "user_declined_handoff",
+      "topScore": 0.2875,
+      "threshold": 0.95,
+      "needsConfirmation": false
+    }
+  },
+  {
+    "timestamp": "2026-04-02T12:35:26.030Z",
+    "userId": "u_stale_intent",
+    "sessionId": "s_stale_intent",
+    "message": "F860 需要订阅费吗？",
+    "reply": "抱歉，我暂时无法准确理解您的问题，需要为您转接人工客服吗？",
+    "appContext": {
+      "platform": "ios",
+      "appVersion": "1.0.0",
+      "pageCode": "home"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 0.698333,
+      "topDenseScore": 0.7,
+      "threshold": 0.6,
+      "lexicalMatch": 0,
+      "topicLexicalMatch": 0,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 0.698333,
+          "faq_id": "F860-028",
+          "question": "如何连接接收器？"
+        },
+        {
+          "score": 0.2835,
+          "faq_id": "F860-011",
+          "question": "产品是什么，能解决什么问题？"
+        },
+        {
+          "score": 0.08121,
+          "faq_id": "F860-037",
+          "question": "创建围栏时，设备是否需要宠物佩戴？"
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-02T12:36:18.050Z",
+    "userId": "u_live_2",
+    "sessionId": "s_live_2",
+    "message": "F860 需要订阅费吗？",
+    "reply": "抱歉，我暂时无法准确理解您的问题，需要为您转接人工客服吗？",
+    "appContext": {},
+    "retrieval": {
+      "error": "",
+      "topScore": 0.653469,
+      "topDenseScore": 0.6003009,
+      "threshold": 0.6,
+      "lexicalMatch": 0,
+      "topicLexicalMatch": 0,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 0.653469,
+          "faq_id": "F860-028",
+          "question": "如何连接接收器？"
+        },
+        {
+          "score": 0.31086,
+          "faq_id": "F860-021",
+          "question": "充电时间过长/充不满"
+        },
+        {
+          "score": 0.299661,
+          "faq_id": "F860-044",
+          "question": "狗狗需要接受专门训练才能使用围栏吗"
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-02T12:43:46.838Z",
+    "userId": "u1",
+    "sessionId": "s1",
+    "message": "如何连接接收器？",
+    "reply": "非常抱歉，当前这个问题我暂时无法直接解答。建议你直接联系购买产品的平台客服，他们会为你提供更精准的售后支持，帮你尽快解决问题。",
+    "appContext": {
+      "platform": "ios",
+      "appVersion": "1.0.0",
+      "pageCode": "home"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 0.55,
+      "topDenseScore": 0,
+      "lexicalMatch": 1,
+      "topicLexicalMatch": 1,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 0.55,
+          "faq_id": "F860-028",
+          "question": "如何连接接收器？"
+        },
+        {
+          "score": 0.426414,
+          "faq_id": "F860-019",
+          "question": "接收器狗带耳朵断裂"
+        },
+        {
+          "score": 0.279,
+          "faq_id": "GF-012",
+          "question": "F860 是否支持品牌方/B 端合作？"
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-02T12:44:03.952Z",
+    "userId": "u1",
+    "sessionId": "s1",
+    "message": "F860 需要订阅费吗？",
+    "reply": "不需要。F860 为“零订阅离线 GPS 电子围栏”。",
+    "appContext": {
+      "platform": "ios",
+      "appVersion": "1.0.0",
+      "pageCode": "home"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 0.723,
+      "topDenseScore": 0.94,
+      "lexicalMatch": 1,
+      "topicLexicalMatch": 1,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 0.723,
+          "faq_id": "GF-002",
+          "question": "F860 需要订阅费吗？"
+        },
+        {
+          "score": 0.487,
+          "faq_id": "GF-001",
+          "question": "F860 是什么产品？"
+        },
+        {
+          "score": 0.383333,
+          "faq_id": "F860-028",
+          "question": "如何连接接收器？"
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-02T12:44:03.961Z",
+    "userId": "u2",
+    "sessionId": "s2",
+    "message": "这个设备充不进电怎么办？",
+    "reply": "非常抱歉，当前这个问题我暂时无法直接解答。建议你直接联系购买产品的平台客服，他们会为你提供更精准的售后支持，帮你尽快解决问题。",
+    "appContext": {
+      "platform": "ios",
+      "appVersion": "1.0.0",
+      "pageCode": "home"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 0.388047,
+      "topDenseScore": 0.72,
+      "lexicalMatch": 0,
+      "topicLexicalMatch": 0,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 0.388047,
+          "faq_id": "F860-009",
+          "question": "宠物会对项圈过敏、磨皮肤吗？"
+        },
+        {
+          "score": 0.387214,
+          "faq_id": "GF-008",
+          "question": "F860 户外环境下防护能力怎么样？"
+        },
+        {
+          "score": 0.357143,
+          "faq_id": "F860-028",
+          "question": "如何连接接收器？"
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-02T12:44:04.425Z",
+    "userId": "u4",
+    "sessionId": "s4",
+    "message": "请说一下定价规则",
+    "reply": "非常抱歉，当前这个问题我暂时无法直接解答。建议你直接联系购买产品的平台客服，他们会为你提供更精准的售后支持，帮你尽快解决问题。",
+    "appContext": {
+      "platform": "ios",
+      "appVersion": "1.0.0",
+      "pageCode": "home"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 0.292857,
+      "topDenseScore": 0,
+      "lexicalMatch": 0,
+      "topicLexicalMatch": 0,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 0.292857,
+          "faq_id": "F860-018",
+          "question": "产品耐用性差，使用时间短容易损坏？"
+        },
+        {
+          "score": 0.279,
+          "faq_id": "GF-012",
+          "question": "F860 是否支持品牌方/B 端合作？"
+        },
+        {
+          "score": 0.261,
+          "faq_id": "GF-019",
+          "question": "F860 怎么快速上手使用？"
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-02T12:44:04.435Z",
+    "userId": "u4",
+    "sessionId": "s4",
+    "message": "稍等一下",
+    "reply": "非常抱歉，当前这个问题我暂时无法直接解答。建议你直接联系购买产品的平台客服，他们会为你提供更精准的售后支持，帮你尽快解决问题。",
+    "appContext": {
+      "platform": "ios",
+      "appVersion": "1.0.0",
+      "pageCode": "home"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 0.35,
+      "topDenseScore": 0,
+      "lexicalMatch": 0,
+      "topicLexicalMatch": 0,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 0.35,
+          "faq_id": "F860-018",
+          "question": "产品耐用性差，使用时间短容易损坏？"
+        },
+        {
+          "score": 0.279,
+          "faq_id": "GF-012",
+          "question": "F860 是否支持品牌方/B 端合作？"
+        },
+        {
+          "score": 0.261,
+          "faq_id": "GF-019",
+          "question": "F860 怎么快速上手使用？"
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-02T12:44:04.896Z",
+    "userId": "u_stale_intent",
+    "sessionId": "s_stale_intent",
+    "message": "F860 需要订阅费吗？",
+    "reply": "【排查步骤：先确认连接流程正确】\n检查连接方式（最常见错误）\n① 接收器：在关闭状态下，短按开机。\n② 打开应用APP：点击设置打开蓝牙，点击添加设备，选择F860设备，添加连接。\n③ 连接成功：主页显示F860设备，点击设备进入围栏设备主页。\n④ 创建围栏：在围栏设置页面，点击“创建围栏”进入绘制界面。\n⑤ 绘制边界：在地图上，点击或拖动点来绘制边界，根据需要选择圆形、多边形或手绘模式，对于多边形围栏，您最多可以设置10个点。绘制完成后，系统会自动将该形状闭合为一个封闭区域。\n⑥ 保存并启用围栏：绘制完成后，点击“保存”，围栏成功保存后，您可以立即启用它。\n\n【快速总结】开机→连接APP→绘制围栏→启用围栏",
+    "appContext": {
+      "platform": "ios",
+      "appVersion": "1.0.0",
+      "pageCode": "home"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 0.698333,
+      "topDenseScore": 0.7,
+      "lexicalMatch": 0,
+      "topicLexicalMatch": 0,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 0.698333,
+          "faq_id": "F860-028",
+          "question": "如何连接接收器？"
+        },
+        {
+          "score": 0.2835,
+          "faq_id": "F860-011",
+          "question": "产品是什么，能解决什么问题？"
+        },
+        {
+          "score": 0.08121,
+          "faq_id": "F860-037",
+          "question": "创建围栏时，设备是否需要宠物佩戴？"
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-02T12:44:25.981Z",
+    "userId": "u1",
+    "sessionId": "s1",
+    "message": "F860 需要订阅费吗？",
+    "reply": "不需要。F860 为“零订阅离线 GPS 电子围栏”。",
+    "appContext": {
+      "platform": "ios",
+      "appVersion": "1.0.0",
+      "pageCode": "home"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 0.723,
+      "topDenseScore": 0.94,
+      "lexicalMatch": 1,
+      "topicLexicalMatch": 1,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 0.723,
+          "faq_id": "GF-002",
+          "question": "F860 需要订阅费吗？"
+        },
+        {
+          "score": 0.487,
+          "faq_id": "GF-001",
+          "question": "F860 是什么产品？"
+        },
+        {
+          "score": 0.383333,
+          "faq_id": "F860-028",
+          "question": "如何连接接收器？"
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-02T12:44:25.989Z",
+    "userId": "u2",
+    "sessionId": "s2",
+    "message": "这个设备充不进电怎么办？",
+    "reply": "非常抱歉，当前这个问题我暂时无法直接解答。建议你直接联系购买产品的平台客服，他们会为你提供更精准的售后支持，帮你尽快解决问题。",
+    "appContext": {
+      "platform": "ios",
+      "appVersion": "1.0.0",
+      "pageCode": "home"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 0.388047,
+      "topDenseScore": 0.72,
+      "lexicalMatch": 0,
+      "topicLexicalMatch": 0,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 0.388047,
+          "faq_id": "F860-009",
+          "question": "宠物会对项圈过敏、磨皮肤吗？"
+        },
+        {
+          "score": 0.387214,
+          "faq_id": "GF-008",
+          "question": "F860 户外环境下防护能力怎么样？"
+        },
+        {
+          "score": 0.357143,
+          "faq_id": "F860-028",
+          "question": "如何连接接收器？"
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-02T12:44:26.457Z",
+    "userId": "u4",
+    "sessionId": "s4",
+    "message": "请说一下定价规则",
+    "reply": "非常抱歉，当前这个问题我暂时无法直接解答。建议你直接联系购买产品的平台客服，他们会为你提供更精准的售后支持，帮你尽快解决问题。",
+    "appContext": {
+      "platform": "ios",
+      "appVersion": "1.0.0",
+      "pageCode": "home"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 0.292857,
+      "topDenseScore": 0,
+      "lexicalMatch": 0,
+      "topicLexicalMatch": 0,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 0.292857,
+          "faq_id": "F860-018",
+          "question": "产品耐用性差，使用时间短容易损坏？"
+        },
+        {
+          "score": 0.279,
+          "faq_id": "GF-012",
+          "question": "F860 是否支持品牌方/B 端合作？"
+        },
+        {
+          "score": 0.261,
+          "faq_id": "GF-019",
+          "question": "F860 怎么快速上手使用？"
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-02T12:44:26.466Z",
+    "userId": "u4",
+    "sessionId": "s4",
+    "message": "稍等一下",
+    "reply": "非常抱歉，当前这个问题我暂时无法直接解答。建议你直接联系购买产品的平台客服，他们会为你提供更精准的售后支持，帮你尽快解决问题。",
+    "appContext": {
+      "platform": "ios",
+      "appVersion": "1.0.0",
+      "pageCode": "home"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 0.35,
+      "topDenseScore": 0,
+      "lexicalMatch": 0,
+      "topicLexicalMatch": 0,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 0.35,
+          "faq_id": "F860-018",
+          "question": "产品耐用性差，使用时间短容易损坏？"
+        },
+        {
+          "score": 0.279,
+          "faq_id": "GF-012",
+          "question": "F860 是否支持品牌方/B 端合作？"
+        },
+        {
+          "score": 0.261,
+          "faq_id": "GF-019",
+          "question": "F860 怎么快速上手使用？"
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-02T12:44:26.928Z",
+    "userId": "u_stale_intent",
+    "sessionId": "s_stale_intent",
+    "message": "F860 需要订阅费吗？",
+    "reply": "【排查步骤：先确认连接流程正确】\n检查连接方式（最常见错误）\n① 接收器：在关闭状态下，短按开机。\n② 打开应用APP：点击设置打开蓝牙，点击添加设备，选择F860设备，添加连接。\n③ 连接成功：主页显示F860设备，点击设备进入围栏设备主页。\n④ 创建围栏：在围栏设置页面，点击“创建围栏”进入绘制界面。\n⑤ 绘制边界：在地图上，点击或拖动点来绘制边界，根据需要选择圆形、多边形或手绘模式，对于多边形围栏，您最多可以设置10个点。绘制完成后，系统会自动将该形状闭合为一个封闭区域。\n⑥ 保存并启用围栏：绘制完成后，点击“保存”，围栏成功保存后，您可以立即启用它。\n\n【快速总结】开机→连接APP→绘制围栏→启用围栏",
+    "appContext": {
+      "platform": "ios",
+      "appVersion": "1.0.0",
+      "pageCode": "home"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 0.698333,
+      "topDenseScore": 0.7,
+      "lexicalMatch": 0,
+      "topicLexicalMatch": 0,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 0.698333,
+          "faq_id": "F860-028",
+          "question": "如何连接接收器？"
+        },
+        {
+          "score": 0.2835,
+          "faq_id": "F860-011",
+          "question": "产品是什么，能解决什么问题？"
+        },
+        {
+          "score": 0.08121,
+          "faq_id": "F860-037",
+          "question": "创建围栏时，设备是否需要宠物佩戴？"
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-02T12:45:21.159Z",
+    "userId": "u1",
+    "sessionId": "s1",
+    "message": "F860 需要订阅费吗？",
+    "reply": "不需要。F860 为“零订阅离线 GPS 电子围栏”。",
+    "appContext": {
+      "platform": "ios",
+      "appVersion": "1.0.0",
+      "pageCode": "home"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 0.723,
+      "topDenseScore": 0.94,
+      "lexicalMatch": 1,
+      "topicLexicalMatch": 1,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 0.723,
+          "faq_id": "GF-002",
+          "question": "F860 需要订阅费吗？"
+        },
+        {
+          "score": 0.487,
+          "faq_id": "GF-001",
+          "question": "F860 是什么产品？"
+        },
+        {
+          "score": 0.383333,
+          "faq_id": "F860-028",
+          "question": "如何连接接收器？"
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-02T12:45:21.171Z",
+    "userId": "u2",
+    "sessionId": "s2",
+    "message": "这个设备充不进电怎么办？",
+    "reply": "非常抱歉，当前这个问题我暂时无法直接解答。建议你直接联系购买产品的平台客服，他们会为你提供更精准的售后支持，帮你尽快解决问题。",
+    "appContext": {
+      "platform": "ios",
+      "appVersion": "1.0.0",
+      "pageCode": "home"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 0.388047,
+      "topDenseScore": 0.72,
+      "lexicalMatch": 0,
+      "topicLexicalMatch": 0,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 0.388047,
+          "faq_id": "F860-009",
+          "question": "宠物会对项圈过敏、磨皮肤吗？"
+        },
+        {
+          "score": 0.387214,
+          "faq_id": "GF-008",
+          "question": "F860 户外环境下防护能力怎么样？"
+        },
+        {
+          "score": 0.357143,
+          "faq_id": "F860-028",
+          "question": "如何连接接收器？"
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-02T12:45:21.631Z",
+    "userId": "u4",
+    "sessionId": "s4",
+    "message": "请说一下定价规则",
+    "reply": "非常抱歉，当前这个问题我暂时无法直接解答。建议你直接联系购买产品的平台客服，他们会为你提供更精准的售后支持，帮你尽快解决问题。",
+    "appContext": {
+      "platform": "ios",
+      "appVersion": "1.0.0",
+      "pageCode": "home"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 0.292857,
+      "topDenseScore": 0,
+      "lexicalMatch": 0,
+      "topicLexicalMatch": 0,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 0.292857,
+          "faq_id": "F860-018",
+          "question": "产品耐用性差，使用时间短容易损坏？"
+        },
+        {
+          "score": 0.279,
+          "faq_id": "GF-012",
+          "question": "F860 是否支持品牌方/B 端合作？"
+        },
+        {
+          "score": 0.261,
+          "faq_id": "GF-019",
+          "question": "F860 怎么快速上手使用？"
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-02T12:45:21.641Z",
+    "userId": "u4",
+    "sessionId": "s4",
+    "message": "稍等一下",
+    "reply": "非常抱歉，当前这个问题我暂时无法直接解答。建议你直接联系购买产品的平台客服，他们会为你提供更精准的售后支持，帮你尽快解决问题。",
+    "appContext": {
+      "platform": "ios",
+      "appVersion": "1.0.0",
+      "pageCode": "home"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 0.35,
+      "topDenseScore": 0,
+      "lexicalMatch": 0,
+      "topicLexicalMatch": 0,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 0.35,
+          "faq_id": "F860-018",
+          "question": "产品耐用性差，使用时间短容易损坏？"
+        },
+        {
+          "score": 0.279,
+          "faq_id": "GF-012",
+          "question": "F860 是否支持品牌方/B 端合作？"
+        },
+        {
+          "score": 0.261,
+          "faq_id": "GF-019",
+          "question": "F860 怎么快速上手使用？"
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-02T12:45:22.097Z",
+    "userId": "u_stale_intent",
+    "sessionId": "s_stale_intent",
+    "message": "F860 需要订阅费吗？",
+    "reply": "非常抱歉，当前这个问题我暂时无法直接解答。建议你直接联系购买产品的平台客服，他们会为你提供更精准的售后支持，帮你尽快解决问题。",
+    "appContext": {
+      "platform": "ios",
+      "appVersion": "1.0.0",
+      "pageCode": "home"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 0.698333,
+      "topDenseScore": 0.7,
+      "lexicalMatch": 0,
+      "topicLexicalMatch": 0,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 0.698333,
+          "faq_id": "F860-028",
+          "question": "如何连接接收器？"
+        },
+        {
+          "score": 0.2835,
+          "faq_id": "F860-011",
+          "question": "产品是什么，能解决什么问题？"
+        },
+        {
+          "score": 0.08121,
+          "faq_id": "F860-037",
+          "question": "创建围栏时，设备是否需要宠物佩戴？"
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-02T12:46:04.575Z",
+    "userId": "u1",
+    "sessionId": "s1",
+    "message": "F860 需要订阅费吗？",
+    "reply": "不需要。F860 为“零订阅离线 GPS 电子围栏”。",
+    "appContext": {
+      "platform": "ios",
+      "appVersion": "1.0.0",
+      "pageCode": "home"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 0.723,
+      "topDenseScore": 0.94,
+      "lexicalMatch": 1,
+      "topicLexicalMatch": 1,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 0.723,
+          "faq_id": "GF-002",
+          "question": "F860 需要订阅费吗？"
+        },
+        {
+          "score": 0.487,
+          "faq_id": "GF-001",
+          "question": "F860 是什么产品？"
+        },
+        {
+          "score": 0.383333,
+          "faq_id": "F860-028",
+          "question": "如何连接接收器？"
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-02T12:46:04.585Z",
+    "userId": "u2",
+    "sessionId": "s2",
+    "message": "这个设备充不进电怎么办？",
+    "reply": "非常抱歉，当前这个问题我暂时无法直接解答。建议你直接联系购买产品的平台客服，他们会为你提供更精准的售后支持，帮你尽快解决问题。",
+    "appContext": {
+      "platform": "ios",
+      "appVersion": "1.0.0",
+      "pageCode": "home"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 0.388047,
+      "topDenseScore": 0.72,
+      "lexicalMatch": 0,
+      "topicLexicalMatch": 0,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 0.388047,
+          "faq_id": "F860-009",
+          "question": "宠物会对项圈过敏、磨皮肤吗？"
+        },
+        {
+          "score": 0.387214,
+          "faq_id": "GF-008",
+          "question": "F860 户外环境下防护能力怎么样？"
+        },
+        {
+          "score": 0.357143,
+          "faq_id": "F860-028",
+          "question": "如何连接接收器？"
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-02T12:46:05.043Z",
+    "userId": "u4",
+    "sessionId": "s4",
+    "message": "请说一下定价规则",
+    "reply": "非常抱歉，当前这个问题我暂时无法直接解答。建议你直接联系购买产品的平台客服，他们会为你提供更精准的售后支持，帮你尽快解决问题。",
+    "appContext": {
+      "platform": "ios",
+      "appVersion": "1.0.0",
+      "pageCode": "home"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 0.292857,
+      "topDenseScore": 0,
+      "lexicalMatch": 0,
+      "topicLexicalMatch": 0,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 0.292857,
+          "faq_id": "F860-018",
+          "question": "产品耐用性差，使用时间短容易损坏？"
+        },
+        {
+          "score": 0.279,
+          "faq_id": "GF-012",
+          "question": "F860 是否支持品牌方/B 端合作？"
+        },
+        {
+          "score": 0.261,
+          "faq_id": "GF-019",
+          "question": "F860 怎么快速上手使用？"
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-02T12:46:05.057Z",
+    "userId": "u4",
+    "sessionId": "s4",
+    "message": "稍等一下",
+    "reply": "非常抱歉，当前这个问题我暂时无法直接解答。建议你直接联系购买产品的平台客服，他们会为你提供更精准的售后支持，帮你尽快解决问题。",
+    "appContext": {
+      "platform": "ios",
+      "appVersion": "1.0.0",
+      "pageCode": "home"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 0.35,
+      "topDenseScore": 0,
+      "lexicalMatch": 0,
+      "topicLexicalMatch": 0,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 0.35,
+          "faq_id": "F860-018",
+          "question": "产品耐用性差，使用时间短容易损坏？"
+        },
+        {
+          "score": 0.279,
+          "faq_id": "GF-012",
+          "question": "F860 是否支持品牌方/B 端合作？"
+        },
+        {
+          "score": 0.261,
+          "faq_id": "GF-019",
+          "question": "F860 怎么快速上手使用？"
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-02T12:46:05.520Z",
+    "userId": "u_stale_intent",
+    "sessionId": "s_stale_intent",
+    "message": "F860 需要订阅费吗？",
+    "reply": "非常抱歉，当前这个问题我暂时无法直接解答。建议你直接联系购买产品的平台客服，他们会为你提供更精准的售后支持，帮你尽快解决问题。",
+    "appContext": {
+      "platform": "ios",
+      "appVersion": "1.0.0",
+      "pageCode": "home"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 0.698333,
+      "topDenseScore": 0.7,
+      "lexicalMatch": 0,
+      "topicLexicalMatch": 0,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 0.698333,
+          "faq_id": "F860-028",
+          "question": "如何连接接收器？"
+        },
+        {
+          "score": 0.2835,
+          "faq_id": "F860-011",
+          "question": "产品是什么，能解决什么问题？"
+        },
+        {
+          "score": 0.08121,
+          "faq_id": "F860-037",
+          "question": "创建围栏时，设备是否需要宠物佩戴？"
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-02T12:46:22.581Z",
+    "userId": "u1",
+    "sessionId": "s1",
+    "message": "F860 需要订阅费吗？",
+    "reply": "不需要。F860 为“零订阅离线 GPS 电子围栏”。",
+    "appContext": {
+      "platform": "ios",
+      "appVersion": "1.0.0",
+      "pageCode": "home"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 0.723,
+      "topDenseScore": 0.94,
+      "lexicalMatch": 1,
+      "topicLexicalMatch": 1,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 0.723,
+          "faq_id": "GF-002",
+          "question": "F860 需要订阅费吗？"
+        },
+        {
+          "score": 0.487,
+          "faq_id": "GF-001",
+          "question": "F860 是什么产品？"
+        },
+        {
+          "score": 0.383333,
+          "faq_id": "F860-028",
+          "question": "如何连接接收器？"
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-02T12:46:22.590Z",
+    "userId": "u2",
+    "sessionId": "s2",
+    "message": "这个设备充不进电怎么办？",
+    "reply": "非常抱歉，当前这个问题我暂时无法直接解答。建议你直接联系购买产品的平台客服，他们会为你提供更精准的售后支持，帮你尽快解决问题。",
+    "appContext": {
+      "platform": "ios",
+      "appVersion": "1.0.0",
+      "pageCode": "home"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 0.388047,
+      "topDenseScore": 0.72,
+      "lexicalMatch": 0,
+      "topicLexicalMatch": 0,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 0.388047,
+          "faq_id": "F860-009",
+          "question": "宠物会对项圈过敏、磨皮肤吗？"
+        },
+        {
+          "score": 0.387214,
+          "faq_id": "GF-008",
+          "question": "F860 户外环境下防护能力怎么样？"
+        },
+        {
+          "score": 0.357143,
+          "faq_id": "F860-028",
+          "question": "如何连接接收器？"
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-02T12:46:23.084Z",
+    "userId": "u4",
+    "sessionId": "s4",
+    "message": "请说一下定价规则",
+    "reply": "非常抱歉，当前这个问题我暂时无法直接解答。建议你直接联系购买产品的平台客服，他们会为你提供更精准的售后支持，帮你尽快解决问题。",
+    "appContext": {
+      "platform": "ios",
+      "appVersion": "1.0.0",
+      "pageCode": "home"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 0.292857,
+      "topDenseScore": 0,
+      "lexicalMatch": 0,
+      "topicLexicalMatch": 0,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 0.292857,
+          "faq_id": "F860-018",
+          "question": "产品耐用性差，使用时间短容易损坏？"
+        },
+        {
+          "score": 0.279,
+          "faq_id": "GF-012",
+          "question": "F860 是否支持品牌方/B 端合作？"
+        },
+        {
+          "score": 0.261,
+          "faq_id": "GF-019",
+          "question": "F860 怎么快速上手使用？"
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-02T12:46:23.097Z",
+    "userId": "u4",
+    "sessionId": "s4",
+    "message": "稍等一下",
+    "reply": "非常抱歉，当前这个问题我暂时无法直接解答。建议你直接联系购买产品的平台客服，他们会为你提供更精准的售后支持，帮你尽快解决问题。",
+    "appContext": {
+      "platform": "ios",
+      "appVersion": "1.0.0",
+      "pageCode": "home"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 0.35,
+      "topDenseScore": 0,
+      "lexicalMatch": 0,
+      "topicLexicalMatch": 0,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 0.35,
+          "faq_id": "F860-018",
+          "question": "产品耐用性差，使用时间短容易损坏？"
+        },
+        {
+          "score": 0.279,
+          "faq_id": "GF-012",
+          "question": "F860 是否支持品牌方/B 端合作？"
+        },
+        {
+          "score": 0.261,
+          "faq_id": "GF-019",
+          "question": "F860 怎么快速上手使用？"
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-02T12:46:23.890Z",
+    "userId": "u_stale_intent",
+    "sessionId": "s_stale_intent",
+    "message": "F860 需要订阅费吗？",
+    "reply": "非常抱歉，当前这个问题我暂时无法直接解答。建议你直接联系购买产品的平台客服，他们会为你提供更精准的售后支持，帮你尽快解决问题。",
+    "appContext": {
+      "platform": "ios",
+      "appVersion": "1.0.0",
+      "pageCode": "home"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 0.698333,
+      "topDenseScore": 0.7,
+      "lexicalMatch": 0,
+      "topicLexicalMatch": 0,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 0.698333,
+          "faq_id": "F860-028",
+          "question": "如何连接接收器？"
+        },
+        {
+          "score": 0.2835,
+          "faq_id": "F860-011",
+          "question": "产品是什么，能解决什么问题？"
+        },
+        {
+          "score": 0.08121,
+          "faq_id": "F860-037",
+          "question": "创建围栏时，设备是否需要宠物佩戴？"
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-02T12:46:50.826Z",
+    "userId": "u_live_final",
+    "sessionId": "s_live_final",
+    "message": "请说一下定价规则",
+    "reply": "非常抱歉，当前这个问题我暂时无法直接解答。建议你直接联系购买产品的平台客服，他们会为你提供更精准的售后支持，帮你尽快解决问题。",
+    "appContext": {},
+    "retrieval": {
+      "error": "",
+      "topScore": 0.302229,
+      "topDenseScore": 0.67161965,
+      "lexicalMatch": 0,
+      "topicLexicalMatch": 0,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 0.302229,
+          "faq_id": "F860-029",
+          "question": "围栏界面连接加载失败怎么处理？"
+        },
+        {
+          "score": 0.299216,
+          "faq_id": "F860-037",
+          "question": "创建围栏时，设备是否需要宠物佩戴？"
+        },
+        {
+          "score": 0.293728,
+          "faq_id": "F860-011",
+          "question": "产品是什么，能解决什么问题？"
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-02T12:51:13.204Z",
+    "userId": "u1",
+    "sessionId": "s1",
+    "message": "F860 需要订阅费吗？",
+    "reply": "不需要。F860 为“零订阅离线 GPS 电子围栏”。",
+    "appContext": {
+      "platform": "ios",
+      "appVersion": "1.0.0",
+      "pageCode": "home"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 0.723,
+      "topDenseScore": 0.94,
+      "lexicalMatch": 1,
+      "topicLexicalMatch": 1,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 0.723,
+          "faq_id": "GF-002",
+          "question": "F860 需要订阅费吗？"
+        },
+        {
+          "score": 0.487,
+          "faq_id": "GF-001",
+          "question": "F860 是什么产品？"
+        },
+        {
+          "score": 0.383333,
+          "faq_id": "F860-028",
+          "question": "如何连接接收器？"
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-02T12:51:13.216Z",
+    "userId": "u2",
+    "sessionId": "s2",
+    "message": "这个设备充不进电怎么办？",
+    "reply": "非常抱歉，当前这个问题我暂时无法直接解答。建议你直接联系购买产品的平台客服，他们会为你提供更精准的售后支持，帮你尽快解决问题。",
+    "appContext": {
+      "platform": "ios",
+      "appVersion": "1.0.0",
+      "pageCode": "home"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 0.388047,
+      "topDenseScore": 0.72,
+      "lexicalMatch": 0,
+      "topicLexicalMatch": 0,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 0.388047,
+          "faq_id": "F860-009",
+          "question": "宠物会对项圈过敏、磨皮肤吗？"
+        },
+        {
+          "score": 0.387214,
+          "faq_id": "GF-008",
+          "question": "F860 户外环境下防护能力怎么样？"
+        },
+        {
+          "score": 0.357143,
+          "faq_id": "F860-028",
+          "question": "如何连接接收器？"
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-02T12:51:13.679Z",
+    "userId": "u4",
+    "sessionId": "s4",
+    "message": "请说一下定价规则",
+    "reply": "非常抱歉，当前这个问题我暂时无法直接解答。建议你直接联系购买产品的平台客服，他们会为你提供更精准的售后支持，帮你尽快解决问题。",
+    "appContext": {
+      "platform": "ios",
+      "appVersion": "1.0.0",
+      "pageCode": "home"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 0.292857,
+      "topDenseScore": 0,
+      "lexicalMatch": 0,
+      "topicLexicalMatch": 0,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 0.292857,
+          "faq_id": "F860-018",
+          "question": "产品耐用性差，使用时间短容易损坏？"
+        },
+        {
+          "score": 0.279,
+          "faq_id": "GF-012",
+          "question": "F860 是否支持品牌方/B 端合作？"
+        },
+        {
+          "score": 0.261,
+          "faq_id": "GF-019",
+          "question": "F860 怎么快速上手使用？"
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-02T12:51:13.689Z",
+    "userId": "u4",
+    "sessionId": "s4",
+    "message": "稍等一下",
+    "reply": "非常抱歉，当前这个问题我暂时无法直接解答。建议你直接联系购买产品的平台客服，他们会为你提供更精准的售后支持，帮你尽快解决问题。",
+    "appContext": {
+      "platform": "ios",
+      "appVersion": "1.0.0",
+      "pageCode": "home"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 0.35,
+      "topDenseScore": 0,
+      "lexicalMatch": 0,
+      "topicLexicalMatch": 0,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 0.35,
+          "faq_id": "F860-018",
+          "question": "产品耐用性差，使用时间短容易损坏？"
+        },
+        {
+          "score": 0.279,
+          "faq_id": "GF-012",
+          "question": "F860 是否支持品牌方/B 端合作？"
+        },
+        {
+          "score": 0.261,
+          "faq_id": "GF-019",
+          "question": "F860 怎么快速上手使用？"
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-02T12:51:14.151Z",
+    "userId": "u_stale_intent",
+    "sessionId": "s_stale_intent",
+    "message": "F860 需要订阅费吗？",
+    "reply": "非常抱歉，当前这个问题我暂时无法直接解答。建议你直接联系购买产品的平台客服，他们会为你提供更精准的售后支持，帮你尽快解决问题。",
+    "appContext": {
+      "platform": "ios",
+      "appVersion": "1.0.0",
+      "pageCode": "home"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 0.698333,
+      "topDenseScore": 0.7,
+      "lexicalMatch": 0,
+      "topicLexicalMatch": 0,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 0.698333,
+          "faq_id": "F860-028",
+          "question": "如何连接接收器？"
+        },
+        {
+          "score": 0.2835,
+          "faq_id": "F860-011",
+          "question": "产品是什么，能解决什么问题？"
+        },
+        {
+          "score": 0.08121,
+          "faq_id": "F860-037",
+          "question": "创建围栏时，设备是否需要宠物佩戴？"
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-02T13:04:22.305Z",
+    "userId": "u1",
+    "sessionId": "s1",
+    "message": "F860 需要订阅费吗？",
+    "reply": "非常抱歉，当前这个问题我暂时无法直接解答。建议你直接联系购买产品的平台客服，他们会为你提供更精准的售后支持，帮你尽快解决问题。",
+    "appContext": {
+      "platform": "ios",
+      "appVersion": "1.0.0",
+      "pageCode": "home"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 0.653469,
+      "topDenseScore": 0.6003009,
+      "lexicalMatch": 0,
+      "topicLexicalMatch": 0,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 0.653469,
+          "faq_id": "F860-028",
+          "question": "如何连接接收器？"
+        },
+        {
+          "score": 0.31086,
+          "faq_id": "F860-021",
+          "question": "充电时间过长/充不满"
+        },
+        {
+          "score": 0.299661,
+          "faq_id": "F860-044",
+          "question": "狗狗需要接受专门训练才能使用围栏吗"
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-02T13:04:45.539Z",
+    "userId": "u1",
+    "sessionId": "s1",
+    "message": "F860 需要订阅费吗？",
+    "reply": "非常抱歉，当前这个问题我暂时无法直接解答。建议你直接联系购买产品的平台客服，他们会为你提供更精准的售后支持，帮你尽快解决问题。",
+    "appContext": {
+      "platform": "ios",
+      "appVersion": "1.0.0",
+      "pageCode": "home"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 0.653469,
+      "topDenseScore": 0.6003009,
+      "lexicalMatch": 0,
+      "topicLexicalMatch": 0,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 0.653469,
+          "faq_id": "F860-028",
+          "question": "如何连接接收器？"
+        },
+        {
+          "score": 0.31086,
+          "faq_id": "F860-021",
+          "question": "充电时间过长/充不满"
+        },
+        {
+          "score": 0.299661,
+          "faq_id": "F860-044",
+          "question": "狗狗需要接受专门训练才能使用围栏吗"
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-02T13:05:17.448Z",
+    "userId": "u_2ph4ffm4rr",
+    "sessionId": "s_qpm2mvm4rr",
+    "message": "需要订阅费吗",
+    "reply": "非常抱歉，当前这个问题我暂时无法直接解答。建议你直接联系购买产品的平台客服，他们会为你提供更精准的售后支持，帮你尽快解决问题。",
+    "appContext": {
+      "platform": "webview",
+      "appVersion": "1.0.0",
+      "pageCode": "h5_chat"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 0.516002,
+      "topDenseScore": 0.66165465,
+      "lexicalMatch": 0,
+      "topicLexicalMatch": 0,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 0.516002,
+          "faq_id": "F860-028",
+          "question": "如何连接接收器？"
+        },
+        {
+          "score": 0.446686,
+          "faq_id": "F860-045",
+          "question": "如何正确清洁和维护设备"
+        },
+        {
+          "score": 0.31,
+          "faq_id": "F860-037",
+          "question": "创建围栏时，设备是否需要宠物佩戴？"
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-02T13:05:22.890Z",
+    "userId": "u_2ph4ffm4rr",
+    "sessionId": "s_qpm2mvm4rr",
+    "message": "支持哪些语言",
+    "reply": "非常抱歉，当前这个问题我暂时无法直接解答。建议你直接联系购买产品的平台客服，他们会为你提供更精准的售后支持，帮你尽快解决问题。",
+    "appContext": {
+      "platform": "webview",
+      "appVersion": "1.0.0",
+      "pageCode": "h5_chat"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 0.494916,
+      "topDenseScore": 0.6563189,
+      "lexicalMatch": 0.2,
+      "topicLexicalMatch": 0.2,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 0.494916,
+          "faq_id": "F860-017",
+          "question": "设备可以创建那些类型的围栏？"
+        },
+        {
+          "score": 0.402419,
+          "faq_id": "F860-045",
+          "question": "如何正确清洁和维护设备"
+        },
+        {
+          "score": 0.37,
+          "faq_id": "F860-016",
+          "question": "产品有哪些工作模式？"
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-02T13:05:24.113Z",
+    "userId": "u_2ph4ffm4rr",
+    "sessionId": "s_qpm2mvm4rr",
+    "message": "怎么设置电子围栏",
+    "reply": "非常抱歉，当前这个问题我暂时无法直接解答。建议你直接联系购买产品的平台客服，他们会为你提供更精准的售后支持，帮你尽快解决问题。",
+    "appContext": {
+      "platform": "webview",
+      "appVersion": "1.0.0",
+      "pageCode": "h5_chat"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 0.66733,
+      "topDenseScore": 0.64168537,
+      "lexicalMatch": 0,
+      "topicLexicalMatch": 0,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 0.66733,
+          "faq_id": "F860-011",
+          "question": "产品是什么，能解决什么问题？"
+        },
+        {
+          "score": 0.565515,
+          "faq_id": "F860-024",
+          "question": "设备突然不工作了怎么办？"
+        },
+        {
+          "score": 0.506023,
+          "faq_id": "F860-028",
+          "question": "如何连接接收器？"
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-02T13:05:42.608Z",
+    "userId": "u_2ph4ffm4rr",
+    "sessionId": "s_qpm2mvm4rr",
+    "message": "支持哪些语言",
+    "reply": "非常抱歉，当前这个问题我暂时无法直接解答。建议你直接联系购买产品的平台客服，他们会为你提供更精准的售后支持，帮你尽快解决问题。",
+    "appContext": {
+      "platform": "webview",
+      "appVersion": "1.0.0",
+      "pageCode": "h5_chat"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 0.494916,
+      "topDenseScore": 0.6563189,
+      "lexicalMatch": 0.2,
+      "topicLexicalMatch": 0.2,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 0.494916,
+          "faq_id": "F860-017",
+          "question": "设备可以创建那些类型的围栏？"
+        },
+        {
+          "score": 0.402419,
+          "faq_id": "F860-045",
+          "question": "如何正确清洁和维护设备"
+        },
+        {
+          "score": 0.37,
+          "faq_id": "F860-016",
+          "question": "产品有哪些工作模式？"
+        }
+      ]
+    }
   }
 ]

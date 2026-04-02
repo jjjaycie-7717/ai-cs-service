@@ -182,16 +182,6 @@
         color: var(--ink);
       }
 
-      .btn-yes {
-        background: #dcfce7;
-        color: #166534;
-      }
-
-      .btn-no {
-        background: #fee2e2;
-        color: #991b1b;
-      }
-
       .chat-panel {
         display: flex;
         flex-direction: column;
@@ -253,25 +243,11 @@
         margin-top: 4px;
       }
 
-      .handoff {
-        margin-top: 8px;
-        font-size: 12px;
-        padding: 8px;
-        border-radius: 10px;
-        border: 1px solid var(--border);
-        background: #f8fafc;
-      }
-
       .composer {
         border-top: 1px solid var(--border);
         padding: 12px;
         display: grid;
         gap: 10px;
-      }
-
-      .composer .quick {
-        display: flex;
-        gap: 8px;
       }
 
       @keyframes lift {
@@ -304,7 +280,7 @@
       <section class="card hero">
         <div>
           <h1>AI 客服流程测试台</h1>
-          <p>直接在页面验证：检索回答、低置信度询问、用户确认转人工。</p>
+          <p>直接在页面验证：检索回答、统一兜底和来源展示。</p>
         </div>
         <div id="healthStatus" class="status">检查服务中...</div>
       </section>
@@ -356,10 +332,6 @@
               <button id="sendBtn" class="btn-primary" type="button">发送</button>
               <button id="clearBtn" class="btn-ghost" type="button">清空对话</button>
             </div>
-            <div class="quick">
-              <button id="quickYes" class="btn-yes" type="button">需要</button>
-              <button id="quickNo" class="btn-no" type="button">不需要</button>
-            </div>
           </div>
         </main>
       </section>
@@ -370,8 +342,6 @@
       const messageInput = document.getElementById("messageInput");
       const sendBtn = document.getElementById("sendBtn");
       const clearBtn = document.getElementById("clearBtn");
-      const quickYes = document.getElementById("quickYes");
-      const quickNo = document.getElementById("quickNo");
       const healthStatus = document.getElementById("healthStatus");
       const userIdInput = document.getElementById("userId");
       const sessionIdInput = document.getElementById("sessionId");
@@ -408,7 +378,6 @@
             `服务在线`,
             `Qdrant=${data.qdrantConfigured ? "on" : "off"}`,
             `Embedding=${data.embeddingConfigured ? "on" : "off"}`,
-            `低置信=${data.autoHandoffThreshold ?? "-"}`,
             `回答阈值=${data.answerConfidenceThreshold ?? "-"}`,
             `词面阈值=${data.lexicalMatchMin ?? "-"}`,
           ].join(" | ");
@@ -442,23 +411,6 @@
             sources.appendChild(item);
           });
           wrap.appendChild(sources);
-        }
-
-        if (role === "bot" && extra.handoff) {
-          const h = extra.handoff;
-          const handoff = document.createElement("div");
-          handoff.className = "handoff";
-          handoff.textContent = [
-            `handoff.triggered=${h.triggered}`,
-            `needsConfirmation=${h.needsConfirmation}`,
-            `topScore=${typeof h.topScore === "number" ? h.topScore.toFixed(4) : "-"}`,
-            `threshold=${h.threshold ?? "-"}`,
-            h.ticketId ? `ticketId=${h.ticketId}` : "",
-            h.reason ? `reason=${h.reason}` : "",
-          ]
-            .filter(Boolean)
-            .join(" | ");
-          wrap.appendChild(handoff);
         }
 
         const meta = document.createElement("div");
@@ -503,7 +455,6 @@
           }
           addMessage("bot", data.reply || "(空回复)", {
             sources: data.sources,
-            handoff: data.handoff,
           });
         } catch (err) {
           addMessage("bot", `请求失败：${err.message}`);
@@ -525,8 +476,6 @@
         }
       });
 
-      quickYes.addEventListener("click", () => sendMessage("需要"));
-      quickNo.addEventListener("click", () => sendMessage("不需要"));
       clearBtn.addEventListener("click", () => {
         chatFeed.innerHTML = '<div class="empty">对话已清空。</div>';
       });

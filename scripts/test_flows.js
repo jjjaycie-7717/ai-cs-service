@@ -168,6 +168,82 @@ async function startMockRagServer() {
   };
 }
 
+async function startStaleIntentMockRagServer() {
+  const server = http.createServer(async (req, res) => {
+    const pathName = String(req.url || "").split("?")[0];
+
+    if (req.method === "POST" && pathName === "/v1/embeddings") {
+      const body = await readRequestJson(req);
+      const inputs = Array.isArray(body.input) ? body.input : [body.input];
+      const data = inputs.map((item, index) => ({
+        index,
+        embedding: embeddingFor(item),
+      }));
+
+      res.writeHead(200, { "Content-Type": "application/json" });
+      res.end(JSON.stringify({ data }));
+      return;
+    }
+
+    if (
+      req.method === "POST" &&
+      /^\/collections\/[^/]+\/points\/search$/.test(pathName)
+    ) {
+      const body = await readRequestJson(req);
+      const vector = Array.isArray(body.vector) ? body.vector : [];
+      let result = [];
+
+      if (vector[0] >= 0.9) {
+        result = [
+          {
+            score: 0.7,
+            payload: {
+              chunk_id: "chunk_028",
+              faq_id: "F860-028",
+              question: "如何连接接收器？",
+              answer: "先开机，再打开 APP 添加设备并连接接收器。",
+            },
+          },
+          {
+            score: 0.63,
+            payload: {
+              chunk_id: "chunk_011",
+              faq_id: "F860-011",
+              question: "产品是什么，能解决什么问题？",
+              answer: "这是基于 GPS 的电子围栏辅助管理产品。",
+            },
+          },
+        ];
+      }
+
+      res.writeHead(200, { "Content-Type": "application/json" });
+      res.end(JSON.stringify({ result }));
+      return;
+    }
+
+    res.writeHead(404, { "Content-Type": "application/json" });
+    res.end(JSON.stringify({ error: "not_found" }));
+  });
+
+  await new Promise((resolve, reject) => {
+    server.once("error", reject);
+    server.listen(0, "127.0.0.1", resolve);
+  });
+
+  const addr = server.address();
+  if (!addr || typeof addr === "string") {
+    throw new Error("mock_server_address_unavailable");
+  }
+
+  return {
+    baseUrl: `http://127.0.0.1:${addr.port}`,
+    close: () =>
+      new Promise((resolve) => {
+        server.close(() => resolve());
+      }),
+  };
+}
+
 async function startAppServer(extraEnv = {}) {
   const port = randomPort();
   const env = {
@@ -246,6 +322,13 @@ async function runDefaultFlowSuite(baseUrl) {
     "health",
   );
   assert.equal(health.ok, true, "health.ok should be true");
+  assert.equal("llmProviderSetting" in health, false, "health should not expose llm settings");
+  assert.equal("llmProviderResolved" in health, false, "health should not expose llm provider");
+  assert.equal("chatModel" in health, false, "health should not expose chat model");
+  assert.equal("ollamaConfigured" in health, false, "health should not expose ollama config");
+  assert.equal("openaiConfigured" in health, false, "health should not expose openai config");
+  assert.equal("autoHandoffEnabled" in health, false, "health should not expose handoff setting");
+  assert.equal("autoHandoffThreshold" in health, false, "health should not expose handoff threshold");
 
   const missingFields = assertJsonResponse(
     await request(baseUrl, "POST", "/api/chat", {
@@ -279,7 +362,7 @@ async function runDefaultFlowSuite(baseUrl) {
     "chat normal",
   );
   assert.match(chatNormal.reply, /不需要|零订阅/, "chat normal reply unexpected");
-  assert.equal(chatNormal.handoff?.triggered, false);
+  assert.equal("handoff" in chatNormal, false, "chat should not expose handoff info");
 
   const chatUnsupported = assertJsonResponse(
     await request(baseUrl, "POST", "/api/chat", {
@@ -291,8 +374,11 @@ async function runDefaultFlowSuite(baseUrl) {
     200,
     "chat unsupported",
   );
-  assert.match(chatUnsupported.reply, /暂时无法回答/);
-  assert.equal(chatUnsupported.handoff?.reason, "unsupported_topic");
+  assert.equal(
+    chatUnsupported.reply,
+    "非常抱歉，当前这个问题我暂时无法直接解答。建议你直接联系购买产品的平台客服，他们会为你提供更精准的售后支持，帮你尽快解决问题。",
+  );
+  assert.equal("handoff" in chatUnsupported, false, "fallback should not expose handoff info");
 
   const feedback = assertJsonResponse(
     await request(baseUrl, "POST", "/api/feedback", {
@@ -306,23 +392,18 @@ async function runDefaultFlowSuite(baseUrl) {
   );
   assert.equal(feedback.ok, true);
 
-  const handoff = assertJsonResponse(
-    await request(baseUrl, "POST", "/api/handoff", {
-      userId: "u3",
-      sessionId: "s3",
-      question: "我找不到设备绑定入口",
-      contact: "13800000000",
-      appContext: { platform: "android", appVersion: "1.0.0", pageCode: "device_home" },
-    }),
-    200,
-    "manual handoff",
-  );
-  assert.equal(handoff.ok, true);
-  assert.match(String(handoff.ticketId || ""), /^ticket_/);
+  const handoffRemoved = await request(baseUrl, "POST", "/api/handoff", {
+    userId: "u3",
+    sessionId: "s3",
+    question: "我找不到设备绑定入口",
+    contact: "13800000000",
+    appContext: { platform: "android", appVersion: "1.0.0", pageCode: "device_home" },
+  });
+  assert.equal(handoffRemoved.status, 404, "handoff endpoint should be removed");
 }
 
-async function runPendingHandoffSuite(baseUrl) {
-  const first = assertJsonResponse(
+async function runUnifiedFallbackSuite(baseUrl) {
+  const fallback = assertJsonResponse(
     await request(baseUrl, "POST", "/api/chat", {
       userId: "u4",
       sessionId: "s4",
@@ -330,10 +411,13 @@ async function runPendingHandoffSuite(baseUrl) {
       appContext: { platform: "ios", appVersion: "1.0.0", pageCode: "home" },
     }),
     200,
-    "pending handoff trigger",
+    "unified fallback",
   );
-  assert.equal(first.handoff?.needsConfirmation, true);
-  assert.match(first.reply, /转接人工客服/);
+  assert.equal(
+    fallback.reply,
+    "非常抱歉，当前这个问题我暂时无法直接解答。建议你直接联系购买产品的平台客服，他们会为你提供更精准的售后支持，帮你尽快解决问题。",
+  );
+  assert.equal("handoff" in fallback, false, "fallback should not expose handoff info");
 
   const askAgain = assertJsonResponse(
     await request(baseUrl, "POST", "/api/chat", {
@@ -343,55 +427,45 @@ async function runPendingHandoffSuite(baseUrl) {
       appContext: { platform: "ios", appVersion: "1.0.0", pageCode: "home" },
     }),
     200,
-    "pending handoff unknown decision",
+    "fallback followup",
   );
-  assert.equal(askAgain.handoff?.needsConfirmation, true);
-  assert.equal(askAgain.handoff?.reason, "awaiting_handoff_confirmation");
+  assert.equal(
+    askAgain.reply,
+    "非常抱歉，当前这个问题我暂时无法直接解答。建议你直接联系购买产品的平台客服，他们会为你提供更精准的售后支持，帮你尽快解决问题。",
+  );
+  assert.equal("handoff" in askAgain, false, "followup should not expose handoff info");
+}
 
-  const confirmYes = assertJsonResponse(
+async function runStaleIntentSuite(baseUrl) {
+  const chat = assertJsonResponse(
     await request(baseUrl, "POST", "/api/chat", {
-      userId: "u4",
-      sessionId: "s4",
-      message: "需要",
+      userId: "u_stale_intent",
+      sessionId: "s_stale_intent",
+      message: "F860 需要订阅费吗？",
       appContext: { platform: "ios", appVersion: "1.0.0", pageCode: "home" },
     }),
     200,
-    "pending handoff confirm yes",
+    "stale intent chat",
   );
-  assert.equal(confirmYes.handoff?.triggered, true);
-  assert.equal(confirmYes.handoff?.reason, "user_confirmed_handoff");
-  assert.match(String(confirmYes.handoff?.ticketId || ""), /^ticket_/);
 
-  const second = assertJsonResponse(
-    await request(baseUrl, "POST", "/api/chat", {
-      userId: "u5",
-      sessionId: "s5",
-      message: "请说明企业后台流程",
-      appContext: { platform: "ios", appVersion: "1.0.0", pageCode: "home" },
-    }),
-    200,
-    "pending handoff trigger 2",
+  assert.doesNotMatch(
+    chat.reply,
+    /连接接收器|添加设备/,
+    "stale intent should not answer with unrelated setup guidance",
   );
-  assert.equal(second.handoff?.needsConfirmation, true);
-
-  const confirmNo = assertJsonResponse(
-    await request(baseUrl, "POST", "/api/chat", {
-      userId: "u5",
-      sessionId: "s5",
-      message: "不需要",
-      appContext: { platform: "ios", appVersion: "1.0.0", pageCode: "home" },
-    }),
-    200,
-    "pending handoff confirm no",
+  assert.equal(
+    chat.reply,
+    "非常抱歉，当前这个问题我暂时无法直接解答。建议你直接联系购买产品的平台客服，他们会为你提供更精准的售后支持，帮你尽快解决问题。",
   );
-  assert.equal(confirmNo.handoff?.triggered, false);
-  assert.equal(confirmNo.handoff?.reason, "user_declined_handoff");
+  assert.equal("handoff" in chat, false, "stale intent fallback should not expose handoff info");
 }
 
 async function main() {
   const mock = await startMockRagServer();
+  const staleIntentMock = await startStaleIntentMockRagServer();
   let defaultServer = null;
-  let pendingServer = null;
+  let fallbackServer = null;
+  let staleIntentServer = null;
 
   try {
     defaultServer = await startAppServer({
@@ -403,24 +477,34 @@ async function main() {
     await defaultServer.stop();
     defaultServer = null;
 
-    pendingServer = await startAppServer({
+    fallbackServer = await startAppServer({
       EMBEDDING_BASE_URL: `${mock.baseUrl}/v1`,
       QDRANT_URL: mock.baseUrl,
       QDRANT_COLLECTION: "faq_chunks",
-      AUTO_HANDOFF_THRESHOLD: "0.95",
       UNKNOWN_TOPIC_SCORE_MAX: "0",
       UNKNOWN_TOPIC_DENSE_MAX: "0",
       UNKNOWN_TOPIC_LEXICAL_MAX: "0",
     });
-    await runPendingHandoffSuite(pendingServer.baseUrl);
-    await pendingServer.stop();
-    pendingServer = null;
+    await runUnifiedFallbackSuite(fallbackServer.baseUrl);
+    await fallbackServer.stop();
+    fallbackServer = null;
+
+    staleIntentServer = await startAppServer({
+      EMBEDDING_BASE_URL: `${staleIntentMock.baseUrl}/v1`,
+      QDRANT_URL: staleIntentMock.baseUrl,
+      QDRANT_COLLECTION: "faq_chunks",
+    });
+    await runStaleIntentSuite(staleIntentServer.baseUrl);
+    await staleIntentServer.stop();
+    staleIntentServer = null;
 
     console.log("flow tests passed");
   } finally {
     if (defaultServer) await defaultServer.stop();
-    if (pendingServer) await pendingServer.stop();
+    if (fallbackServer) await fallbackServer.stop();
+    if (staleIntentServer) await staleIntentServer.stop();
     await mock.close();
+    await staleIntentMock.close();
   }
 }
 

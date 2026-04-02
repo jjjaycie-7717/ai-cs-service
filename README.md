@@ -14,14 +14,6 @@ Edit `.env`:
 
 ```env
 PORT=3001
-LLM_PROVIDER=ollama
-OLLAMA_BASE_URL=http://127.0.0.1:11434
-OLLAMA_MODEL=qwen3:4b
-LLM_TEMPERATURE=0.2
-LLM_TIMEOUT_MS=20000
-OPENAI_API_KEY=
-OPENAI_BASE_URL=
-CHAT_MODEL=gpt-4o-mini
 EMBEDDING_BASE_URL=http://127.0.0.1:1234/v1
 EMBEDDING_MODEL=text-embedding-nomic-embed-text-v1.5
 EMBEDDING_API_KEY=lm-studio
@@ -36,8 +28,6 @@ RERANK_WEIGHT_DENSE=0.62
 RERANK_WEIGHT_BM25=0.16
 RERANK_WEIGHT_LEXICAL=0.22
 RAG_SCORE_THRESHOLD=0.58
-AUTO_HANDOFF_ENABLED=true
-AUTO_HANDOFF_THRESHOLD=0.6
 ANSWER_CONFIDENCE_THRESHOLD=0.78
 LEXICAL_MATCH_MIN=0.15
 DIRECT_ANSWER_MIN_SCORE=0.6
@@ -50,25 +40,12 @@ QUERY_VARIANT_LIMIT=4
 UNKNOWN_TOPIC_SCORE_MAX=0.64
 UNKNOWN_TOPIC_DENSE_MAX=0.74
 UNKNOWN_TOPIC_LEXICAL_MAX=0.16
-PENDING_HANDOFF_TTL_MS=600000
 ```
 
 Reason:
-- `LLM_PROVIDER` supports `ollama` / `openai` / `auto` / `none`.
-- For free local LLM, use `LLM_PROVIDER=ollama` and keep `OPENAI_API_KEY` empty.
-- `OPENAI_API_KEY` is optional. If configured, you can set `LLM_PROVIDER=openai` (or `auto`) to use OpenAI.
+- The service now answers from retrieval and built-in reply rules, without chat LLM generation.
+- `EMBEDDING_*` is only used for query/document embeddings.
 - App calls this server through HTTP APIs.
-
-### 1.1) Ollama quick start (free local model)
-
-1. Install Ollama from `https://ollama.com/download`
-2. Pull and run a model:
-
-```bash
-ollama run qwen3:4b
-```
-
-3. Keep Ollama running, then start this service.
 
 ## 2) Run
 
@@ -89,8 +66,6 @@ Use this command to verify end-to-end core flows:
 - retrieve
 - chat (normal / unsupported topic)
 - feedback
-- handoff
-- handoff confirmation (yes / no / pending)
 
 ```bash
 npm run test:flows
@@ -111,11 +86,8 @@ Behavior:
 - "是否/能否/要不要"这类问题命中明确知识时优先直接给结论，不强制先追问
 - "产品优势/怎么使用/怎么上手"等高频话术会走预设意图召回，减少字面不一致导致的误判
 - 购买渠道、防水能力、适用场景、语言支持、行为洞察、材质清洁等也使用预设意图直答
-- 对知识库未覆盖主题（如充电/电池）启用拦截，直接返回“暂时无法回答”，避免答非所问
-- medium confidence only asks clarification when top answer is still ambiguous
-- return answer from retrieval directly (or refine with configured LLM: Ollama/OpenAI) only when confidence is high enough
-- when retrieval confidence is low, ask user whether to transfer to human agent
-- only create handoff ticket after user confirms with "需要"
+- 对知识库未覆盖主题或置信度不足的问题，统一返回固定兜底文案，避免答非所问
+- return answer from retrieval directly when confidence is high enough
 
 Tuning tips:
 - lower `ANSWER_CONFIDENCE_THRESHOLD` to return answers more aggressively
@@ -155,24 +127,6 @@ Request:
   "sessionId": "s1",
   "rating": "up",
   "comment": "有帮助"
-}
-```
-
-### `POST /api/handoff`
-
-Request:
-
-```json
-{
-  "userId": "u1",
-  "sessionId": "s1",
-  "question": "我找不到设备绑定入口",
-  "contact": "13800000000",
-  "appContext": {
-    "platform": "android",
-    "appVersion": "1.0.0",
-    "pageCode": "device_home"
-  }
 }
 ```
 
@@ -250,7 +204,6 @@ Supported inbound types:
 Current MVP stores data in:
 - `data/messages.json`
 - `data/feedback.json`
-- `data/handoff_tickets.json`
 
 Next step should be migration to a real DB.
 
@@ -302,8 +255,7 @@ After `npm run dev`, open:
 
 Page capabilities:
 - send chat messages directly to `/api/chat`
-- show retrieved sources and handoff status
-- one-click reply with `需要` or `不需要` to complete handoff confirmation flow
+- show retrieved sources
 
 ## 9) Retrieval Evaluation
 

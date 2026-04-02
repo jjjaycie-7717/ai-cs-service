@@ -38,5 +38,125 @@
     "rating": "up",
     "comment": "ok",
     "messageId": ""
+  },
+  {
+    "timestamp": "2026-04-02T11:59:13.385Z",
+    "userId": "u1",
+    "sessionId": "s1",
+    "rating": "up",
+    "comment": "ok",
+    "messageId": ""
+  },
+  {
+    "timestamp": "2026-04-02T12:28:14.183Z",
+    "userId": "u1",
+    "sessionId": "s1",
+    "rating": "up",
+    "comment": "ok",
+    "messageId": ""
+  },
+  {
+    "timestamp": "2026-04-02T12:31:13.798Z",
+    "userId": "u1",
+    "sessionId": "s1",
+    "rating": "up",
+    "comment": "ok",
+    "messageId": ""
+  },
+  {
+    "timestamp": "2026-04-02T12:32:23.588Z",
+    "userId": "u1",
+    "sessionId": "s1",
+    "rating": "up",
+    "comment": "ok",
+    "messageId": ""
+  },
+  {
+    "timestamp": "2026-04-02T12:32:45.277Z",
+    "userId": "u1",
+    "sessionId": "s1",
+    "rating": "up",
+    "comment": "ok",
+    "messageId": ""
+  },
+  {
+    "timestamp": "2026-04-02T12:33:00.943Z",
+    "userId": "u1",
+    "sessionId": "s1",
+    "rating": "up",
+    "comment": "ok",
+    "messageId": ""
+  },
+  {
+    "timestamp": "2026-04-02T12:34:53.831Z",
+    "userId": "u1",
+    "sessionId": "s1",
+    "rating": "up",
+    "comment": "ok",
+    "messageId": ""
+  },
+  {
+    "timestamp": "2026-04-02T12:35:07.511Z",
+    "userId": "u1",
+    "sessionId": "s1",
+    "rating": "up",
+    "comment": "ok",
+    "messageId": ""
+  },
+  {
+    "timestamp": "2026-04-02T12:35:25.088Z",
+    "userId": "u1",
+    "sessionId": "s1",
+    "rating": "up",
+    "comment": "ok",
+    "messageId": ""
+  },
+  {
+    "timestamp": "2026-04-02T12:44:03.966Z",
+    "userId": "u1",
+    "sessionId": "s1",
+    "rating": "up",
+    "comment": "ok",
+    "messageId": ""
+  },
+  {
+    "timestamp": "2026-04-02T12:44:25.995Z",
+    "userId": "u1",
+    "sessionId": "s1",
+    "rating": "up",
+    "comment": "ok",
+    "messageId": ""
+  },
+  {
+    "timestamp": "2026-04-02T12:45:21.178Z",
+    "userId": "u1",
+    "sessionId": "s1",
+    "rating": "up",
+    "comment": "ok",
+    "messageId": ""
+  },
+  {
+    "timestamp": "2026-04-02T12:46:04.591Z",
+    "userId": "u1",
+    "sessionId": "s1",
+    "rating": "up",
+    "comment": "ok",
+    "messageId": ""
+  },
+  {
+    "timestamp": "2026-04-02T12:46:22.596Z",
+    "userId": "u1",
+    "sessionId": "s1",
+    "rating": "up",
+    "comment": "ok",
+    "messageId": ""
+  },
+  {
+    "timestamp": "2026-04-02T12:51:13.223Z",
+    "userId": "u1",
+    "sessionId": "s1",
+    "rating": "up",
+    "comment": "ok",
+    "messageId": ""
   }
 ]

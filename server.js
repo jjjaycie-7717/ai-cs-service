@@ -1,9 +1,9 @@
 const express = require("express");
 const cors = require("cors");
 const dotenv = require("dotenv");
-const OpenAI = require("openai");
 const fs = require("fs/promises");
 const path = require("path");
+const { fuseAndRerank: rerankSearchHits } = require("./scripts/retrieval_rerank");
 
 dotenv.config();
 
@@ -25,24 +25,12 @@ const chunksFilePath = path.resolve(
   __dirname,
   process.env.CHUNKS_FILE || "faq_chunks.jsonl",
 );
-const llmProvider = String(process.env.LLM_PROVIDER || "auto")
-  .trim()
-  .toLowerCase();
-const chatModel = process.env.CHAT_MODEL || "gpt-4o-mini";
-const ollamaBaseUrl = (
-  process.env.OLLAMA_BASE_URL || "http://127.0.0.1:11434"
-).replace(/\/$/, "");
-const ollamaModel = process.env.OLLAMA_MODEL || "qwen3:4b";
-const llmTemperature = envNumber("LLM_TEMPERATURE", 0.2);
-const llmTimeoutMs = envNumber("LLM_TIMEOUT_MS", 20000);
-
 const embeddingBaseUrl = (
   process.env.EMBEDDING_BASE_URL || "http://127.0.0.1:1234/v1"
 ).replace(/\/$/, "");
 const embeddingModel =
   process.env.EMBEDDING_MODEL || "text-embedding-nomic-embed-text-v1.5";
-const embeddingApiKey =
-  process.env.EMBEDDING_API_KEY || process.env.OPENAI_API_KEY || "";
+const embeddingApiKey = process.env.EMBEDDING_API_KEY || "";
 
 const qdrantUrl = (process.env.QDRANT_URL || "").replace(/\/$/, "");
 const qdrantApiKey = process.env.QDRANT_API_KEY || "";
@@ -55,14 +43,9 @@ const rerankWeightDense = envNumber("RERANK_WEIGHT_DENSE", 0.62);
 const rerankWeightBm25 = envNumber("RERANK_WEIGHT_BM25", 0.16);
 const rerankWeightLexical = envNumber("RERANK_WEIGHT_LEXICAL", 0.22);
 const ragScoreThreshold = envNumber("RAG_SCORE_THRESHOLD", 0.58);
-const autoHandoffEnabled = (process.env.AUTO_HANDOFF_ENABLED || "true") === "true";
-const autoHandoffThreshold = envNumber("AUTO_HANDOFF_THRESHOLD", 0.6);
 const answerConfidenceThreshold = envNumber("ANSWER_CONFIDENCE_THRESHOLD", 0.78);
 const lexicalMatchMin = envNumber("LEXICAL_MATCH_MIN", 0.15);
-const directAnswerMinScore = envNumber(
-  "DIRECT_ANSWER_MIN_SCORE",
-  autoHandoffThreshold,
-);
+const directAnswerMinScore = envNumber("DIRECT_ANSWER_MIN_SCORE", 0.6);
 const decisionQuestionMinScore = envNumber("DECISION_QUESTION_MIN_SCORE", 0.68);
 const decisionQuestionLexicalMin = envNumber(
   "DECISION_QUESTION_LEXICAL_MIN",
@@ -75,9 +58,9 @@ const queryVariantLimit = envNumber("QUERY_VARIANT_LIMIT", 4);
 const unknownTopicScoreMax = envNumber("UNKNOWN_TOPIC_SCORE_MAX", 0.64);
 const unknownTopicDenseMax = envNumber("UNKNOWN_TOPIC_DENSE_MAX", 0.74);
 const unknownTopicLexicalMax = envNumber("UNKNOWN_TOPIC_LEXICAL_MAX", 0.16);
-const pendingHandoffTtlMs = envNumber("PENDING_HANDOFF_TTL_MS", 10 * 60 * 1000);
-const pendingHandoffConfirmations = new Map();
 let bm25IndexPromise = null;
+const genericFallbackReply =
+  "非常抱歉，当前这个问题我暂时无法直接解答。建议你直接联系购买产品的平台客服，他们会为你提供更精准的售后支持，帮你尽快解决问题。";
 
 app.use(cors());
 app.use(express.json());
@@ -86,26 +69,6 @@ app.use(express.static(publicDir));
 app.get("/h5/chat", (req, res) => {
   res.sendFile(path.join(publicDir, "embed.html"));
 });
-
-let openaiClient = null;
-if (process.env.OPENAI_API_KEY) {
-  const options = { apiKey: process.env.OPENAI_API_KEY };
-  if (process.env.OPENAI_BASE_URL) {
-    options.baseURL = process.env.OPENAI_BASE_URL.replace(/\/$/, "");
-  }
-  openaiClient = new OpenAI(options);
-}
-
-const assistantSystemPrompt = [
-  "你是【Weilturn F860电子围栏】的AI客服，专注回答该产品的使用、功能、技术和售后等问题。",
-  "回答必须严格基于提供的知识库内容，禁止编造。",
-  "如果知识库中没有相关信息，请礼貌告知用户：“抱歉，这个问题我暂时无法回答，你可以联系人工客服获取帮助。”",
-  "不可回答：硬件维修或更换、与其他品牌设备兼容性、用户隐私数据（如位置历史）。",
-  "回答要通俗易懂，避免使用专业术语，保持亲切，优先分步骤说明。",
-  "用户提问不需要和知识库问题逐字一致，只要语义一致就应返回对应答案。",
-  "对于“是否/能否/要不要”这类明确问题，只要知识库有直接结论，必须先直接给结论，不要先追问。",
-  "回答不要太简略：先给结论，再补充依据或步骤。",
-].join("\n");
 
 const termAliasGroups = [
   {
@@ -240,6 +203,26 @@ function detectQueryIntent(text) {
   return null;
 }
 
+function resolveQueryIntent(text, availableFaqIds = null) {
+  const profile = detectQueryIntent(text);
+  if (!profile) return null;
+  if (!(availableFaqIds instanceof Set) || !availableFaqIds.size) {
+    return profile;
+  }
+
+  const matchedFaqIds = (profile.priorityFaqIds || []).filter((faqId) =>
+    availableFaqIds.has(faqId),
+  );
+  if (!matchedFaqIds.length) {
+    return null;
+  }
+
+  return {
+    ...profile,
+    priorityFaqIds: matchedFaqIds,
+  };
+}
+
 function isLikelyUnsupportedTopic(text) {
   const normalized = normalizeTerminology(text).replace(/\s+/g, "");
   if (!normalized) return false;
@@ -260,9 +243,8 @@ function dedupeStrings(items, limit = queryVariantLimit) {
   return output;
 }
 
-function buildQueryPlan(query) {
+function buildQueryPlan(query, intent = null) {
   const normalizedQuery = normalizeTerminology(query);
-  const intent = detectQueryIntent(normalizedQuery);
   const intentHints = intent?.queryHints || [];
   const variants = dedupeStrings([
     normalizedQuery,
@@ -315,34 +297,6 @@ function requireFields(body, fields) {
   return missing;
 }
 
-function buildSessionKey(userId, sessionId) {
-  return `${userId}::${sessionId}`;
-}
-
-function parseHandoffDecision(message) {
-  const text = String(message || "")
-    .trim()
-    .replace(/\s+/g, "")
-    .toLowerCase();
-
-  if (
-    /^(需要|要|是|好的|好|可以|行|转人工|yes|y|ok)$/.test(text) ||
-    (text.includes("转人工") && !text.includes("不"))
-  ) {
-    return "yes";
-  }
-
-  if (
-    /^(不需要|不要|不用|否|不用了|先不用|暂时不用|no|n)$/.test(text) ||
-    text.includes("不需要") ||
-    text.includes("不用")
-  ) {
-    return "no";
-  }
-
-  return "unknown";
-}
-
 function tokenizeForOverlap(text) {
   const normalized = String(text || "")
     .toLowerCase()
@@ -357,6 +311,19 @@ function tokenizeForOverlap(text) {
   return tokens;
 }
 
+function extractTopicText(text) {
+  return normalizeTerminology(text)
+    .toLowerCase()
+    .replace(/f860/g, "")
+    .replace(/电子围栏/g, "")
+    .replace(/gps/g, "")
+    .replace(/app/g, "")
+    .replace(/产品|设备|项圈|宠物|狗狗/g, "")
+    .replace(/需要|需不需要|要不要|要吗|是否|能否|可以|可否|是不是|有没有/g, "")
+    .replace(/请问|一下|这个|这款|这台|怎么|如何|吗|呢|呀|啊/g, "")
+    .replace(/\s+/g, "");
+}
+
 function computeLexicalMatch(query, candidateText) {
   const qTokens = tokenizeForOverlap(query);
   const cTokens = tokenizeForOverlap(candidateText);
@@ -367,6 +334,13 @@ function computeLexicalMatch(query, candidateText) {
     if (cTokens.has(token)) hits += 1;
   }
   return hits / qTokens.size;
+}
+
+function computeTopicLexicalMatch(query, candidateText) {
+  return computeLexicalMatch(
+    extractTopicText(query),
+    extractTopicText(candidateText),
+  );
 }
 
 function parseJsonl(text) {
@@ -467,6 +441,11 @@ async function ensureBm25Index() {
   })();
 
   return bm25IndexPromise;
+}
+
+async function getKnowledgeBaseFaqIds() {
+  const index = await ensureBm25Index();
+  return new Set(index.docs.map((doc) => String(doc.payload?.faq_id || "")).filter(Boolean));
 }
 
 function bm25Score(queryTokens, doc, index) {
@@ -612,40 +591,6 @@ function fuseAndRerank(query, denseHits, bm25Hits, limit) {
   return reranked.slice(0, limit);
 }
 
-function buildTicketId() {
-  return `ticket_${Date.now()}_${Math.floor(Math.random() * 1000)}`;
-}
-
-async function createHandoffTicket({
-  userId,
-  sessionId,
-  question,
-  contact = "",
-  appContext = {},
-  source = "manual",
-  reason = "",
-  retrieval = {},
-}) {
-  const ticketId = buildTicketId();
-  const now = new Date().toISOString();
-
-  await appendJsonArray("handoff_tickets.json", {
-    ticketId,
-    timestamp: now,
-    userId,
-    sessionId,
-    question,
-    contact,
-    appContext,
-    status: "open",
-    source,
-    reason,
-    retrieval,
-  });
-
-  return { ticketId, now };
-}
-
 function buildEmbeddingHeaders() {
   const headers = { "Content-Type": "application/json" };
   if (embeddingApiKey) {
@@ -724,7 +669,12 @@ async function searchByVariant(query, limit) {
     bm25Search(query, bm25CandidateK),
   ]);
   const denseHits = await denseSearchByVector(vector, denseCandidateK);
-  return fuseAndRerank(query, denseHits, bm25Hits, limit);
+  return rerankSearchHits(query, denseHits, bm25Hits, limit, {
+    hybridRrfK,
+    rerankWeightDense,
+    rerankWeightBm25,
+    rerankWeightLexical,
+  });
 }
 
 function mergeVariantHits(variantResults, limit, priorityFaqIds = []) {
@@ -802,7 +752,11 @@ async function searchKnowledgeBase(query, options = {}) {
     return [];
   }
 
-  const plan = buildQueryPlan(query);
+  const availableFaqIds = await getKnowledgeBaseFaqIds();
+  const plan = buildQueryPlan(
+    query,
+    resolveQueryIntent(query, availableFaqIds),
+  );
   const limit = Number(options.limit || ragTopK);
   const variantLimit = Math.max(10, limit * 2);
   const variantResults = await Promise.all(
@@ -815,35 +769,17 @@ async function searchKnowledgeBase(query, options = {}) {
   return mergeVariantHits(variantResults, limit, plan.priorityFaqIds);
 }
 
-function formatFaqContext(hits) {
-  if (!hits.length) {
-    return "无检索结果";
-  }
-
-  return hits
-    .map((hit, idx) => {
-      const p = hit.payload || {};
-      return [
-        `候选${idx + 1} score=${hit.score.toFixed(4)}`,
-        `faq_id=${p.faq_id || "-"}`,
-        `question=${p.question || "-"}`,
-        `answer=${p.answer || "-"}`,
-      ].join("\n");
-    })
-    .join("\n\n");
-}
-
 function buildFallbackReply(hits) {
   const trusted = hits.filter((hit) => hit.score >= ragScoreThreshold);
   const best = trusted[0] || hits[0];
 
   if (!best) {
-    return "抱歉，这个问题我暂时无法回答，你可以联系人工客服获取帮助。";
+    return genericFallbackReply;
   }
 
   const answer = best.payload?.answer;
   if (!answer) {
-    return "抱歉，这个问题我暂时无法回答，你可以联系人工客服获取帮助。";
+    return genericFallbackReply;
   }
 
   return answer;
@@ -927,162 +863,13 @@ function buildIntentPresetReply(intentName, hits) {
   return "";
 }
 
-function resolveLlmProvider() {
-  if (llmProvider === "none") {
-    return "none";
-  }
-
-  if (llmProvider === "openai") {
-    return openaiClient ? "openai" : "none";
-  }
-
-  if (llmProvider === "ollama") {
-    return ollamaBaseUrl ? "ollama" : "none";
-  }
-
-  if (llmProvider === "auto") {
-    if (openaiClient) return "openai";
-    if (ollamaBaseUrl) return "ollama";
-    return "none";
-  }
-
-  return "none";
-}
-
-function buildLlmMessages({
-  contextText = "",
-  message = "",
-  normalizedMessage = "",
-  hits = [],
-}) {
-  return [
-    {
-      role: "system",
-      content: assistantSystemPrompt,
-    },
-    {
-      role: "user",
-      content: [
-        `App context: ${contextText}`,
-        `User question: ${message}`,
-        `Normalized question: ${normalizedMessage}`,
-        `Knowledge base context:\n${formatFaqContext(hits)}`,
-      ].join("\n\n"),
-    },
-  ];
-}
-
-async function generateReplyWithOpenAI(messages) {
-  if (!openaiClient) {
-    return "";
-  }
-
-  try {
-    const completion = await openaiClient.chat.completions.create({
-      model: chatModel,
-      temperature: llmTemperature,
-      messages,
-    });
-    return String(completion.choices?.[0]?.message?.content || "").trim();
-  } catch (err) {
-    console.error("chat_completion_failed", err);
-    return "";
-  }
-}
-
-async function generateReplyWithOllama(messages) {
-  if (!ollamaBaseUrl) {
-    return "";
-  }
-
-  const controller = new AbortController();
-  const timeoutId =
-    llmTimeoutMs > 0 ? setTimeout(() => controller.abort(), llmTimeoutMs) : null;
-
-  try {
-    const body = {
-      model: ollamaModel,
-      messages,
-      stream: false,
-      options: {
-        temperature: llmTemperature,
-      },
-    };
-
-    const resp = await fetch(`${ollamaBaseUrl}/api/chat`, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(body),
-      signal: controller.signal,
-    });
-
-    if (!resp.ok) {
-      const text = await resp.text();
-      console.error(
-        "ollama_chat_failed",
-        `status=${resp.status}`,
-        `statusText=${resp.statusText}`,
-        text,
-      );
-      return "";
-    }
-
-    const json = await resp.json();
-    return String(json?.message?.content || "").trim();
-  } catch (err) {
-    if (err?.name === "AbortError") {
-      console.error("ollama_chat_timeout", `${llmTimeoutMs}ms`);
-      return "";
-    }
-    console.error("ollama_chat_failed", err);
-    return "";
-  } finally {
-    if (timeoutId) {
-      clearTimeout(timeoutId);
-    }
-  }
-}
-
-async function generateReplyWithLlm(input) {
-  const provider = resolveLlmProvider();
-  if (provider === "none") {
-    return "";
-  }
-
-  const messages = buildLlmMessages(input);
-  if (provider === "openai") {
-    const openaiReply = await generateReplyWithOpenAI(messages);
-    if (openaiReply) return openaiReply;
-
-    if (llmProvider === "auto") {
-      return generateReplyWithOllama(messages);
-    }
-    return "";
-  }
-
-  return generateReplyWithOllama(messages);
-}
-
 app.get("/health", (req, res) => {
   res.json({
     ok: true,
     service: "ai-cs-service",
-    llmProviderSetting: llmProvider,
-    llmProviderResolved: resolveLlmProvider(),
-    chatModel,
-    ollamaConfigured: Boolean(ollamaBaseUrl && ollamaModel),
-    ollamaBaseUrl,
-    ollamaModel,
-    llmTemperature,
-    llmTimeoutMs,
-    openaiConfigured: Boolean(process.env.OPENAI_API_KEY),
     qdrantConfigured: Boolean(qdrantUrl),
     embeddingConfigured: Boolean(embeddingBaseUrl && embeddingModel),
     ragCollection: qdrantCollection,
-    autoHandoffEnabled,
-    autoHandoffThreshold,
     answerConfidenceThreshold,
     lexicalMatchMin,
     directAnswerMinScore,
@@ -1150,135 +937,13 @@ app.post("/api/chat", async (req, res) => {
   }
 
   const { userId, sessionId, message, appContext = {} } = req.body;
-  const sessionKey = buildSessionKey(userId, sessionId);
-  const contextText = [
-    `platform=${appContext.platform || "unknown"}`,
-    `appVersion=${appContext.appVersion || "unknown"}`,
-    `pageCode=${appContext.pageCode || "unknown"}`,
-  ].join(", ");
 
   try {
-    const pending = pendingHandoffConfirmations.get(sessionKey);
-    if (pending) {
-      const expired = Date.now() - pending.createdAt > pendingHandoffTtlMs;
-      if (expired) {
-        pendingHandoffConfirmations.delete(sessionKey);
-      } else {
-        const decision = parseHandoffDecision(message);
-        if (decision === "yes") {
-          const ticket = await createHandoffTicket({
-            userId,
-            sessionId,
-            question: pending.originalQuestion,
-            appContext: pending.appContext,
-            source: "user_confirmed_handoff",
-            reason: pending.reason || "user_confirmed_handoff",
-            retrieval: pending.retrieval || {},
-          });
-          pendingHandoffConfirmations.delete(sessionKey);
-
-          const now = new Date().toISOString();
-          const reply = `好的，已为你转接人工客服，工单号：${ticket.ticketId}。`;
-          const handoff = {
-            triggered: true,
-            ticketId: ticket.ticketId,
-            reason: "user_confirmed_handoff",
-            topScore: pending.topScore,
-            threshold: autoHandoffThreshold,
-            needsConfirmation: false,
-          };
-
-          await appendJsonArray("messages.json", {
-            timestamp: now,
-            userId,
-            sessionId,
-            message,
-            reply,
-            appContext,
-            retrieval: pending.retrieval || {},
-            handoff,
-          });
-
-          return res.json({
-            sessionId,
-            reply,
-            sources: pending.sources || [],
-            handoff,
-            timestamp: now,
-          });
-        }
-
-        if (decision === "no") {
-          pendingHandoffConfirmations.delete(sessionKey);
-
-          const now = new Date().toISOString();
-          const reply = "好的，暂不转接人工。你可以补充更多细节，我继续帮你排查。";
-          const handoff = {
-            triggered: false,
-            ticketId: "",
-            reason: "user_declined_handoff",
-            topScore: pending.topScore,
-            threshold: autoHandoffThreshold,
-            needsConfirmation: false,
-          };
-
-          await appendJsonArray("messages.json", {
-            timestamp: now,
-            userId,
-            sessionId,
-            message,
-            reply,
-            appContext,
-            retrieval: pending.retrieval || {},
-            handoff,
-          });
-
-          return res.json({
-            sessionId,
-            reply,
-            sources: pending.sources || [],
-            handoff,
-            timestamp: now,
-          });
-        }
-
-        const now = new Date().toISOString();
-        const reply = "请回复“需要”或“不需要”，我再为你处理是否转接人工客服。";
-        const handoff = {
-          triggered: false,
-          ticketId: "",
-          reason: "awaiting_handoff_confirmation",
-          topScore: pending.topScore,
-          threshold: autoHandoffThreshold,
-          needsConfirmation: true,
-          options: ["需要", "不需要"],
-        };
-
-        await appendJsonArray("messages.json", {
-          timestamp: now,
-          userId,
-          sessionId,
-          message,
-          reply,
-          appContext,
-          retrieval: pending.retrieval || {},
-          handoff,
-        });
-
-        return res.json({
-          sessionId,
-          reply,
-          sources: pending.sources || [],
-          handoff,
-          timestamp: now,
-        });
-      }
-    }
-
     let retrievalError = "";
     let hits = [];
     const normalizedMessage = normalizeTerminology(message);
-    const queryIntent = detectQueryIntent(normalizedMessage);
+    const availableFaqIds = await getKnowledgeBaseFaqIds();
+    const queryIntent = resolveQueryIntent(normalizedMessage, availableFaqIds);
     try {
       hits = await searchKnowledgeBase(message);
     } catch (err) {
@@ -1286,17 +951,8 @@ app.post("/api/chat", async (req, res) => {
       console.error("retrieval_failed", err);
     }
 
-    let reply = await generateReplyWithLlm({
-      contextText,
-      message,
-      normalizedMessage,
-      hits,
-    });
-
-    if (!reply) {
-      const presetReply = buildIntentPresetReply(queryIntent?.name || "", hits);
-      reply = presetReply || buildFallbackReply(hits);
-    }
+    const presetReply = buildIntentPresetReply(queryIntent?.name || "", hits);
+    let reply = presetReply || buildFallbackReply(hits);
 
     const sources = hits.map((hit) => ({
       score: Number(hit.score.toFixed(4)),
@@ -1315,6 +971,11 @@ app.post("/api/chat", async (req, res) => {
     const lexicalMatch =
       Number(hits[0]?.lexical_match || 0) ||
       computeLexicalMatch(normalizedMessage, normalizedTopCandidateText);
+    const topicLexicalMatch = computeTopicLexicalMatch(
+      normalizedMessage,
+      normalizedTopCandidateText,
+    );
+    const effectiveLexicalMatch = queryIntent ? lexicalMatch : topicLexicalMatch;
 
     const hasTopAnswer = Boolean(String(topPayload.answer || "").trim());
     const decisionQuestion = isDecisionQuestion(message);
@@ -1323,114 +984,42 @@ app.post("/api/chat", async (req, res) => {
       !queryIntent &&
       topScore <= unknownTopicScoreMax &&
       topDenseScore <= unknownTopicDenseMax &&
-      lexicalMatch <= unknownTopicLexicalMax;
+      effectiveLexicalMatch <= unknownTopicLexicalMax;
     const shouldReturnUnknown = unsupportedTopic || lowConfidenceNoIntent;
     const semanticMatched =
       (topDenseScore >= semanticMatchMinDense || topScore >= directAnswerMinScore) &&
-      (Boolean(queryIntent) || lexicalMatch >= semanticLexicalFloor);
+      (Boolean(queryIntent) || effectiveLexicalMatch >= semanticLexicalFloor);
     const intentDrivenAnswer =
       Boolean(queryIntent) &&
       topScore >= intentAnswerMinScore &&
       topDenseScore >= semanticMatchMinDense * 0.9;
+    const noIntentDirectAnswer =
+      !queryIntent &&
+      ((topScore >= answerConfidenceThreshold &&
+        effectiveLexicalMatch >= lexicalMatchMin) ||
+        (topScore >= directAnswerMinScore &&
+          effectiveLexicalMatch >= Math.max(lexicalMatchMin, 0.3)) ||
+        (decisionQuestion &&
+          topScore >= decisionQuestionMinScore &&
+          effectiveLexicalMatch >= decisionQuestionLexicalMin));
     const shouldPreferDirectAnswer =
       !shouldReturnUnknown &&
       hasTopAnswer &&
-      (topScore >= answerConfidenceThreshold ||
-        intentDrivenAnswer ||
-        (topDenseScore >= semanticMatchMinDense &&
-          topScore >= intentAnswerMinScore) ||
-        (topScore >= directAnswerMinScore && lexicalMatch >= lexicalMatchMin) ||
-        (decisionQuestion &&
-          topScore >= decisionQuestionMinScore &&
-          lexicalMatch >= decisionQuestionLexicalMin));
+      (intentDrivenAnswer ||
+        (Boolean(queryIntent) &&
+          (topScore >= answerConfidenceThreshold ||
+            (topDenseScore >= semanticMatchMinDense &&
+              topScore >= intentAnswerMinScore) ||
+            (topScore >= directAnswerMinScore &&
+              effectiveLexicalMatch >= lexicalMatchMin) ||
+            (decisionQuestion &&
+              topScore >= decisionQuestionMinScore &&
+              effectiveLexicalMatch >= decisionQuestionLexicalMin))) ||
+        noIntentDirectAnswer);
+    const shouldUseFallback = shouldReturnUnknown || !shouldPreferDirectAnswer;
 
-    const shouldAutoHandoff =
-      autoHandoffEnabled &&
-      !shouldReturnUnknown &&
-      (hits.length === 0 ||
-        (!semanticMatched &&
-          (topScore < autoHandoffThreshold || lexicalMatch < lexicalMatchMin)));
-
-    const shouldClarify =
-      !shouldReturnUnknown && !shouldAutoHandoff && !shouldPreferDirectAnswer;
-
-    let handoff = {
-      triggered: false,
-      ticketId: "",
-      reason: "",
-      topScore,
-      threshold: autoHandoffThreshold,
-      needsConfirmation: false,
-      lexicalMatch: Number(lexicalMatch.toFixed(4)),
-      answerThreshold: answerConfidenceThreshold,
-      topDenseScore: Number(topDenseScore.toFixed(4)),
-      semanticMatchMinDense,
-      semanticLexicalFloor,
-      unsupportedTopic,
-      lowConfidenceNoIntent,
-      intent: queryIntent?.name || "",
-    };
-
-    if (shouldReturnUnknown) {
-      reply = "抱歉，这个问题我暂时无法回答，你可以联系人工客服获取帮助。";
-      handoff.reason = unsupportedTopic
-        ? "unsupported_topic"
-        : "low_relevance_without_intent";
-    }
-
-    if (shouldClarify) {
-      reply =
-        "为了给你准确答复，请补充两个信息：1）你现在所在的App页面；2）你已经尝试过的操作步骤。";
-      handoff.reason = "needs_clarification";
-    }
-
-    if (shouldAutoHandoff) {
-      const reason =
-        hits.length === 0
-          ? "no_retrieval_hits"
-          : topScore < autoHandoffThreshold
-            ? `top_score_below_threshold_${topScore.toFixed(4)}`
-            : `lexical_match_below_threshold_${lexicalMatch.toFixed(4)}`;
-      pendingHandoffConfirmations.set(sessionKey, {
-        createdAt: Date.now(),
-        originalQuestion: message,
-        appContext,
-        reason,
-        topScore,
-        lexicalMatch: Number(lexicalMatch.toFixed(4)),
-        sources,
-        retrieval: {
-          error: retrievalError,
-          topScore,
-          topDenseScore,
-          threshold: autoHandoffThreshold,
-          lexicalMatch: Number(lexicalMatch.toFixed(4)),
-          lexicalMatchMin,
-          semanticMatchMinDense,
-          intent: queryIntent?.name || "",
-          answerConfidenceThreshold,
-          topHits: hits.map((hit) => ({
-            score: hit.score,
-            faq_id: hit.payload?.faq_id || "",
-            question: hit.payload?.question || "",
-          })),
-        },
-      });
-
-      handoff = {
-        triggered: false,
-        ticketId: "",
-        reason,
-        topScore,
-        threshold: autoHandoffThreshold,
-        needsConfirmation: true,
-        options: ["需要", "不需要"],
-        lexicalMatch: Number(lexicalMatch.toFixed(4)),
-        answerThreshold: answerConfidenceThreshold,
-      };
-
-      reply =
-        "抱歉，我暂时无法准确理解您的问题，需要为您转接人工客服吗？";
+    if (shouldUseFallback) {
+      reply = genericFallbackReply;
     }
 
     const now = new Date().toISOString();
@@ -1445,8 +1034,8 @@ app.post("/api/chat", async (req, res) => {
         error: retrievalError,
         topScore,
         topDenseScore,
-        threshold: autoHandoffThreshold,
-        lexicalMatch: Number(lexicalMatch.toFixed(4)),
+        lexicalMatch: Number(effectiveLexicalMatch.toFixed(4)),
+        topicLexicalMatch: Number(topicLexicalMatch.toFixed(4)),
         lexicalMatchMin,
         semanticMatchMinDense,
         intent: queryIntent?.name || "",
@@ -1463,7 +1052,6 @@ app.post("/api/chat", async (req, res) => {
       sessionId,
       reply,
       sources,
-      handoff,
       timestamp: now,
     });
   } catch (err) {
@@ -1498,34 +1086,6 @@ app.post("/api/feedback", async (req, res) => {
   });
 
   return res.json({ ok: true, timestamp: now });
-});
-
-app.post("/api/handoff", async (req, res) => {
-  const required = ["userId", "sessionId", "question"];
-  const missing = requireFields(req.body || {}, required);
-  if (missing.length) {
-    return res.status(400).json({
-      error: "missing_fields",
-      missing,
-    });
-  }
-
-  const { userId, sessionId, question, contact = "", appContext = {} } = req.body;
-  const ticket = await createHandoffTicket({
-    userId,
-    sessionId,
-    question,
-    contact,
-    appContext,
-    source: "manual_api_handoff",
-    reason: "manual_request",
-  });
-
-  return res.json({
-    ok: true,
-    ticketId: ticket.ticketId,
-    message: "人工工单已创建",
-  });
 });
 
 app.listen(port, () => {

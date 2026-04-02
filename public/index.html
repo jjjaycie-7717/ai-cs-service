@@ -435,7 +435,6 @@
               loading.querySelector("div").textContent = data.reply || "暂时没有结果。";
               postToNative("message_received", {
                 reply: data.reply || "",
-                handoff: data.handoff || null,
                 userId: cfg.userId,
                 sessionId: cfg.sessionId
               });
