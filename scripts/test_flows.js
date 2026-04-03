@@ -986,6 +986,18 @@ async function runDefaultFlowSuite(baseUrl) {
   );
   assert.match(chatUsageParaphrase.reply, /开机|APP|连接接收器/, "usage paraphrase reply unexpected");
 
+  const chatFenceAlertSetup = assertJsonResponse(
+    await request(baseUrl, "POST", "/api/chat", {
+      userId: "u_fence_alert_setup",
+      sessionId: "s_fence_alert_setup",
+      message: "怎么开启电子围栏告警？",
+      appContext: { platform: "ios", appVersion: "1.0.0", pageCode: "home" },
+    }),
+    200,
+    "chat fence alert setup",
+  );
+  assert.match(chatFenceAlertSetup.reply, /开机|连接APP|启用围栏/, "fence alert setup reply unexpected");
+
   const chatBoundaryParaphrase = assertJsonResponse(
     await request(baseUrl, "POST", "/api/chat", {
       userId: "u_boundary",

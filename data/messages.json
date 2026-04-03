@@ -15440,5 +15440,4215 @@
         }
       ]
     }
+  },
+  {
+    "timestamp": "2026-04-03T06:18:06.527Z",
+    "userId": "u1",
+    "sessionId": "s1",
+    "message": "怎么开启电子围栏告警？",
+    "reply": "非常抱歉，当前这个问题我暂时无法直接解答。建议你直接联系购买产品的平台客服，他们会为你提供更精准的售后支持，帮你尽快解决问题。",
+    "appContext": {
+      "platform": "web",
+      "appVersion": "1.0.0",
+      "pageCode": "home"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 0.670213,
+      "topDenseScore": 0.7046447,
+      "lexicalMatch": 0,
+      "topicLexicalMatch": 0,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 0.670213,
+          "faq_id": "F860-011",
+          "question": "产品是什么，能解决什么问题？"
+        },
+        {
+          "score": 0.55426,
+          "faq_id": "F860-032",
+          "question": "围栏已启用，但未触发报警，该怎么办？"
+        },
+        {
+          "score": 0.549764,
+          "faq_id": "F860-039",
+          "question": "产品无法正常使用怎么办？"
+        },
+        {
+          "score": 0.529048,
+          "faq_id": "F860-028",
+          "question": "如何连接接收器？"
+        },
+        {
+          "score": 0.479538,
+          "faq_id": "F860-040",
+          "question": "显示超出安全距离但未受到处罚怎么办？"
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-03T06:22:09.584Z",
+    "userId": "u1",
+    "sessionId": "s1",
+    "message": "产品优势是什么？",
+    "reply": "1. 无需埋线，轻松安装\n采用无线技术，无需复杂施工或地面埋线，简单设置即可在手机APP中定义围栏范围。\n2. 智能围栏，随时随地自定义\n通过手机APP可自由设定围栏的形状和大小，支持圆形、多边形以及自定义绘制等多种模式，灵活适应各种环境。\n3. 两种防护模式，简单选择\nStay Inside（不可越界）：确保您的宠物只在您设定的边界内活动。\nKeep Outside（不可靠近）：防止您的宠物进入设定的禁区。\n4. 实时越界提醒，多重安全反馈\n项圈会在宠物接近或越过围栏边界时，通过声音、震动或静电提醒宠物，引导其返回安全区域，有效预防走失和危险。\n5. 手动训练模式\n提供手动触发的训练模式，允许宠物主通过APP直接控制警告信号（声音、震动或静电），以增强训练效果或即时纠正宠物行为。\n6. 离线自动执行，持续守护\n设置完成后，即使手机与项圈蓝牙断开，设备依然能自主执行围栏功能，确保宠物安全。\n7. 运动追踪，健康管理\n结合运动值与活动距离监控，全面了解宠物的日常活动与健康状态，更好地把握宠物的生活习惯。",
+    "appContext": {
+      "platform": "ios",
+      "appVersion": "1.0.0",
+      "pageCode": "home"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 1.2928,
+      "topDenseScore": 0.94,
+      "lexicalMatch": 1,
+      "topicLexicalMatch": 0,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "product_advantages",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 1.2928,
+          "faq_id": "F860-014",
+          "question": "产品有哪些核心特点？"
+        },
+        {
+          "score": 1.06414,
+          "faq_id": "F860-011",
+          "question": "产品是什么，能解决什么问题？"
+        },
+        {
+          "score": 0.9946,
+          "faq_id": "F860-017",
+          "question": "设备可以创建那些类型的围栏？"
+        },
+        {
+          "score": 0.495397,
+          "faq_id": "F860-028",
+          "question": "如何连接接收器？"
+        },
+        {
+          "score": 0.346624,
+          "faq_id": "F860-044",
+          "question": "狗狗需要接受专门训练才能使用围栏吗"
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-03T06:22:09.601Z",
+    "userId": "u_scene",
+    "sessionId": "s_scene",
+    "message": "在哪里可以用？",
+    "reply": "1.需在户外开阔、无遮挡区域使用，禁止在室内、树下、屋檐下等GPS信号弱/无信号处使用；\n2.首次使用前在安全环境测试设备反应，帮助宠物适应；\n3.定期检查设备信号及运行状态，确保边界防护功能正常。\n4.训狗模式可在任意环境使用，但在复杂环境遥控距离可能会有所折损。",
+    "appContext": {
+      "platform": "ios",
+      "appVersion": "1.0.0",
+      "pageCode": "home"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 1.268,
+      "topDenseScore": 0.9,
+      "lexicalMatch": 1,
+      "topicLexicalMatch": 0,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "usage_scenarios",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 1.268,
+          "faq_id": "F860-013",
+          "question": "产品的使用场景有哪些要求？"
+        },
+        {
+          "score": 1.2008,
+          "faq_id": "F860-015",
+          "question": "产品适合室内使用吗？"
+        },
+        {
+          "score": 0.65,
+          "faq_id": "F860-012",
+          "question": "产品适用哪些犬类？"
+        },
+        {
+          "score": 0.458879,
+          "faq_id": "F860-028",
+          "question": "如何连接接收器？"
+        },
+        {
+          "score": 0.454216,
+          "faq_id": "F860-017",
+          "question": "设备可以创建那些类型的围栏？"
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-03T06:22:09.615Z",
+    "userId": "u_effect",
+    "sessionId": "s_effect",
+    "message": "没效果怎么办",
+    "reply": "排查步骤：\n1.本产品是训练辅助工具，需用户与宠物互动训练才能达到预期效果；\n2.专业指导：自行训练效果不佳可寻求专业训犬师的训练指导；\n3.科学训练：每次训练时长10-15分钟，保持紧凑高效，训练效果更佳。",
+    "appContext": {
+      "platform": "ios",
+      "appVersion": "1.0.0",
+      "pageCode": "home"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 1.2742,
+      "topDenseScore": 0.91,
+      "lexicalMatch": 1,
+      "topicLexicalMatch": 0.3333,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "training_effectiveness",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 1.2742,
+          "faq_id": "F860-007",
+          "question": "产品未改变狗狗行为怎么办？"
+        },
+        {
+          "score": 0.875107,
+          "faq_id": "F860-044",
+          "question": "狗狗需要接受专门训练才能使用围栏吗"
+        },
+        {
+          "score": 0.463796,
+          "faq_id": "F860-028",
+          "question": "如何连接接收器？"
+        },
+        {
+          "score": 0.416737,
+          "faq_id": "F860-017",
+          "question": "设备可以创建那些类型的围栏？"
+        },
+        {
+          "score": 0.366,
+          "faq_id": "F860-004",
+          "question": "初期有效后续不起作用怎么办？"
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-03T06:22:09.626Z",
+    "userId": "u_usage",
+    "sessionId": "s_usage",
+    "message": "第一次咋弄",
+    "reply": "【排查步骤：先确认连接流程正确】\n检查连接方式（最常见错误）\n① 接收器：在关闭状态下，短按开机。\n② 打开应用APP：点击设置打开蓝牙，点击添加设备，选择F860设备，添加连接。\n③ 连接成功：主页显示F860设备，点击设备进入围栏设备主页。\n④ 创建围栏：在围栏设置页面，点击“创建围栏”进入绘制界面。\n⑤ 绘制边界：在地图上，点击或拖动点来绘制边界，根据需要选择圆形、多边形或手绘模式，对于多边形围栏，您最多可以设置10个点。绘制完成后，系统会自动将该形状闭合为一个封闭区域。\n⑥ 保存并启用围栏：绘制完成后，点击“保存”，围栏成功保存后，您可以立即启用它。\n\n【快速总结】开机→连接APP→绘制围栏→启用围栏",
+    "appContext": {
+      "platform": "ios",
+      "appVersion": "1.0.0",
+      "pageCode": "home"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 1.2804,
+      "topDenseScore": 0.92,
+      "lexicalMatch": 1,
+      "topicLexicalMatch": 0,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "product_usage",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 1.2804,
+          "faq_id": "F860-028",
+          "question": "如何连接接收器？"
+        },
+        {
+          "score": 1.2328,
+          "faq_id": "F860-030",
+          "question": "是否可以同时创建多个围栏？"
+        },
+        {
+          "score": 1.0396,
+          "faq_id": "F860-017",
+          "question": "设备可以创建那些类型的围栏？"
+        },
+        {
+          "score": 0.351342,
+          "faq_id": "F860-044",
+          "question": "狗狗需要接受专门训练才能使用围栏吗"
+        },
+        {
+          "score": 0.338529,
+          "faq_id": "F860-031",
+          "question": "围栏创建后可以修改吗？"
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-03T06:22:09.635Z",
+    "userId": "u_fence_alert_setup",
+    "sessionId": "s_fence_alert_setup",
+    "message": "怎么开启电子围栏告警？",
+    "reply": "非常抱歉，当前这个问题我暂时无法直接解答。建议你直接联系购买产品的平台客服，他们会为你提供更精准的售后支持，帮你尽快解决问题。",
+    "appContext": {
+      "platform": "ios",
+      "appVersion": "1.0.0",
+      "pageCode": "home"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 0.466414,
+      "topDenseScore": 0.62,
+      "lexicalMatch": 0,
+      "topicLexicalMatch": 0,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 0.466414,
+          "faq_id": "F860-028",
+          "question": "如何连接接收器？"
+        },
+        {
+          "score": 0.404857,
+          "faq_id": "F860-017",
+          "question": "设备可以创建那些类型的围栏？"
+        },
+        {
+          "score": 0.233333,
+          "faq_id": "F860-011",
+          "question": "产品是什么，能解决什么问题？"
+        },
+        {
+          "score": 0.158192,
+          "faq_id": "F860-039",
+          "question": "产品无法正常使用怎么办？"
+        },
+        {
+          "score": 0.131496,
+          "faq_id": "F860-041",
+          "question": "机器开启时响起声音怎么办？"
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-03T06:22:38.367Z",
+    "userId": "u1",
+    "sessionId": "s1",
+    "message": "产品优势是什么？",
+    "reply": "1. 无需埋线，轻松安装\n采用无线技术，无需复杂施工或地面埋线，简单设置即可在手机APP中定义围栏范围。\n2. 智能围栏，随时随地自定义\n通过手机APP可自由设定围栏的形状和大小，支持圆形、多边形以及自定义绘制等多种模式，灵活适应各种环境。\n3. 两种防护模式，简单选择\nStay Inside（不可越界）：确保您的宠物只在您设定的边界内活动。\nKeep Outside（不可靠近）：防止您的宠物进入设定的禁区。\n4. 实时越界提醒，多重安全反馈\n项圈会在宠物接近或越过围栏边界时，通过声音、震动或静电提醒宠物，引导其返回安全区域，有效预防走失和危险。\n5. 手动训练模式\n提供手动触发的训练模式，允许宠物主通过APP直接控制警告信号（声音、震动或静电），以增强训练效果或即时纠正宠物行为。\n6. 离线自动执行，持续守护\n设置完成后，即使手机与项圈蓝牙断开，设备依然能自主执行围栏功能，确保宠物安全。\n7. 运动追踪，健康管理\n结合运动值与活动距离监控，全面了解宠物的日常活动与健康状态，更好地把握宠物的生活习惯。",
+    "appContext": {
+      "platform": "ios",
+      "appVersion": "1.0.0",
+      "pageCode": "home"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 1.2928,
+      "topDenseScore": 0.94,
+      "lexicalMatch": 1,
+      "topicLexicalMatch": 0,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "product_advantages",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 1.2928,
+          "faq_id": "F860-014",
+          "question": "产品有哪些核心特点？"
+        },
+        {
+          "score": 1.06414,
+          "faq_id": "F860-011",
+          "question": "产品是什么，能解决什么问题？"
+        },
+        {
+          "score": 0.9946,
+          "faq_id": "F860-017",
+          "question": "设备可以创建那些类型的围栏？"
+        },
+        {
+          "score": 0.495397,
+          "faq_id": "F860-028",
+          "question": "如何连接接收器？"
+        },
+        {
+          "score": 0.346624,
+          "faq_id": "F860-044",
+          "question": "狗狗需要接受专门训练才能使用围栏吗"
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-03T06:22:38.383Z",
+    "userId": "u_scene",
+    "sessionId": "s_scene",
+    "message": "在哪里可以用？",
+    "reply": "1.需在户外开阔、无遮挡区域使用，禁止在室内、树下、屋檐下等GPS信号弱/无信号处使用；\n2.首次使用前在安全环境测试设备反应，帮助宠物适应；\n3.定期检查设备信号及运行状态，确保边界防护功能正常。\n4.训狗模式可在任意环境使用，但在复杂环境遥控距离可能会有所折损。",
+    "appContext": {
+      "platform": "ios",
+      "appVersion": "1.0.0",
+      "pageCode": "home"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 1.268,
+      "topDenseScore": 0.9,
+      "lexicalMatch": 1,
+      "topicLexicalMatch": 0,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "usage_scenarios",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 1.268,
+          "faq_id": "F860-013",
+          "question": "产品的使用场景有哪些要求？"
+        },
+        {
+          "score": 1.2008,
+          "faq_id": "F860-015",
+          "question": "产品适合室内使用吗？"
+        },
+        {
+          "score": 0.65,
+          "faq_id": "F860-012",
+          "question": "产品适用哪些犬类？"
+        },
+        {
+          "score": 0.458879,
+          "faq_id": "F860-028",
+          "question": "如何连接接收器？"
+        },
+        {
+          "score": 0.454216,
+          "faq_id": "F860-017",
+          "question": "设备可以创建那些类型的围栏？"
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-03T06:22:38.394Z",
+    "userId": "u_effect",
+    "sessionId": "s_effect",
+    "message": "没效果怎么办",
+    "reply": "排查步骤：\n1.本产品是训练辅助工具，需用户与宠物互动训练才能达到预期效果；\n2.专业指导：自行训练效果不佳可寻求专业训犬师的训练指导；\n3.科学训练：每次训练时长10-15分钟，保持紧凑高效，训练效果更佳。",
+    "appContext": {
+      "platform": "ios",
+      "appVersion": "1.0.0",
+      "pageCode": "home"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 1.2742,
+      "topDenseScore": 0.91,
+      "lexicalMatch": 1,
+      "topicLexicalMatch": 0.3333,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "training_effectiveness",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 1.2742,
+          "faq_id": "F860-007",
+          "question": "产品未改变狗狗行为怎么办？"
+        },
+        {
+          "score": 0.875107,
+          "faq_id": "F860-044",
+          "question": "狗狗需要接受专门训练才能使用围栏吗"
+        },
+        {
+          "score": 0.463796,
+          "faq_id": "F860-028",
+          "question": "如何连接接收器？"
+        },
+        {
+          "score": 0.416737,
+          "faq_id": "F860-017",
+          "question": "设备可以创建那些类型的围栏？"
+        },
+        {
+          "score": 0.366,
+          "faq_id": "F860-004",
+          "question": "初期有效后续不起作用怎么办？"
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-03T06:22:38.403Z",
+    "userId": "u_usage",
+    "sessionId": "s_usage",
+    "message": "第一次咋弄",
+    "reply": "【排查步骤：先确认连接流程正确】\n检查连接方式（最常见错误）\n① 接收器：在关闭状态下，短按开机。\n② 打开应用APP：点击设置打开蓝牙，点击添加设备，选择F860设备，添加连接。\n③ 连接成功：主页显示F860设备，点击设备进入围栏设备主页。\n④ 创建围栏：在围栏设置页面，点击“创建围栏”进入绘制界面。\n⑤ 绘制边界：在地图上，点击或拖动点来绘制边界，根据需要选择圆形、多边形或手绘模式，对于多边形围栏，您最多可以设置10个点。绘制完成后，系统会自动将该形状闭合为一个封闭区域。\n⑥ 保存并启用围栏：绘制完成后，点击“保存”，围栏成功保存后，您可以立即启用它。\n\n【快速总结】开机→连接APP→绘制围栏→启用围栏",
+    "appContext": {
+      "platform": "ios",
+      "appVersion": "1.0.0",
+      "pageCode": "home"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 1.2804,
+      "topDenseScore": 0.92,
+      "lexicalMatch": 1,
+      "topicLexicalMatch": 0,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "product_usage",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 1.2804,
+          "faq_id": "F860-028",
+          "question": "如何连接接收器？"
+        },
+        {
+          "score": 1.2328,
+          "faq_id": "F860-030",
+          "question": "是否可以同时创建多个围栏？"
+        },
+        {
+          "score": 1.0396,
+          "faq_id": "F860-017",
+          "question": "设备可以创建那些类型的围栏？"
+        },
+        {
+          "score": 0.351342,
+          "faq_id": "F860-044",
+          "question": "狗狗需要接受专门训练才能使用围栏吗"
+        },
+        {
+          "score": 0.338529,
+          "faq_id": "F860-031",
+          "question": "围栏创建后可以修改吗？"
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-03T06:22:38.414Z",
+    "userId": "u_fence_alert_setup",
+    "sessionId": "s_fence_alert_setup",
+    "message": "怎么开启电子围栏告警？",
+    "reply": "【排查步骤：先确认连接流程正确】\n检查连接方式（最常见错误）\n① 接收器：在关闭状态下，短按开机。\n② 打开应用APP：点击设置打开蓝牙，点击添加设备，选择F860设备，添加连接。\n③ 连接成功：主页显示F860设备，点击设备进入围栏设备主页。\n④ 创建围栏：在围栏设置页面，点击“创建围栏”进入绘制界面。\n⑤ 绘制边界：在地图上，点击或拖动点来绘制边界，根据需要选择圆形、多边形或手绘模式，对于多边形围栏，您最多可以设置10个点。绘制完成后，系统会自动将该形状闭合为一个封闭区域。\n⑥ 保存并启用围栏：绘制完成后，点击“保存”，围栏成功保存后，您可以立即启用它。\n\n【快速总结】开机→连接APP→绘制围栏→启用围栏",
+    "appContext": {
+      "platform": "ios",
+      "appVersion": "1.0.0",
+      "pageCode": "home"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 1.2804,
+      "topDenseScore": 0.92,
+      "lexicalMatch": 1,
+      "topicLexicalMatch": 0,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "fence_alert_setup",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 1.2804,
+          "faq_id": "F860-028",
+          "question": "如何连接接收器？"
+        },
+        {
+          "score": 1.0246,
+          "faq_id": "F860-017",
+          "question": "设备可以创建那些类型的围栏？"
+        },
+        {
+          "score": 0.579795,
+          "faq_id": "F860-030",
+          "question": "是否可以同时创建多个围栏？"
+        },
+        {
+          "score": 0.248333,
+          "faq_id": "F860-011",
+          "question": "产品是什么，能解决什么问题？"
+        },
+        {
+          "score": 0.191656,
+          "faq_id": "F860-024",
+          "question": "设备突然不工作了怎么办？"
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-03T06:22:38.424Z",
+    "userId": "u_boundary",
+    "sessionId": "s_boundary",
+    "message": "会不会乱报",
+    "reply": "并非总是如此，实际性能可能因环境条件和定位精度而异，此功能用于辅助管理，无法保证在每种环境下都能精确触发。",
+    "appContext": {
+      "platform": "ios",
+      "appVersion": "1.0.0",
+      "pageCode": "home"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 1.268,
+      "topDenseScore": 0.9,
+      "lexicalMatch": 1,
+      "topicLexicalMatch": 0,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "positioning_boundary",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 1.268,
+          "faq_id": "F860-034",
+          "question": "围栏是否始终准确触发？"
+        },
+        {
+          "score": 0.853537,
+          "faq_id": "F860-036",
+          "question": "当设备显示信号异常时，我还能使用围栏吗？"
+        },
+        {
+          "score": 0.665,
+          "faq_id": "F860-033",
+          "question": "围栏触发延迟是正常吗？"
+        },
+        {
+          "score": 0.453715,
+          "faq_id": "F860-028",
+          "question": "如何连接接收器？"
+        },
+        {
+          "score": 0.408949,
+          "faq_id": "F860-017",
+          "question": "设备可以创建那些类型的围栏？"
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-03T06:22:38.433Z",
+    "userId": "u_charge",
+    "sessionId": "s_charge",
+    "message": "充不上电",
+    "reply": "【排查步骤：从易到难，1分钟定位】\n1. 优先换充电配件（最常见，占80%）\n   → 操作：用Type-C（U-C类）充电线（C-C类无法充电）+ 5V1A普通充电头（禁用快充头）\n   → 验证：换配件后仍无反应，排除配件问题\n   → 建议：优先使用产品附赠原装充电套装\n\n2. 清洁充电口（易忽略）\n   → 问题：泥、毛、汗渍导致接触不良\n   → 操作：棉签蘸酒精，擦拭充电口金属触点，擦净后重试\n\n3. 检查电池状态（长期闲置易出现）\n   → 问题：电池亏电\"饿死\"或老化\n   → 操作：持续充电10-20分钟，仍无反应则电池报废，需联系售后\n\n【快速总结】换配件→擦充电口→充10-20分钟→无效找售后",
+    "appContext": {
+      "platform": "ios",
+      "appVersion": "1.0.0",
+      "pageCode": "home"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 1.2742,
+      "topDenseScore": 0.91,
+      "lexicalMatch": 1,
+      "topicLexicalMatch": 0,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "charging_issue",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 1.2742,
+          "faq_id": "F860-020",
+          "question": "设备无法充电怎么办？"
+        },
+        {
+          "score": 1.207,
+          "faq_id": "F860-021",
+          "question": "充电时间过长/充不满"
+        },
+        {
+          "score": 0.65,
+          "faq_id": "F860-023",
+          "question": "产品长时间未使用后如何处理？"
+        },
+        {
+          "score": 0.432267,
+          "faq_id": "F860-028",
+          "question": "如何连接接收器？"
+        },
+        {
+          "score": 0.3596,
+          "faq_id": "F860-017",
+          "question": "设备可以创建那些类型的围栏？"
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-03T06:22:38.442Z",
+    "userId": "u_startup",
+    "sessionId": "s_startup",
+    "message": "开不了咋办",
+    "reply": "先充电 30 分钟，再检查充电配件和充电口。",
+    "appContext": {
+      "platform": "ios",
+      "appVersion": "1.0.0",
+      "pageCode": "home"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 1.268,
+      "topDenseScore": 0.9,
+      "lexicalMatch": 1,
+      "topicLexicalMatch": 0,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "startup_issue",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 1.268,
+          "faq_id": "F860-027",
+          "question": "产品无法启动怎么办？"
+        },
+        {
+          "score": 1.1884,
+          "faq_id": "F860-039",
+          "question": "产品无法正常使用怎么办？"
+        },
+        {
+          "score": 0.62,
+          "faq_id": "F860-024",
+          "question": "设备突然不工作了怎么办？"
+        },
+        {
+          "score": 0.3844,
+          "faq_id": "F860-028",
+          "question": "如何连接接收器？"
+        },
+        {
+          "score": 0.3596,
+          "faq_id": "F860-017",
+          "question": "设备可以创建那些类型的围栏？"
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-03T06:22:38.449Z",
+    "userId": "u_false_alarm",
+    "sessionId": "s_false_alarm",
+    "message": "返回后还在报警",
+    "reply": "排查步骤：\n1.信号干扰：在户外开阔区域重新设定安全区域，避开信号干扰源；\n2.信号较弱：在空旷天空场景使用，修剪遮挡物或适当缩小安全区域；\n3.范围过小：安全区域距离太小导致误判，适当增加安全距离。\n\n【快速总结】避开干扰源→避开遮挡物→调节使用范围",
+    "appContext": {
+      "platform": "ios",
+      "appVersion": "1.0.0",
+      "pageCode": "home"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 1.2866,
+      "topDenseScore": 0.93,
+      "lexicalMatch": 1,
+      "topicLexicalMatch": 0.3333,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "false_alarm_in_safe_zone",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 1.2866,
+          "faq_id": "F860-002",
+          "question": "宠物在安全区内却警报/返回后警报继续怎么办？"
+        },
+        {
+          "score": 0.595656,
+          "faq_id": "F860-040",
+          "question": "显示超出安全距离但未受到处罚怎么办？"
+        },
+        {
+          "score": 0.170539,
+          "faq_id": "F860-044",
+          "question": "狗狗需要接受专门训练才能使用围栏吗"
+        },
+        {
+          "score": 0.099474,
+          "faq_id": "F860-042",
+          "question": "产品功能未被激活怎么办？"
+        },
+        {
+          "score": 0.095822,
+          "faq_id": "F860-041",
+          "question": "机器开启时响起声音怎么办？"
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-03T06:22:38.458Z",
+    "userId": "u_loose",
+    "sessionId": "s_loose",
+    "message": "项圈扣环扣不紧怎么办",
+    "reply": "排查步骤：\n1.正确调节：首次使用用笔杆标记所需长度，将颈带收紧至扣环内贴合颈部，剪掉多余部分；\n2.标准佩戴：接收器位于颈部中央，下方与颈部之间保留约一指宽空隙，既牢固又不压迫；3.检查扣环：确保所有扣环均扣紧，无松动情况。",
+    "appContext": {
+      "platform": "ios",
+      "appVersion": "1.0.0",
+      "pageCode": "home"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 1.2928,
+      "topDenseScore": 0.94,
+      "lexicalMatch": 1,
+      "topicLexicalMatch": 0.4,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "collar_fit_issue",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 1.2928,
+          "faq_id": "F860-003",
+          "question": "项圈容易脱落、不够紧怎么办？"
+        },
+        {
+          "score": 0.526,
+          "faq_id": "F860-019",
+          "question": "接收器狗带耳朵断裂"
+        },
+        {
+          "score": 0.157636,
+          "faq_id": "F860-028",
+          "question": "如何连接接收器？"
+        },
+        {
+          "score": 0.136662,
+          "faq_id": "F860-025",
+          "question": "无静音/无震动/静态刺激无效怎么办？"
+        },
+        {
+          "score": 0.104901,
+          "faq_id": "F860-006",
+          "question": "设备伤到狗狗了怎么办？"
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-03T06:22:38.467Z",
+    "userId": "u_anti_loss",
+    "sessionId": "s_anti_loss",
+    "message": "定位准吗",
+    "reply": "GPS围栏为宠物防走失辅助工具，其效果受GPS信号、使用环境、设备佩戴情况等多种因素影响，**无法保证100%防止宠物丢失**，请勿完全依赖本产品，建议配合其他防走失措施使用。",
+    "appContext": {
+      "platform": "ios",
+      "appVersion": "1.0.0",
+      "pageCode": "home"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 1.2804,
+      "topDenseScore": 0.92,
+      "lexicalMatch": 1,
+      "topicLexicalMatch": 0,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "anti_loss_reliability",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 1.2804,
+          "faq_id": "F860-008",
+          "question": "GPS围栏能100%防止宠物丢失吗？"
+        },
+        {
+          "score": 0.977023,
+          "faq_id": "F860-011",
+          "question": "产品是什么，能解决什么问题？"
+        },
+        {
+          "score": 0.436252,
+          "faq_id": "F860-028",
+          "question": "如何连接接收器？"
+        },
+        {
+          "score": 0.424439,
+          "faq_id": "F860-017",
+          "question": "设备可以创建那些类型的围栏？"
+        },
+        {
+          "score": 0.140539,
+          "faq_id": "F860-034",
+          "question": "围栏是否始终准确触发？"
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-03T06:22:38.475Z",
+    "userId": "u_button",
+    "sessionId": "s_button",
+    "message": "按了没反应",
+    "reply": "【按故障类型对应处理】\n1. 按键失灵/没反应（最常见）\n   → 原因：弹片失效、接触不良、进水腐蚀\n   → 操作：\n     ① 若碰过水，晾干后重试\n     ② 轻轻敲击按键，排除触点氧化（可喷电子清洁剂）\n     ③ 无效则内部弹片损坏，需售后\n\n2. 按键卡顿/回弹差\n   → 原因：硅胶老化、有异物、结构卡滞\n   → 操作：\n     ① 牙签清理按键缝隙灰尘/毛发\n     ② 反复按压10-20次测试回弹\n\n3. 按键误触/乱触发\n   → 原因：防水胶挤压、内部短路\n   → 操作：\n     ① 检查硅胶按键是否变形，有无挤压按键\n     ② 进水后出现则需售后检测短路问题\n\n4. 按键松动/异响/脱落\n   → 原因：卡扣损坏、摔撞导致\n   → 操作：\n     ① 轻微松动：避免频繁按压\n     ② 严重松动/脱落：立即停用，联系售后\n\n【总结】清异物→敲按键→查进水→无效找售后",
+    "appContext": {
+      "platform": "ios",
+      "appVersion": "1.0.0",
+      "pageCode": "home"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 1.2866,
+      "topDenseScore": 0.93,
+      "lexicalMatch": 1,
+      "topicLexicalMatch": 0.5,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "button_issue",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 1.2866,
+          "faq_id": "F860-010",
+          "question": "按键卡键/不灵敏/重按/松动/失灵"
+        },
+        {
+          "score": 0.3844,
+          "faq_id": "F860-028",
+          "question": "如何连接接收器？"
+        },
+        {
+          "score": 0.3596,
+          "faq_id": "F860-017",
+          "question": "设备可以创建那些类型的围栏？"
+        },
+        {
+          "score": 0.216741,
+          "faq_id": "F860-024",
+          "question": "设备突然不工作了怎么办？"
+        },
+        {
+          "score": 0.211545,
+          "faq_id": "F860-027",
+          "question": "产品无法启动怎么办？"
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-03T06:22:38.483Z",
+    "userId": "u_dogs",
+    "sessionId": "s_dogs",
+    "message": "攻击性狗狗可以用吗？",
+    "reply": "1.适用于中型犬及大型犬，宠物体重15-110磅，颈围9-26英尺；\n2.适合健康、散养放养、经常出门遛宠的宠物家庭；\n3.不适用于攻击性较强的狗狗，避免影响设备使用或造成损坏。",
+    "appContext": {
+      "platform": "ios",
+      "appVersion": "1.0.0",
+      "pageCode": "home"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 1.2928,
+      "topDenseScore": 0.94,
+      "lexicalMatch": 1,
+      "topicLexicalMatch": 0.6667,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "applicable_dogs",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 1.2928,
+          "faq_id": "F860-012",
+          "question": "产品适用哪些犬类？"
+        },
+        {
+          "score": 0.703856,
+          "faq_id": "F860-015",
+          "question": "产品适合室内使用吗？"
+        },
+        {
+          "score": 0.688872,
+          "faq_id": "F860-013",
+          "question": "产品的使用场景有哪些要求？"
+        },
+        {
+          "score": 0.143563,
+          "faq_id": "F860-005",
+          "question": "振动/静态刺激是否安全？"
+        },
+        {
+          "score": 0.106723,
+          "faq_id": "F860-016",
+          "question": "产品有哪些工作模式？"
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-03T06:22:38.492Z",
+    "userId": "u_modes",
+    "sessionId": "s_modes",
+    "message": "这个设备一共有哪几种模式",
+    "reply": "1.支持训狗模式+围栏模式，\n2.可按需求自由切换所需要的模式。",
+    "appContext": {
+      "platform": "ios",
+      "appVersion": "1.0.0",
+      "pageCode": "home"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 1.2128,
+      "topDenseScore": 0.94,
+      "lexicalMatch": 1,
+      "topicLexicalMatch": 0.2857,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "work_modes",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 1.2128,
+          "faq_id": "F860-016",
+          "question": "产品有哪些工作模式？"
+        },
+        {
+          "score": 0.482579,
+          "faq_id": "F860-028",
+          "question": "如何连接接收器？"
+        },
+        {
+          "score": 0.3596,
+          "faq_id": "F860-017",
+          "question": "设备可以创建那些类型的围栏？"
+        },
+        {
+          "score": 0.223564,
+          "faq_id": "F860-014",
+          "question": "产品有哪些核心特点？"
+        },
+        {
+          "score": 0.190699,
+          "faq_id": "F860-013",
+          "question": "产品的使用场景有哪些要求？"
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-03T06:22:38.501Z",
+    "userId": "u_durability",
+    "sessionId": "s_durability",
+    "message": "这个设备是不是很容易坏",
+    "reply": "【核心原因+预防措施】\n1. 最常见：进水损坏（占60%）\n   → 原因：防水胶圈老化/变形/螺丝松动，狗狗淋雨、玩水佩戴\n   → 预防：\n     ① 每月检查螺丝是否松动（是否完好、缝隙过大）\n     ② 狗狗洗澡、玩水时取下设备\n     ③ 进水后立即关机晾干，不要继续使用\n\n2. 结构强度问题（占20%）\n   → 原因：外壳薄、卡扣弱，狗狗甩头、撞击、啃咬导致开裂\n   → 预防：\n     ① 选合适尺寸项圈，避免过松导致甩撞\n     ② 不让狗狗单独啃咬设备\n     ③ 摔撞后检查外壳是否开裂\n\n3. 电池与元件问题（占15%）\n   → 原因：电池循环寿命短、触点易氧化、按键/马达寿命短\n   → 预防：\n     ① 用原装充电器，避免损伤电池\n     ② 每月清洁金属触点（棉签酒精擦拭）\n     ③ 避免频繁高强度使用按键\n\n4. 环境因素（占5%）\n   → 原因：暴晒（塑料老化）、高温（元件损坏）、潮湿（腐蚀）\n   → 预防：\n     ① 不使用时存放在阴凉干燥处\n     ② 避免长时间暴晒或放高温车内\n\n【总结】防进水→防摔咬→定期清洁→正确存放→用原装配件",
+    "appContext": {
+      "platform": "ios",
+      "appVersion": "1.0.0",
+      "pageCode": "home"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 1.214229,
+      "topDenseScore": 0.94,
+      "lexicalMatch": 1,
+      "topicLexicalMatch": 0.3333,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "product_durability",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 1.214229,
+          "faq_id": "F860-018",
+          "question": "产品耐用性差，使用时间短容易损坏？"
+        },
+        {
+          "score": 1.1264,
+          "faq_id": "F860-045",
+          "question": "如何正确清洁和维护设备"
+        },
+        {
+          "score": 0.201836,
+          "faq_id": "F860-028",
+          "question": "如何连接接收器？"
+        },
+        {
+          "score": 0.134827,
+          "faq_id": "F860-023",
+          "question": "产品长时间未使用后如何处理？"
+        },
+        {
+          "score": 0.126406,
+          "faq_id": "F860-022",
+          "question": "电池不耐用、一天用不到就关机了？"
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-03T06:22:38.508Z",
+    "userId": "u_strap",
+    "sessionId": "s_strap",
+    "message": "狗带不结实",
+    "reply": "原因分析+预防+处理】\n1. 核心断裂原因\n   → ① 材质差：承重≤30KG，狗狗爆冲易断\n   → ② 注塑缺陷：有气泡、缩水，强度不足\n   → ③ 老化变脆：日晒、高低温导致塑料老化\n   → ④ 使用不当：狗狗猛冲、拉扯，超过承重极限\n\n2. 预防措施\n   → ① 不使用时存放在阴凉处，避免暴晒老化\n   → ② 每月检查狗带（是否有裂纹、老化），3个月更换一次\n   → ③ 避免狗狗单独啃咬狗带，减少爆冲行为\n\n【总结】选对承重→定期检查→避免爆冲",
+    "appContext": {
+      "platform": "ios",
+      "appVersion": "1.0.0",
+      "pageCode": "home"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 1.2928,
+      "topDenseScore": 0.94,
+      "lexicalMatch": 1,
+      "topicLexicalMatch": 0.25,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "strap_break_issue",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 1.2928,
+          "faq_id": "F860-019",
+          "question": "接收器狗带耳朵断裂"
+        },
+        {
+          "score": 0.486764,
+          "faq_id": "F860-028",
+          "question": "如何连接接收器？"
+        },
+        {
+          "score": 0.3596,
+          "faq_id": "F860-017",
+          "question": "设备可以创建那些类型的围栏？"
+        },
+        {
+          "score": 0.098025,
+          "faq_id": "F860-003",
+          "question": "项圈容易脱落、不够紧怎么办？"
+        },
+        {
+          "score": 0.093164,
+          "faq_id": "F860-024",
+          "question": "设备突然不工作了怎么办？"
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-03T06:22:38.516Z",
+    "userId": "u_first_use",
+    "sessionId": "s_first_use",
+    "message": "首次使用需要注意什么？",
+    "reply": "1.需在户外开阔、无遮挡区域使用，禁止在室内、树下、屋檐下等GPS信号弱/无信号处使用；\n2.首次使用前在安全环境测试设备反应，帮助宠物适应；\n3.定期检查设备信号及运行状态，确保边界防护功能正常。\n4.训狗模式可在任意环境使用，但在复杂环境遥控距离可能会有所折损。",
+    "appContext": {
+      "platform": "ios",
+      "appVersion": "1.0.0",
+      "pageCode": "home"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 1.268,
+      "topDenseScore": 0.9,
+      "lexicalMatch": 1,
+      "topicLexicalMatch": 0.4286,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "first_use_guidance",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 1.268,
+          "faq_id": "F860-013",
+          "question": "产品的使用场景有哪些要求？"
+        },
+        {
+          "score": 1.2204,
+          "faq_id": "F860-028",
+          "question": "如何连接接收器？"
+        },
+        {
+          "score": 0.609226,
+          "faq_id": "F860-007",
+          "question": "产品未改变狗狗行为怎么办？"
+        },
+        {
+          "score": 0.587068,
+          "faq_id": "F860-015",
+          "question": "产品适合室内使用吗？"
+        },
+        {
+          "score": 0.527,
+          "faq_id": "F860-030",
+          "question": "是否可以同时创建多个围栏？"
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-03T06:22:38.526Z",
+    "userId": "u_gps",
+    "sessionId": "s_gps",
+    "message": "搜不到GPS怎么办",
+    "reply": "排查步骤：\n1. 排查遮挡问题（最主要原因，占70%）\n   → 转移至户外开阔、无遮挡区域，远离室内、树下、高楼等信号遮挡处；\n   → 等待设备搜索信号，确保信号格数达到3格及以上再使用；\n   → 重启设备，重新进行定位操作；\n   → 避免在强电磁干扰区域使用。\n2.排查环境干扰\n   → 干扰源：电磁干扰，金属结构多区域。\n   → 操作：调整围栏活动区域，避开此类区域。\n4. 检查设备状态\n   → 情况1：电量低（信号搜索能力下降）\n     操作：充电30分钟后重试\n   → 情况2：设备摔撞（天线松动、信号模块损坏）\n     操作：若摔撞后出现问题，联系售后检测\n\n【快速总结】清遮挡→避干扰→查电量→无效找售后",
+    "appContext": {
+      "platform": "ios",
+      "appVersion": "1.0.0",
+      "pageCode": "home"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 1.2708,
+      "topDenseScore": 0.94,
+      "lexicalMatch": 1,
+      "topicLexicalMatch": 0,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "gps_signal_issue",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 1.2708,
+          "faq_id": "F860-001",
+          "question": "无法搜索到GPS信号或丢失信号怎么办？"
+        },
+        {
+          "score": 0.65,
+          "faq_id": "F860-036",
+          "question": "当设备显示信号异常时，我还能使用围栏吗？"
+        },
+        {
+          "score": 0.468715,
+          "faq_id": "F860-028",
+          "question": "如何连接接收器？"
+        },
+        {
+          "score": 0.423949,
+          "faq_id": "F860-017",
+          "question": "设备可以创建那些类型的围栏？"
+        },
+        {
+          "score": 0.210058,
+          "faq_id": "F860-039",
+          "question": "产品无法正常使用怎么办？"
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-03T06:22:38.535Z",
+    "userId": "u_battery",
+    "sessionId": "s_battery",
+    "message": "为什么一天就没电了",
+    "reply": "【排查步骤：先判断电池状态，再优化使用】\n1. 优先检查电池本身（占70%）\n   → 情况1：循环寿命耗尽：锂电池循环约300–500次后，容量会降至初始 70% 以下，续航明显缩短。\n     特征：充1小时满电，用1天就没电，可能鼓包\n     操作：更换新电池\n   → 情况2：低温性能差：0℃以下锂电池活性大幅下降，电压骤降、续航显著缩水\n     特征：冬季户外续航明显缩短\n     操作：低温环境减少使用，或给项圈加保暖套\n\n2. 优化充电方式\n   → 正确做法：\n     ① 用原装5V1A充电器，禁用快充\n     ② 电量低于20%充电，充满后30分钟内断电\n     ③ 避免高温/低温环境充电（10-30℃最佳）\n   → 错误做法：\n     ① 未用原装充电器：电压/电流不匹配，导致充不满或过充，加速老化\n     ② 充电环境极端：高温/低温下充电，电池活性差、充入电量少\n     ③ 过充/过放：长期插电不拔、用到彻底关机再充，严重损伤电池寿命\n\n3. 减少耗电过快的习惯\n   → 操作1：不用时关机（持续待机1天耗10%电）\n   → 操作2：降低预警档位（少用高档位电击/震动）\n   → 操作3：信号异常/频繁重连：433MHz/毫米波通信受干扰、距离过远，模块反复搜网、耗电飙升\n   → 操作4：减少频繁越界（每次纠正耗电增加）\n\n【快速总结】查电池是否老化→用原装充电→不用时关机→低温少用",
+    "appContext": {
+      "platform": "ios",
+      "appVersion": "1.0.0",
+      "pageCode": "home"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 1.177,
+      "topDenseScore": 0.85,
+      "lexicalMatch": 1,
+      "topicLexicalMatch": 0.375,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "battery_endurance",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 1.177,
+          "faq_id": "F860-021",
+          "question": "充电时间过长/充不满"
+        },
+        {
+          "score": 0.71,
+          "faq_id": "F860-022",
+          "question": "电池不耐用、一天用不到就关机了？"
+        },
+        {
+          "score": 0.68,
+          "faq_id": "F860-023",
+          "question": "产品长时间未使用后如何处理？"
+        },
+        {
+          "score": 0.660921,
+          "faq_id": "F860-020",
+          "question": "设备无法充电怎么办？"
+        },
+        {
+          "score": 0.529275,
+          "faq_id": "F860-018",
+          "question": "产品耐用性差，使用时间短容易损坏？"
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-03T06:22:38.544Z",
+    "userId": "u_fence_page",
+    "sessionId": "s_fence_page",
+    "message": "围栏页面一直转圈怎么办",
+    "reply": "使用过程中，有一定概率因为网络问题，出现界面加载失败，或显示一直正在连接可通过以下方法解决：\n①点击返回退出到设备主界面，点击设备重新进入围栏界面进行连接。\n②后台退出APP，重启APP进入重新连接。",
+    "appContext": {
+      "platform": "ios",
+      "appVersion": "1.0.0",
+      "pageCode": "home"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 1.2928,
+      "topDenseScore": 0.94,
+      "lexicalMatch": 1,
+      "topicLexicalMatch": 0.25,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "fence_page_load_issue",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 1.2928,
+          "faq_id": "F860-029",
+          "question": "围栏界面连接加载失败怎么处理？"
+        },
+        {
+          "score": 1.2504,
+          "faq_id": "F860-028",
+          "question": "如何连接接收器？"
+        },
+        {
+          "score": 0.527,
+          "faq_id": "F860-030",
+          "question": "是否可以同时创建多个围栏？"
+        },
+        {
+          "score": 0.206656,
+          "faq_id": "F860-024",
+          "question": "设备突然不工作了怎么办？"
+        },
+        {
+          "score": 0.145198,
+          "faq_id": "F860-019",
+          "question": "接收器狗带耳朵断裂"
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-03T06:22:38.553Z",
+    "userId": "u_fence_no_alarm",
+    "sessionId": "s_fence_no_alarm",
+    "message": "围栏明明开着却不报警",
+    "reply": "【排查步骤：从易到难，1分钟定位】\n1. 设备是否已开机，\n2.设备是否已定位，围栏是否已保存并启用。\n3.当前环境是否具备稳定信号，如定位异常或信号不稳定，围栏可能占时无法正常工作。\n\n【快速总结】开机检查→围栏设定检查→信号环境检查",
+    "appContext": {
+      "platform": "ios",
+      "appVersion": "1.0.0",
+      "pageCode": "home"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 1.228911,
+      "topDenseScore": 0.94,
+      "lexicalMatch": 1,
+      "topicLexicalMatch": 0.2222,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "fence_no_alarm",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 1.228911,
+          "faq_id": "F860-032",
+          "question": "围栏已启用，但未触发报警，该怎么办？"
+        },
+        {
+          "score": 0.65,
+          "faq_id": "F860-042",
+          "question": "产品功能未被激活怎么办？"
+        },
+        {
+          "score": 0.65,
+          "faq_id": "F860-026",
+          "question": "预警/纠正功能没反应"
+        },
+        {
+          "score": 0.481727,
+          "faq_id": "F860-028",
+          "question": "如何连接接收器？"
+        },
+        {
+          "score": 0.405314,
+          "faq_id": "F860-017",
+          "question": "设备可以创建那些类型的围栏？"
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-03T06:22:38.561Z",
+    "userId": "u_small_fence",
+    "sessionId": "s_small_fence",
+    "message": "把围栏画小一点会不会更准",
+    "reply": "不推荐绘制小范围，范围太小，报警可能会频繁触发并影响用户体验，可根据环境适当设置围栏范围。",
+    "appContext": {
+      "platform": "ios",
+      "appVersion": "1.0.0",
+      "pageCode": "home"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 1.2653,
+      "topDenseScore": 0.94,
+      "lexicalMatch": 1,
+      "topicLexicalMatch": 0.1818,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "small_fence_issue",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 1.2653,
+          "faq_id": "F860-035",
+          "question": "绘制小范围围栏，围栏效果是否会更好？"
+        },
+        {
+          "score": 1.238,
+          "faq_id": "F860-034",
+          "question": "围栏是否始终准确触发？"
+        },
+        {
+          "score": 0.545244,
+          "faq_id": "F860-036",
+          "question": "当设备显示信号异常时，我还能使用围栏吗？"
+        },
+        {
+          "score": 0.428142,
+          "faq_id": "F860-028",
+          "question": "如何连接接收器？"
+        },
+        {
+          "score": 0.415611,
+          "faq_id": "F860-017",
+          "question": "设备可以创建那些类型的围栏？"
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-03T06:22:38.570Z",
+    "userId": "u_fence_disabled",
+    "sessionId": "s_fence_disabled",
+    "message": "把围栏关掉后报警还会不会触发",
+    "reply": "关闭围栏后，设备将不在提供围栏相关报警或触发功能，其他设备功能不受影响。",
+    "appContext": {
+      "platform": "ios",
+      "appVersion": "1.0.0",
+      "pageCode": "home"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 1.2928,
+      "topDenseScore": 0.94,
+      "lexicalMatch": 1,
+      "topicLexicalMatch": 0.2308,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "fence_disabled_effect",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 1.2928,
+          "faq_id": "F860-038",
+          "question": "关闭围栏后会发生什么？"
+        },
+        {
+          "score": 0.446527,
+          "faq_id": "F860-028",
+          "question": "如何连接接收器？"
+        },
+        {
+          "score": 0.389344,
+          "faq_id": "F860-017",
+          "question": "设备可以创建那些类型的围栏？"
+        },
+        {
+          "score": 0.173987,
+          "faq_id": "F860-035",
+          "question": "绘制小范围围栏，围栏效果是否会更好？"
+        },
+        {
+          "score": 0.120211,
+          "faq_id": "F860-034",
+          "question": "围栏是否始终准确触发？"
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-03T06:22:38.578Z",
+    "userId": "u_startup_beep",
+    "sessionId": "s_startup_beep",
+    "message": "开机一直响",
+    "reply": "排查步骤：\n1.超出安全范围：设备在初始安全范围外开机，GPS图标闪烁并播放3分钟提示音，返回安全半径或重新调整中心点/安全半径即可取消；\n2.信号不足：开机初期卫星数量少定位不准，信号达到4-5格时会自动取消提示音。",
+    "appContext": {
+      "platform": "ios",
+      "appVersion": "1.0.0",
+      "pageCode": "home"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 0.71,
+      "topDenseScore": 0,
+      "lexicalMatch": 1,
+      "topicLexicalMatch": 0.25,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "startup_beep_issue",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 0.71,
+          "faq_id": "F860-041",
+          "question": "机器开启时响起声音怎么办？"
+        },
+        {
+          "score": 0.65,
+          "faq_id": "F860-001",
+          "question": "无法搜索到GPS信号或丢失信号怎么办？"
+        },
+        {
+          "score": 0.516248,
+          "faq_id": "F860-028",
+          "question": "如何连接接收器？"
+        },
+        {
+          "score": 0.3896,
+          "faq_id": "F860-017",
+          "question": "设备可以创建那些类型的围栏？"
+        },
+        {
+          "score": 0.198385,
+          "faq_id": "F860-039",
+          "question": "产品无法正常使用怎么办？"
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-03T06:22:38.589Z",
+    "userId": "u_inactive_feature",
+    "sessionId": "s_inactive_feature",
+    "message": "宠物出界后设备怎么一点动作都没有",
+    "reply": "排查步骤：\n1.宠物状态：宠物超出安全范围但未移动时，设备仅亮红灯不触发警报，检测到奔跑会立即触发；\n2.信号要求：GPS信号强度低于3格时，产品将自动关闭警报功能，需等待信号恢复后使用。",
+    "appContext": {
+      "platform": "ios",
+      "appVersion": "1.0.0",
+      "pageCode": "home"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 0.71,
+      "topDenseScore": 0,
+      "lexicalMatch": 1,
+      "topicLexicalMatch": 0,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "feature_not_activated",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 0.71,
+          "faq_id": "F860-042",
+          "question": "产品功能未被激活怎么办？"
+        },
+        {
+          "score": 0.68,
+          "faq_id": "F860-032",
+          "question": "围栏已启用，但未触发报警，该怎么办？"
+        },
+        {
+          "score": 0.527701,
+          "faq_id": "F860-028",
+          "question": "如何连接接收器？"
+        },
+        {
+          "score": 0.405314,
+          "faq_id": "F860-017",
+          "question": "设备可以创建那些类型的围栏？"
+        },
+        {
+          "score": 0.160097,
+          "faq_id": "F860-025",
+          "question": "无静音/无震动/静态刺激无效怎么办？"
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-03T06:22:38.598Z",
+    "userId": "u_missing_accessory",
+    "sessionId": "s_missing_accessory",
+    "message": "收到货发现少了配件怎么办",
+    "reply": "因运输过程或包装不当导致的配件缺失/损坏，请提供清晰的照片或视频证据，联系客服启动维修/退货/补发流程，我们将快速为您处理。",
+    "appContext": {
+      "platform": "ios",
+      "appVersion": "1.0.0",
+      "pageCode": "home"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 1.2928,
+      "topDenseScore": 0.94,
+      "lexicalMatch": 1,
+      "topicLexicalMatch": 0.1111,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "accessory_damage_issue",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 1.2928,
+          "faq_id": "F860-043",
+          "question": "缺少配件、配件损坏怎么办？"
+        },
+        {
+          "score": 0.3844,
+          "faq_id": "F860-028",
+          "question": "如何连接接收器？"
+        },
+        {
+          "score": 0.3596,
+          "faq_id": "F860-017",
+          "question": "设备可以创建那些类型的围栏？"
+        },
+        {
+          "score": 0.157317,
+          "faq_id": "F860-027",
+          "question": "产品无法启动怎么办？"
+        },
+        {
+          "score": 0.12846,
+          "faq_id": "F860-020",
+          "question": "设备无法充电怎么办？"
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-03T06:22:38.607Z",
+    "userId": "u_stimulus_invalid",
+    "sessionId": "s_stimulus_invalid",
+    "message": "震动没反应怎么办",
+    "reply": "【排查步骤：先确认基础状态】\n1.静电模式功能被锁，选择静电模式后，按锁键解锁或锁定。\n2.电量过低：电池电量低导致输出功率不足，及时给设备充电。\n3.接触不良：检查项圈接触点是否与狗狗皮肤紧密接触；\n4.强度不足：调节设备增加刺激强度等级；\n【快速总结】设备充电→调节接触点→调档位→无效找售后",
+    "appContext": {
+      "platform": "ios",
+      "appVersion": "1.0.0",
+      "pageCode": "home"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 1.2928,
+      "topDenseScore": 0.94,
+      "lexicalMatch": 1,
+      "topicLexicalMatch": 0.2,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "stimulation_output_issue",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 1.2928,
+          "faq_id": "F860-025",
+          "question": "无静音/无震动/静态刺激无效怎么办？"
+        },
+        {
+          "score": 0.68,
+          "faq_id": "F860-026",
+          "question": "预警/纠正功能没反应"
+        },
+        {
+          "score": 0.3844,
+          "faq_id": "F860-028",
+          "question": "如何连接接收器？"
+        },
+        {
+          "score": 0.3596,
+          "faq_id": "F860-017",
+          "question": "设备可以创建那些类型的围栏？"
+        },
+        {
+          "score": 0.290494,
+          "faq_id": "F860-024",
+          "question": "设备突然不工作了怎么办？"
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-03T06:22:38.615Z",
+    "userId": "u_multi_fence",
+    "sessionId": "s_multi_fence",
+    "message": "能不能一次性建多个围栏",
+    "reply": "可以同时创建多个围栏，但一次只能启用一个无线围栏，若要启用另一个围栏，在围栏列表中切换至该围栏，若要更改围栏范围或形状，编辑围栏并保存。",
+    "appContext": {
+      "platform": "ios",
+      "appVersion": "1.0.0",
+      "pageCode": "home"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 1.2928,
+      "topDenseScore": 0.94,
+      "lexicalMatch": 1,
+      "topicLexicalMatch": 0.5,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "multiple_fences",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 1.2928,
+          "faq_id": "F860-030",
+          "question": "是否可以同时创建多个围栏？"
+        },
+        {
+          "score": 1.2628,
+          "faq_id": "F860-031",
+          "question": "围栏创建后可以修改吗？"
+        },
+        {
+          "score": 0.131233,
+          "faq_id": "F860-017",
+          "question": "设备可以创建那些类型的围栏？"
+        },
+        {
+          "score": 0.128965,
+          "faq_id": "F860-028",
+          "question": "如何连接接收器？"
+        },
+        {
+          "score": 0.127494,
+          "faq_id": "F860-037",
+          "question": "创建围栏时，设备是否需要宠物佩戴？"
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-03T06:22:38.624Z",
+    "userId": "u_edit_fence",
+    "sessionId": "s_edit_fence",
+    "message": "围栏怎么编辑",
+    "reply": "可以，在无线围栏设置页面，在地图上调整围栏形状或边界，然后保存应用修改。",
+    "appContext": {
+      "platform": "ios",
+      "appVersion": "1.0.0",
+      "pageCode": "home"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 1.2928,
+      "topDenseScore": 0.94,
+      "lexicalMatch": 1,
+      "topicLexicalMatch": 0.3333,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "edit_fence",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 1.2928,
+          "faq_id": "F860-031",
+          "question": "围栏创建后可以修改吗？"
+        },
+        {
+          "score": 1.2628,
+          "faq_id": "F860-030",
+          "question": "是否可以同时创建多个围栏？"
+        },
+        {
+          "score": 0.52548,
+          "faq_id": "F860-028",
+          "question": "如何连接接收器？"
+        },
+        {
+          "score": 0.448101,
+          "faq_id": "F860-017",
+          "question": "设备可以创建那些类型的围栏？"
+        },
+        {
+          "score": 0.142203,
+          "faq_id": "F860-032",
+          "question": "围栏已启用，但未触发报警，该怎么办？"
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-03T06:22:38.633Z",
+    "userId": "u_fence_delay",
+    "sessionId": "s_fence_delay",
+    "message": "为什么出界后不是立刻触发",
+    "reply": "是的，无线围栏基于卫星定位，触发可能受环境，信号质量和宠物移动速度影响，在某些环境下可能会出现延迟。",
+    "appContext": {
+      "platform": "ios",
+      "appVersion": "1.0.0",
+      "pageCode": "home"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 1.2928,
+      "topDenseScore": 0.94,
+      "lexicalMatch": 1,
+      "topicLexicalMatch": 0.0909,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "fence_trigger_delay",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 1.2928,
+          "faq_id": "F860-033",
+          "question": "围栏触发延迟是正常吗？"
+        },
+        {
+          "score": 1.238,
+          "faq_id": "F860-034",
+          "question": "围栏是否始终准确触发？"
+        },
+        {
+          "score": 0.613537,
+          "faq_id": "F860-036",
+          "question": "当设备显示信号异常时，我还能使用围栏吗？"
+        },
+        {
+          "score": 0.17274,
+          "faq_id": "F860-026",
+          "question": "预警/纠正功能没反应"
+        },
+        {
+          "score": 0.166395,
+          "faq_id": "F860-032",
+          "question": "围栏已启用，但未触发报警，该怎么办？"
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-03T06:22:38.643Z",
+    "userId": "u_fence_wear",
+    "sessionId": "s_fence_wear",
+    "message": "画围栏的时候设备一定要先戴上吗",
+    "reply": "不需要，创建围栏时，只要设备处于开机状态并已获取了定位信息，即可在地图上绘制围栏，在使用围栏时，请确保设备已正确安装于宠物身上且正常运行。",
+    "appContext": {
+      "platform": "ios",
+      "appVersion": "1.0.0",
+      "pageCode": "home"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 1.2928,
+      "topDenseScore": 0.94,
+      "lexicalMatch": 1,
+      "topicLexicalMatch": 0.0909,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "fence_creation_without_wear",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 1.2928,
+          "faq_id": "F860-037",
+          "question": "创建围栏时，设备是否需要宠物佩戴？"
+        },
+        {
+          "score": 1.2504,
+          "faq_id": "F860-028",
+          "question": "如何连接接收器？"
+        },
+        {
+          "score": 0.557,
+          "faq_id": "F860-030",
+          "question": "是否可以同时创建多个围栏？"
+        },
+        {
+          "score": 0.377626,
+          "faq_id": "F860-017",
+          "question": "设备可以创建那些类型的围栏？"
+        },
+        {
+          "score": 0.206656,
+          "faq_id": "F860-024",
+          "question": "设备突然不工作了怎么办？"
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-03T06:22:38.651Z",
+    "userId": "u_only_alarm",
+    "sessionId": "s_only_alarm",
+    "message": "只报警不惩罚怎么办",
+    "reply": "排查步骤：\n1.信号问题：设备处于信号弱/干扰状态，GPS数据偏差导致误报，检查使用位置信号情况，避开干扰区域；\n2.范围调整：重新调节边界范围，避开信号较弱区域使用；\n3.重启设备：重新定位中心点，校准围栏范围。",
+    "appContext": {
+      "platform": "ios",
+      "appVersion": "1.0.0",
+      "pageCode": "home"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 1.2928,
+      "topDenseScore": 0.94,
+      "lexicalMatch": 1,
+      "topicLexicalMatch": 0.1667,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "alarm_without_penalty",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 1.2928,
+          "faq_id": "F860-040",
+          "question": "显示超出安全距离但未受到处罚怎么办？"
+        },
+        {
+          "score": 1.208,
+          "faq_id": "F860-034",
+          "question": "围栏是否始终准确触发？"
+        },
+        {
+          "score": 0.545244,
+          "faq_id": "F860-036",
+          "question": "当设备显示信号异常时，我还能使用围栏吗？"
+        },
+        {
+          "score": 0.197871,
+          "faq_id": "F860-042",
+          "question": "产品功能未被激活怎么办？"
+        },
+        {
+          "score": 0.166395,
+          "faq_id": "F860-032",
+          "question": "围栏已启用，但未触发报警，该怎么办？"
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-03T06:22:38.660Z",
+    "userId": "u_indoor_use",
+    "sessionId": "s_indoor_use",
+    "message": "在家里室内能直接用围栏吗",
+    "reply": "围栏依赖卫星定位，适用于开阔的户外区域，在室内或信号严重阻隔地方，围栏可能无法正常工作",
+    "appContext": {
+      "platform": "ios",
+      "appVersion": "1.0.0",
+      "pageCode": "home"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 1.2928,
+      "topDenseScore": 0.94,
+      "lexicalMatch": 1,
+      "topicLexicalMatch": 0.3,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "indoor_usage_limit",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 1.2928,
+          "faq_id": "F860-015",
+          "question": "产品适合室内使用吗？"
+        },
+        {
+          "score": 1.238,
+          "faq_id": "F860-013",
+          "question": "产品的使用场景有哪些要求？"
+        },
+        {
+          "score": 0.241721,
+          "faq_id": "F860-012",
+          "question": "产品适用哪些犬类？"
+        },
+        {
+          "score": 0.180546,
+          "faq_id": "F860-039",
+          "question": "产品无法正常使用怎么办？"
+        },
+        {
+          "score": 0.122262,
+          "faq_id": "F860-036",
+          "question": "当设备显示信号异常时，我还能使用围栏吗？"
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-03T06:22:38.669Z",
+    "userId": "u2",
+    "sessionId": "s2",
+    "message": "这个设备充不进电怎么办？",
+    "reply": "【排查步骤：从易到难，1分钟定位】\n1. 优先换充电配件（最常见，占80%）\n   → 操作：用Type-C（U-C类）充电线（C-C类无法充电）+ 5V1A普通充电头（禁用快充头）\n   → 验证：换配件后仍无反应，排除配件问题\n   → 建议：优先使用产品附赠原装充电套装\n\n2. 清洁充电口（易忽略）\n   → 问题：泥、毛、汗渍导致接触不良\n   → 操作：棉签蘸酒精，擦拭充电口金属触点，擦净后重试\n\n3. 检查电池状态（长期闲置易出现）\n   → 问题：电池亏电\"饿死\"或老化\n   → 操作：持续充电10-20分钟，仍无反应则电池报废，需联系售后\n\n【快速总结】换配件→擦充电口→充10-20分钟→无效找售后",
+    "appContext": {
+      "platform": "ios",
+      "appVersion": "1.0.0",
+      "pageCode": "home"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 1.2742,
+      "topDenseScore": 0.91,
+      "lexicalMatch": 1,
+      "topicLexicalMatch": 0.25,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "charging_issue",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 1.2742,
+          "faq_id": "F860-020",
+          "question": "设备无法充电怎么办？"
+        },
+        {
+          "score": 1.207,
+          "faq_id": "F860-021",
+          "question": "充电时间过长/充不满"
+        },
+        {
+          "score": 0.65,
+          "faq_id": "F860-023",
+          "question": "产品长时间未使用后如何处理？"
+        },
+        {
+          "score": 0.447267,
+          "faq_id": "F860-028",
+          "question": "如何连接接收器？"
+        },
+        {
+          "score": 0.3596,
+          "faq_id": "F860-017",
+          "question": "设备可以创建那些类型的围栏？"
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-03T06:22:39.132Z",
+    "userId": "u4",
+    "sessionId": "s4",
+    "message": "请说一下定价规则",
+    "reply": "非常抱歉，当前这个问题我暂时无法直接解答。建议你直接联系购买产品的平台客服，他们会为你提供更精准的售后支持，帮你尽快解决问题。",
+    "appContext": {
+      "platform": "ios",
+      "appVersion": "1.0.0",
+      "pageCode": "home"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 0.3844,
+      "topDenseScore": 0.62,
+      "lexicalMatch": 0,
+      "topicLexicalMatch": 0,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 0.3844,
+          "faq_id": "F860-028",
+          "question": "如何连接接收器？"
+        },
+        {
+          "score": 0.3596,
+          "faq_id": "F860-017",
+          "question": "设备可以创建那些类型的围栏？"
+        },
+        {
+          "score": 0.191429,
+          "faq_id": "F860-018",
+          "question": "产品耐用性差，使用时间短容易损坏？"
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-03T06:22:39.141Z",
+    "userId": "u4",
+    "sessionId": "s4",
+    "message": "稍等一下",
+    "reply": "非常抱歉，当前这个问题我暂时无法直接解答。建议你直接联系购买产品的平台客服，他们会为你提供更精准的售后支持，帮你尽快解决问题。",
+    "appContext": {
+      "platform": "ios",
+      "appVersion": "1.0.0",
+      "pageCode": "home"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 0.3844,
+      "topDenseScore": 0.62,
+      "lexicalMatch": 0,
+      "topicLexicalMatch": 0,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 0.3844,
+          "faq_id": "F860-028",
+          "question": "如何连接接收器？"
+        },
+        {
+          "score": 0.3596,
+          "faq_id": "F860-017",
+          "question": "设备可以创建那些类型的围栏？"
+        },
+        {
+          "score": 0.233333,
+          "faq_id": "F860-018",
+          "question": "产品耐用性差，使用时间短容易损坏？"
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-03T06:22:39.606Z",
+    "userId": "u_stale_intent",
+    "sessionId": "s_stale_intent",
+    "message": "产品优势是什么？",
+    "reply": "1. 无需埋线，轻松安装\n采用无线技术，无需复杂施工或地面埋线，简单设置即可在手机APP中定义围栏范围。\n2. 智能围栏，随时随地自定义\n通过手机APP可自由设定围栏的形状和大小，支持圆形、多边形以及自定义绘制等多种模式，灵活适应各种环境。\n3. 两种防护模式，简单选择\nStay Inside（不可越界）：确保您的宠物只在您设定的边界内活动。\nKeep Outside（不可靠近）：防止您的宠物进入设定的禁区。\n4. 实时越界提醒，多重安全反馈\n项圈会在宠物接近或越过围栏边界时，通过声音、震动或静电提醒宠物，引导其返回安全区域，有效预防走失和危险。\n5. 手动训练模式\n提供手动触发的训练模式，允许宠物主通过APP直接控制警告信号（声音、震动或静电），以增强训练效果或即时纠正宠物行为。\n6. 离线自动执行，持续守护\n设置完成后，即使手机与项圈蓝牙断开，设备依然能自主执行围栏功能，确保宠物安全。\n7. 运动追踪，健康管理\n结合运动值与活动距离监控，全面了解宠物的日常活动与健康状态，更好地把握宠物的生活习惯。",
+    "appContext": {
+      "platform": "ios",
+      "appVersion": "1.0.0",
+      "pageCode": "home"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 1.0148,
+      "topDenseScore": 0.63,
+      "lexicalMatch": 1,
+      "topicLexicalMatch": 0.5,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "product_advantages",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 1.0148,
+          "faq_id": "F860-011",
+          "question": "产品是什么，能解决什么问题？"
+        },
+        {
+          "score": 0.786051,
+          "faq_id": "F860-014",
+          "question": "产品有哪些核心特点？"
+        },
+        {
+          "score": 0.62,
+          "faq_id": "F860-017",
+          "question": "设备可以创建那些类型的围栏？"
+        },
+        {
+          "score": 0.497295,
+          "faq_id": "F860-028",
+          "question": "如何连接接收器？"
+        },
+        {
+          "score": 0.346624,
+          "faq_id": "F860-044",
+          "question": "狗狗需要接受专门训练才能使用围栏吗"
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-03T06:22:51.510Z",
+    "userId": "u_fix_4",
+    "sessionId": "s_fix_4",
+    "message": "只报警不惩罚怎么办",
+    "reply": "排查步骤：\n1.信号问题：设备处于信号弱/干扰状态，GPS数据偏差导致误报，检查使用位置信号情况，避开干扰区域；\n2.范围调整：重新调节边界范围，避开信号较弱区域使用；\n3.重启设备：重新定位中心点，校准围栏范围。",
+    "appContext": {
+      "platform": "web",
+      "appVersion": "1.0.0",
+      "pageCode": "home"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 1.229144,
+      "topDenseScore": 0.8534578,
+      "lexicalMatch": 1,
+      "topicLexicalMatch": 0.1667,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "alarm_without_penalty",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 1.229144,
+          "faq_id": "F860-040",
+          "question": "显示超出安全距离但未受到处罚怎么办？"
+        },
+        {
+          "score": 1.174787,
+          "faq_id": "F860-034",
+          "question": "围栏是否始终准确触发？"
+        },
+        {
+          "score": 0.646084,
+          "faq_id": "F860-032",
+          "question": "围栏已启用，但未触发报警，该怎么办？"
+        },
+        {
+          "score": 0.562683,
+          "faq_id": "F860-035",
+          "question": "绘制小范围围栏，围栏效果是否会更好？"
+        },
+        {
+          "score": 0.55532,
+          "faq_id": "F860-033",
+          "question": "围栏触发延迟是正常吗？"
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-03T06:22:51.543Z",
+    "userId": "u_fix_2",
+    "sessionId": "s_fix_2",
+    "message": "围栏明明开着却不报警",
+    "reply": "【排查步骤：从易到难，1分钟定位】\n1. 设备是否已开机，\n2.设备是否已定位，围栏是否已保存并启用。\n3.当前环境是否具备稳定信号，如定位异常或信号不稳定，围栏可能占时无法正常工作。\n\n【快速总结】开机检查→围栏设定检查→信号环境检查",
+    "appContext": {
+      "platform": "web",
+      "appVersion": "1.0.0",
+      "pageCode": "home"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 1.270983,
+      "topDenseScore": 0.90481055,
+      "lexicalMatch": 1,
+      "topicLexicalMatch": 0.2222,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "fence_no_alarm",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 1.270983,
+          "faq_id": "F860-032",
+          "question": "围栏已启用，但未触发报警，该怎么办？"
+        },
+        {
+          "score": 1.139751,
+          "faq_id": "F860-026",
+          "question": "预警/纠正功能没反应"
+        },
+        {
+          "score": 1.09855,
+          "faq_id": "F860-042",
+          "question": "产品功能未被激活怎么办？"
+        },
+        {
+          "score": 0.71146,
+          "faq_id": "F860-024",
+          "question": "设备突然不工作了怎么办？"
+        },
+        {
+          "score": 0.604241,
+          "faq_id": "F860-040",
+          "question": "显示超出安全距离但未受到处罚怎么办？"
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-03T06:22:51.617Z",
+    "userId": "u_fix_1",
+    "sessionId": "s_fix_1",
+    "message": "怎么开启电子围栏告警？",
+    "reply": "地图上当前支持围栏类型包括圆形，多边形和自由手绘，根据环境选择最适合的形状。",
+    "appContext": {
+      "platform": "web",
+      "appVersion": "1.0.0",
+      "pageCode": "home"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 1.171492,
+      "topDenseScore": 0.84111667,
+      "lexicalMatch": 1,
+      "topicLexicalMatch": 0,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "fence_alert_setup",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 1.171492,
+          "faq_id": "F860-017",
+          "question": "设备可以创建那些类型的围栏？"
+        },
+        {
+          "score": 1.158996,
+          "faq_id": "F860-028",
+          "question": "如何连接接收器？"
+        },
+        {
+          "score": 0.700213,
+          "faq_id": "F860-011",
+          "question": "产品是什么，能解决什么问题？"
+        },
+        {
+          "score": 0.59064,
+          "faq_id": "F860-030",
+          "question": "是否可以同时创建多个围栏？"
+        },
+        {
+          "score": 0.580008,
+          "faq_id": "F860-037",
+          "question": "创建围栏时，设备是否需要宠物佩戴？"
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-03T06:22:52.243Z",
+    "userId": "u_fix_3",
+    "sessionId": "s_fix_3",
+    "message": "围栏报警有延迟正常吗",
+    "reply": "是的，无线围栏基于卫星定位，触发可能受环境，信号质量和宠物移动速度影响，在某些环境下可能会出现延迟。",
+    "appContext": {
+      "platform": "web",
+      "appVersion": "1.0.0",
+      "pageCode": "home"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 1.285615,
+      "topDenseScore": 0.9284109,
+      "lexicalMatch": 1,
+      "topicLexicalMatch": 0.375,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "fence_trigger_delay",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 1.285615,
+          "faq_id": "F860-033",
+          "question": "围栏触发延迟是正常吗？"
+        },
+        {
+          "score": 1.204787,
+          "faq_id": "F860-034",
+          "question": "围栏是否始终准确触发？"
+        },
+        {
+          "score": 0.646084,
+          "faq_id": "F860-032",
+          "question": "围栏已启用，但未触发报警，该怎么办？"
+        },
+        {
+          "score": 0.592683,
+          "faq_id": "F860-035",
+          "question": "绘制小范围围栏，围栏效果是否会更好？"
+        },
+        {
+          "score": 0.546407,
+          "faq_id": "F860-038",
+          "question": "关闭围栏后会发生什么？"
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-03T06:23:11.090Z",
+    "userId": "u1",
+    "sessionId": "s1",
+    "message": "产品优势是什么？",
+    "reply": "1. 无需埋线，轻松安装\n采用无线技术，无需复杂施工或地面埋线，简单设置即可在手机APP中定义围栏范围。\n2. 智能围栏，随时随地自定义\n通过手机APP可自由设定围栏的形状和大小，支持圆形、多边形以及自定义绘制等多种模式，灵活适应各种环境。\n3. 两种防护模式，简单选择\nStay Inside（不可越界）：确保您的宠物只在您设定的边界内活动。\nKeep Outside（不可靠近）：防止您的宠物进入设定的禁区。\n4. 实时越界提醒，多重安全反馈\n项圈会在宠物接近或越过围栏边界时，通过声音、震动或静电提醒宠物，引导其返回安全区域，有效预防走失和危险。\n5. 手动训练模式\n提供手动触发的训练模式，允许宠物主通过APP直接控制警告信号（声音、震动或静电），以增强训练效果或即时纠正宠物行为。\n6. 离线自动执行，持续守护\n设置完成后，即使手机与项圈蓝牙断开，设备依然能自主执行围栏功能，确保宠物安全。\n7. 运动追踪，健康管理\n结合运动值与活动距离监控，全面了解宠物的日常活动与健康状态，更好地把握宠物的生活习惯。",
+    "appContext": {
+      "platform": "ios",
+      "appVersion": "1.0.0",
+      "pageCode": "home"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 1.2928,
+      "topDenseScore": 0.94,
+      "lexicalMatch": 1,
+      "topicLexicalMatch": 0,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "product_advantages",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 1.2928,
+          "faq_id": "F860-014",
+          "question": "产品有哪些核心特点？"
+        },
+        {
+          "score": 1.06414,
+          "faq_id": "F860-011",
+          "question": "产品是什么，能解决什么问题？"
+        },
+        {
+          "score": 0.9946,
+          "faq_id": "F860-017",
+          "question": "设备可以创建那些类型的围栏？"
+        },
+        {
+          "score": 0.495397,
+          "faq_id": "F860-028",
+          "question": "如何连接接收器？"
+        },
+        {
+          "score": 0.346624,
+          "faq_id": "F860-044",
+          "question": "狗狗需要接受专门训练才能使用围栏吗"
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-03T06:23:11.133Z",
+    "userId": "u_scene",
+    "sessionId": "s_scene",
+    "message": "在哪里可以用？",
+    "reply": "1.需在户外开阔、无遮挡区域使用，禁止在室内、树下、屋檐下等GPS信号弱/无信号处使用；\n2.首次使用前在安全环境测试设备反应，帮助宠物适应；\n3.定期检查设备信号及运行状态，确保边界防护功能正常。\n4.训狗模式可在任意环境使用，但在复杂环境遥控距离可能会有所折损。",
+    "appContext": {
+      "platform": "ios",
+      "appVersion": "1.0.0",
+      "pageCode": "home"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 1.268,
+      "topDenseScore": 0.9,
+      "lexicalMatch": 1,
+      "topicLexicalMatch": 0,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "usage_scenarios",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 1.268,
+          "faq_id": "F860-013",
+          "question": "产品的使用场景有哪些要求？"
+        },
+        {
+          "score": 1.2008,
+          "faq_id": "F860-015",
+          "question": "产品适合室内使用吗？"
+        },
+        {
+          "score": 0.65,
+          "faq_id": "F860-012",
+          "question": "产品适用哪些犬类？"
+        },
+        {
+          "score": 0.458879,
+          "faq_id": "F860-028",
+          "question": "如何连接接收器？"
+        },
+        {
+          "score": 0.454216,
+          "faq_id": "F860-017",
+          "question": "设备可以创建那些类型的围栏？"
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-03T06:23:11.148Z",
+    "userId": "u_effect",
+    "sessionId": "s_effect",
+    "message": "没效果怎么办",
+    "reply": "排查步骤：\n1.本产品是训练辅助工具，需用户与宠物互动训练才能达到预期效果；\n2.专业指导：自行训练效果不佳可寻求专业训犬师的训练指导；\n3.科学训练：每次训练时长10-15分钟，保持紧凑高效，训练效果更佳。",
+    "appContext": {
+      "platform": "ios",
+      "appVersion": "1.0.0",
+      "pageCode": "home"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 1.2742,
+      "topDenseScore": 0.91,
+      "lexicalMatch": 1,
+      "topicLexicalMatch": 0.3333,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "training_effectiveness",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 1.2742,
+          "faq_id": "F860-007",
+          "question": "产品未改变狗狗行为怎么办？"
+        },
+        {
+          "score": 0.875107,
+          "faq_id": "F860-044",
+          "question": "狗狗需要接受专门训练才能使用围栏吗"
+        },
+        {
+          "score": 0.463796,
+          "faq_id": "F860-028",
+          "question": "如何连接接收器？"
+        },
+        {
+          "score": 0.416737,
+          "faq_id": "F860-017",
+          "question": "设备可以创建那些类型的围栏？"
+        },
+        {
+          "score": 0.366,
+          "faq_id": "F860-004",
+          "question": "初期有效后续不起作用怎么办？"
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-03T06:23:11.159Z",
+    "userId": "u_usage",
+    "sessionId": "s_usage",
+    "message": "第一次咋弄",
+    "reply": "【排查步骤：先确认连接流程正确】\n检查连接方式（最常见错误）\n① 接收器：在关闭状态下，短按开机。\n② 打开应用APP：点击设置打开蓝牙，点击添加设备，选择F860设备，添加连接。\n③ 连接成功：主页显示F860设备，点击设备进入围栏设备主页。\n④ 创建围栏：在围栏设置页面，点击“创建围栏”进入绘制界面。\n⑤ 绘制边界：在地图上，点击或拖动点来绘制边界，根据需要选择圆形、多边形或手绘模式，对于多边形围栏，您最多可以设置10个点。绘制完成后，系统会自动将该形状闭合为一个封闭区域。\n⑥ 保存并启用围栏：绘制完成后，点击“保存”，围栏成功保存后，您可以立即启用它。\n\n【快速总结】开机→连接APP→绘制围栏→启用围栏",
+    "appContext": {
+      "platform": "ios",
+      "appVersion": "1.0.0",
+      "pageCode": "home"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 1.2804,
+      "topDenseScore": 0.92,
+      "lexicalMatch": 1,
+      "topicLexicalMatch": 0,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "product_usage",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 1.2804,
+          "faq_id": "F860-028",
+          "question": "如何连接接收器？"
+        },
+        {
+          "score": 1.2328,
+          "faq_id": "F860-030",
+          "question": "是否可以同时创建多个围栏？"
+        },
+        {
+          "score": 1.0396,
+          "faq_id": "F860-017",
+          "question": "设备可以创建那些类型的围栏？"
+        },
+        {
+          "score": 0.351342,
+          "faq_id": "F860-044",
+          "question": "狗狗需要接受专门训练才能使用围栏吗"
+        },
+        {
+          "score": 0.338529,
+          "faq_id": "F860-031",
+          "question": "围栏创建后可以修改吗？"
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-03T06:23:11.170Z",
+    "userId": "u_fence_alert_setup",
+    "sessionId": "s_fence_alert_setup",
+    "message": "怎么开启电子围栏告警？",
+    "reply": "【排查步骤：先确认连接流程正确】\n检查连接方式（最常见错误）\n① 接收器：在关闭状态下，短按开机。\n② 打开应用APP：点击设置打开蓝牙，点击添加设备，选择F860设备，添加连接。\n③ 连接成功：主页显示F860设备，点击设备进入围栏设备主页。\n④ 创建围栏：在围栏设置页面，点击“创建围栏”进入绘制界面。\n⑤ 绘制边界：在地图上，点击或拖动点来绘制边界，根据需要选择圆形、多边形或手绘模式，对于多边形围栏，您最多可以设置10个点。绘制完成后，系统会自动将该形状闭合为一个封闭区域。\n⑥ 保存并启用围栏：绘制完成后，点击“保存”，围栏成功保存后，您可以立即启用它。\n\n【快速总结】开机→连接APP→绘制围栏→启用围栏",
+    "appContext": {
+      "platform": "ios",
+      "appVersion": "1.0.0",
+      "pageCode": "home"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 1.2804,
+      "topDenseScore": 0.92,
+      "lexicalMatch": 1,
+      "topicLexicalMatch": 0,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "fence_alert_setup",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 1.2804,
+          "faq_id": "F860-028",
+          "question": "如何连接接收器？"
+        },
+        {
+          "score": 0.564795,
+          "faq_id": "F860-030",
+          "question": "是否可以同时创建多个围栏？"
+        },
+        {
+          "score": 0.404857,
+          "faq_id": "F860-017",
+          "question": "设备可以创建那些类型的围栏？"
+        },
+        {
+          "score": 0.248333,
+          "faq_id": "F860-011",
+          "question": "产品是什么，能解决什么问题？"
+        },
+        {
+          "score": 0.191656,
+          "faq_id": "F860-024",
+          "question": "设备突然不工作了怎么办？"
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-03T06:23:11.181Z",
+    "userId": "u_boundary",
+    "sessionId": "s_boundary",
+    "message": "会不会乱报",
+    "reply": "并非总是如此，实际性能可能因环境条件和定位精度而异，此功能用于辅助管理，无法保证在每种环境下都能精确触发。",
+    "appContext": {
+      "platform": "ios",
+      "appVersion": "1.0.0",
+      "pageCode": "home"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 1.268,
+      "topDenseScore": 0.9,
+      "lexicalMatch": 1,
+      "topicLexicalMatch": 0,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "positioning_boundary",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 1.268,
+          "faq_id": "F860-034",
+          "question": "围栏是否始终准确触发？"
+        },
+        {
+          "score": 0.853537,
+          "faq_id": "F860-036",
+          "question": "当设备显示信号异常时，我还能使用围栏吗？"
+        },
+        {
+          "score": 0.665,
+          "faq_id": "F860-033",
+          "question": "围栏触发延迟是正常吗？"
+        },
+        {
+          "score": 0.453715,
+          "faq_id": "F860-028",
+          "question": "如何连接接收器？"
+        },
+        {
+          "score": 0.408949,
+          "faq_id": "F860-017",
+          "question": "设备可以创建那些类型的围栏？"
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-03T06:23:11.192Z",
+    "userId": "u_charge",
+    "sessionId": "s_charge",
+    "message": "充不上电",
+    "reply": "【排查步骤：从易到难，1分钟定位】\n1. 优先换充电配件（最常见，占80%）\n   → 操作：用Type-C（U-C类）充电线（C-C类无法充电）+ 5V1A普通充电头（禁用快充头）\n   → 验证：换配件后仍无反应，排除配件问题\n   → 建议：优先使用产品附赠原装充电套装\n\n2. 清洁充电口（易忽略）\n   → 问题：泥、毛、汗渍导致接触不良\n   → 操作：棉签蘸酒精，擦拭充电口金属触点，擦净后重试\n\n3. 检查电池状态（长期闲置易出现）\n   → 问题：电池亏电\"饿死\"或老化\n   → 操作：持续充电10-20分钟，仍无反应则电池报废，需联系售后\n\n【快速总结】换配件→擦充电口→充10-20分钟→无效找售后",
+    "appContext": {
+      "platform": "ios",
+      "appVersion": "1.0.0",
+      "pageCode": "home"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 1.2742,
+      "topDenseScore": 0.91,
+      "lexicalMatch": 1,
+      "topicLexicalMatch": 0,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "charging_issue",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 1.2742,
+          "faq_id": "F860-020",
+          "question": "设备无法充电怎么办？"
+        },
+        {
+          "score": 1.207,
+          "faq_id": "F860-021",
+          "question": "充电时间过长/充不满"
+        },
+        {
+          "score": 0.65,
+          "faq_id": "F860-023",
+          "question": "产品长时间未使用后如何处理？"
+        },
+        {
+          "score": 0.432267,
+          "faq_id": "F860-028",
+          "question": "如何连接接收器？"
+        },
+        {
+          "score": 0.3596,
+          "faq_id": "F860-017",
+          "question": "设备可以创建那些类型的围栏？"
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-03T06:23:11.202Z",
+    "userId": "u_startup",
+    "sessionId": "s_startup",
+    "message": "开不了咋办",
+    "reply": "先充电 30 分钟，再检查充电配件和充电口。",
+    "appContext": {
+      "platform": "ios",
+      "appVersion": "1.0.0",
+      "pageCode": "home"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 1.268,
+      "topDenseScore": 0.9,
+      "lexicalMatch": 1,
+      "topicLexicalMatch": 0,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "startup_issue",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 1.268,
+          "faq_id": "F860-027",
+          "question": "产品无法启动怎么办？"
+        },
+        {
+          "score": 1.1884,
+          "faq_id": "F860-039",
+          "question": "产品无法正常使用怎么办？"
+        },
+        {
+          "score": 0.62,
+          "faq_id": "F860-024",
+          "question": "设备突然不工作了怎么办？"
+        },
+        {
+          "score": 0.3844,
+          "faq_id": "F860-028",
+          "question": "如何连接接收器？"
+        },
+        {
+          "score": 0.3596,
+          "faq_id": "F860-017",
+          "question": "设备可以创建那些类型的围栏？"
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-03T06:23:11.212Z",
+    "userId": "u_false_alarm",
+    "sessionId": "s_false_alarm",
+    "message": "返回后还在报警",
+    "reply": "排查步骤：\n1.信号干扰：在户外开阔区域重新设定安全区域，避开信号干扰源；\n2.信号较弱：在空旷天空场景使用，修剪遮挡物或适当缩小安全区域；\n3.范围过小：安全区域距离太小导致误判，适当增加安全距离。\n\n【快速总结】避开干扰源→避开遮挡物→调节使用范围",
+    "appContext": {
+      "platform": "ios",
+      "appVersion": "1.0.0",
+      "pageCode": "home"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 1.2866,
+      "topDenseScore": 0.93,
+      "lexicalMatch": 1,
+      "topicLexicalMatch": 0.3333,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "false_alarm_in_safe_zone",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 1.2866,
+          "faq_id": "F860-002",
+          "question": "宠物在安全区内却警报/返回后警报继续怎么办？"
+        },
+        {
+          "score": 0.595656,
+          "faq_id": "F860-040",
+          "question": "显示超出安全距离但未受到处罚怎么办？"
+        },
+        {
+          "score": 0.170539,
+          "faq_id": "F860-044",
+          "question": "狗狗需要接受专门训练才能使用围栏吗"
+        },
+        {
+          "score": 0.099474,
+          "faq_id": "F860-042",
+          "question": "产品功能未被激活怎么办？"
+        },
+        {
+          "score": 0.095822,
+          "faq_id": "F860-041",
+          "question": "机器开启时响起声音怎么办？"
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-03T06:23:11.224Z",
+    "userId": "u_loose",
+    "sessionId": "s_loose",
+    "message": "项圈扣环扣不紧怎么办",
+    "reply": "排查步骤：\n1.正确调节：首次使用用笔杆标记所需长度，将颈带收紧至扣环内贴合颈部，剪掉多余部分；\n2.标准佩戴：接收器位于颈部中央，下方与颈部之间保留约一指宽空隙，既牢固又不压迫；3.检查扣环：确保所有扣环均扣紧，无松动情况。",
+    "appContext": {
+      "platform": "ios",
+      "appVersion": "1.0.0",
+      "pageCode": "home"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 1.2928,
+      "topDenseScore": 0.94,
+      "lexicalMatch": 1,
+      "topicLexicalMatch": 0.4,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "collar_fit_issue",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 1.2928,
+          "faq_id": "F860-003",
+          "question": "项圈容易脱落、不够紧怎么办？"
+        },
+        {
+          "score": 0.526,
+          "faq_id": "F860-019",
+          "question": "接收器狗带耳朵断裂"
+        },
+        {
+          "score": 0.157636,
+          "faq_id": "F860-028",
+          "question": "如何连接接收器？"
+        },
+        {
+          "score": 0.136662,
+          "faq_id": "F860-025",
+          "question": "无静音/无震动/静态刺激无效怎么办？"
+        },
+        {
+          "score": 0.104901,
+          "faq_id": "F860-006",
+          "question": "设备伤到狗狗了怎么办？"
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-03T06:23:11.239Z",
+    "userId": "u_anti_loss",
+    "sessionId": "s_anti_loss",
+    "message": "定位准吗",
+    "reply": "GPS围栏为宠物防走失辅助工具，其效果受GPS信号、使用环境、设备佩戴情况等多种因素影响，**无法保证100%防止宠物丢失**，请勿完全依赖本产品，建议配合其他防走失措施使用。",
+    "appContext": {
+      "platform": "ios",
+      "appVersion": "1.0.0",
+      "pageCode": "home"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 1.2804,
+      "topDenseScore": 0.92,
+      "lexicalMatch": 1,
+      "topicLexicalMatch": 0,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "anti_loss_reliability",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 1.2804,
+          "faq_id": "F860-008",
+          "question": "GPS围栏能100%防止宠物丢失吗？"
+        },
+        {
+          "score": 0.977023,
+          "faq_id": "F860-011",
+          "question": "产品是什么，能解决什么问题？"
+        },
+        {
+          "score": 0.436252,
+          "faq_id": "F860-028",
+          "question": "如何连接接收器？"
+        },
+        {
+          "score": 0.424439,
+          "faq_id": "F860-017",
+          "question": "设备可以创建那些类型的围栏？"
+        },
+        {
+          "score": 0.140539,
+          "faq_id": "F860-034",
+          "question": "围栏是否始终准确触发？"
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-03T06:23:11.250Z",
+    "userId": "u_button",
+    "sessionId": "s_button",
+    "message": "按了没反应",
+    "reply": "【按故障类型对应处理】\n1. 按键失灵/没反应（最常见）\n   → 原因：弹片失效、接触不良、进水腐蚀\n   → 操作：\n     ① 若碰过水，晾干后重试\n     ② 轻轻敲击按键，排除触点氧化（可喷电子清洁剂）\n     ③ 无效则内部弹片损坏，需售后\n\n2. 按键卡顿/回弹差\n   → 原因：硅胶老化、有异物、结构卡滞\n   → 操作：\n     ① 牙签清理按键缝隙灰尘/毛发\n     ② 反复按压10-20次测试回弹\n\n3. 按键误触/乱触发\n   → 原因：防水胶挤压、内部短路\n   → 操作：\n     ① 检查硅胶按键是否变形，有无挤压按键\n     ② 进水后出现则需售后检测短路问题\n\n4. 按键松动/异响/脱落\n   → 原因：卡扣损坏、摔撞导致\n   → 操作：\n     ① 轻微松动：避免频繁按压\n     ② 严重松动/脱落：立即停用，联系售后\n\n【总结】清异物→敲按键→查进水→无效找售后",
+    "appContext": {
+      "platform": "ios",
+      "appVersion": "1.0.0",
+      "pageCode": "home"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 1.2866,
+      "topDenseScore": 0.93,
+      "lexicalMatch": 1,
+      "topicLexicalMatch": 0.5,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "button_issue",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 1.2866,
+          "faq_id": "F860-010",
+          "question": "按键卡键/不灵敏/重按/松动/失灵"
+        },
+        {
+          "score": 0.3844,
+          "faq_id": "F860-028",
+          "question": "如何连接接收器？"
+        },
+        {
+          "score": 0.3596,
+          "faq_id": "F860-017",
+          "question": "设备可以创建那些类型的围栏？"
+        },
+        {
+          "score": 0.216741,
+          "faq_id": "F860-024",
+          "question": "设备突然不工作了怎么办？"
+        },
+        {
+          "score": 0.211545,
+          "faq_id": "F860-027",
+          "question": "产品无法启动怎么办？"
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-03T06:23:11.260Z",
+    "userId": "u_dogs",
+    "sessionId": "s_dogs",
+    "message": "攻击性狗狗可以用吗？",
+    "reply": "1.适用于中型犬及大型犬，宠物体重15-110磅，颈围9-26英尺；\n2.适合健康、散养放养、经常出门遛宠的宠物家庭；\n3.不适用于攻击性较强的狗狗，避免影响设备使用或造成损坏。",
+    "appContext": {
+      "platform": "ios",
+      "appVersion": "1.0.0",
+      "pageCode": "home"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 1.2928,
+      "topDenseScore": 0.94,
+      "lexicalMatch": 1,
+      "topicLexicalMatch": 0.6667,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "applicable_dogs",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 1.2928,
+          "faq_id": "F860-012",
+          "question": "产品适用哪些犬类？"
+        },
+        {
+          "score": 0.703856,
+          "faq_id": "F860-015",
+          "question": "产品适合室内使用吗？"
+        },
+        {
+          "score": 0.688872,
+          "faq_id": "F860-013",
+          "question": "产品的使用场景有哪些要求？"
+        },
+        {
+          "score": 0.143563,
+          "faq_id": "F860-005",
+          "question": "振动/静态刺激是否安全？"
+        },
+        {
+          "score": 0.106723,
+          "faq_id": "F860-016",
+          "question": "产品有哪些工作模式？"
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-03T06:23:11.271Z",
+    "userId": "u_modes",
+    "sessionId": "s_modes",
+    "message": "这个设备一共有哪几种模式",
+    "reply": "1.支持训狗模式+围栏模式，\n2.可按需求自由切换所需要的模式。",
+    "appContext": {
+      "platform": "ios",
+      "appVersion": "1.0.0",
+      "pageCode": "home"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 1.2128,
+      "topDenseScore": 0.94,
+      "lexicalMatch": 1,
+      "topicLexicalMatch": 0.2857,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "work_modes",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 1.2128,
+          "faq_id": "F860-016",
+          "question": "产品有哪些工作模式？"
+        },
+        {
+          "score": 0.482579,
+          "faq_id": "F860-028",
+          "question": "如何连接接收器？"
+        },
+        {
+          "score": 0.3596,
+          "faq_id": "F860-017",
+          "question": "设备可以创建那些类型的围栏？"
+        },
+        {
+          "score": 0.223564,
+          "faq_id": "F860-014",
+          "question": "产品有哪些核心特点？"
+        },
+        {
+          "score": 0.190699,
+          "faq_id": "F860-013",
+          "question": "产品的使用场景有哪些要求？"
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-03T06:23:11.286Z",
+    "userId": "u_durability",
+    "sessionId": "s_durability",
+    "message": "这个设备是不是很容易坏",
+    "reply": "【核心原因+预防措施】\n1. 最常见：进水损坏（占60%）\n   → 原因：防水胶圈老化/变形/螺丝松动，狗狗淋雨、玩水佩戴\n   → 预防：\n     ① 每月检查螺丝是否松动（是否完好、缝隙过大）\n     ② 狗狗洗澡、玩水时取下设备\n     ③ 进水后立即关机晾干，不要继续使用\n\n2. 结构强度问题（占20%）\n   → 原因：外壳薄、卡扣弱，狗狗甩头、撞击、啃咬导致开裂\n   → 预防：\n     ① 选合适尺寸项圈，避免过松导致甩撞\n     ② 不让狗狗单独啃咬设备\n     ③ 摔撞后检查外壳是否开裂\n\n3. 电池与元件问题（占15%）\n   → 原因：电池循环寿命短、触点易氧化、按键/马达寿命短\n   → 预防：\n     ① 用原装充电器，避免损伤电池\n     ② 每月清洁金属触点（棉签酒精擦拭）\n     ③ 避免频繁高强度使用按键\n\n4. 环境因素（占5%）\n   → 原因：暴晒（塑料老化）、高温（元件损坏）、潮湿（腐蚀）\n   → 预防：\n     ① 不使用时存放在阴凉干燥处\n     ② 避免长时间暴晒或放高温车内\n\n【总结】防进水→防摔咬→定期清洁→正确存放→用原装配件",
+    "appContext": {
+      "platform": "ios",
+      "appVersion": "1.0.0",
+      "pageCode": "home"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 1.214229,
+      "topDenseScore": 0.94,
+      "lexicalMatch": 1,
+      "topicLexicalMatch": 0.3333,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "product_durability",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 1.214229,
+          "faq_id": "F860-018",
+          "question": "产品耐用性差，使用时间短容易损坏？"
+        },
+        {
+          "score": 1.1264,
+          "faq_id": "F860-045",
+          "question": "如何正确清洁和维护设备"
+        },
+        {
+          "score": 0.201836,
+          "faq_id": "F860-028",
+          "question": "如何连接接收器？"
+        },
+        {
+          "score": 0.134827,
+          "faq_id": "F860-023",
+          "question": "产品长时间未使用后如何处理？"
+        },
+        {
+          "score": 0.126406,
+          "faq_id": "F860-022",
+          "question": "电池不耐用、一天用不到就关机了？"
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-03T06:23:11.295Z",
+    "userId": "u_strap",
+    "sessionId": "s_strap",
+    "message": "狗带不结实",
+    "reply": "原因分析+预防+处理】\n1. 核心断裂原因\n   → ① 材质差：承重≤30KG，狗狗爆冲易断\n   → ② 注塑缺陷：有气泡、缩水，强度不足\n   → ③ 老化变脆：日晒、高低温导致塑料老化\n   → ④ 使用不当：狗狗猛冲、拉扯，超过承重极限\n\n2. 预防措施\n   → ① 不使用时存放在阴凉处，避免暴晒老化\n   → ② 每月检查狗带（是否有裂纹、老化），3个月更换一次\n   → ③ 避免狗狗单独啃咬狗带，减少爆冲行为\n\n【总结】选对承重→定期检查→避免爆冲",
+    "appContext": {
+      "platform": "ios",
+      "appVersion": "1.0.0",
+      "pageCode": "home"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 1.2928,
+      "topDenseScore": 0.94,
+      "lexicalMatch": 1,
+      "topicLexicalMatch": 0.25,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "strap_break_issue",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 1.2928,
+          "faq_id": "F860-019",
+          "question": "接收器狗带耳朵断裂"
+        },
+        {
+          "score": 0.486764,
+          "faq_id": "F860-028",
+          "question": "如何连接接收器？"
+        },
+        {
+          "score": 0.3596,
+          "faq_id": "F860-017",
+          "question": "设备可以创建那些类型的围栏？"
+        },
+        {
+          "score": 0.098025,
+          "faq_id": "F860-003",
+          "question": "项圈容易脱落、不够紧怎么办？"
+        },
+        {
+          "score": 0.093164,
+          "faq_id": "F860-024",
+          "question": "设备突然不工作了怎么办？"
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-03T06:23:11.306Z",
+    "userId": "u_first_use",
+    "sessionId": "s_first_use",
+    "message": "首次使用需要注意什么？",
+    "reply": "1.需在户外开阔、无遮挡区域使用，禁止在室内、树下、屋檐下等GPS信号弱/无信号处使用；\n2.首次使用前在安全环境测试设备反应，帮助宠物适应；\n3.定期检查设备信号及运行状态，确保边界防护功能正常。\n4.训狗模式可在任意环境使用，但在复杂环境遥控距离可能会有所折损。",
+    "appContext": {
+      "platform": "ios",
+      "appVersion": "1.0.0",
+      "pageCode": "home"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 1.268,
+      "topDenseScore": 0.9,
+      "lexicalMatch": 1,
+      "topicLexicalMatch": 0.4286,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "first_use_guidance",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 1.268,
+          "faq_id": "F860-013",
+          "question": "产品的使用场景有哪些要求？"
+        },
+        {
+          "score": 1.2204,
+          "faq_id": "F860-028",
+          "question": "如何连接接收器？"
+        },
+        {
+          "score": 0.609226,
+          "faq_id": "F860-007",
+          "question": "产品未改变狗狗行为怎么办？"
+        },
+        {
+          "score": 0.587068,
+          "faq_id": "F860-015",
+          "question": "产品适合室内使用吗？"
+        },
+        {
+          "score": 0.527,
+          "faq_id": "F860-030",
+          "question": "是否可以同时创建多个围栏？"
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-03T06:23:11.316Z",
+    "userId": "u_gps",
+    "sessionId": "s_gps",
+    "message": "搜不到GPS怎么办",
+    "reply": "排查步骤：\n1. 排查遮挡问题（最主要原因，占70%）\n   → 转移至户外开阔、无遮挡区域，远离室内、树下、高楼等信号遮挡处；\n   → 等待设备搜索信号，确保信号格数达到3格及以上再使用；\n   → 重启设备，重新进行定位操作；\n   → 避免在强电磁干扰区域使用。\n2.排查环境干扰\n   → 干扰源：电磁干扰，金属结构多区域。\n   → 操作：调整围栏活动区域，避开此类区域。\n4. 检查设备状态\n   → 情况1：电量低（信号搜索能力下降）\n     操作：充电30分钟后重试\n   → 情况2：设备摔撞（天线松动、信号模块损坏）\n     操作：若摔撞后出现问题，联系售后检测\n\n【快速总结】清遮挡→避干扰→查电量→无效找售后",
+    "appContext": {
+      "platform": "ios",
+      "appVersion": "1.0.0",
+      "pageCode": "home"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 1.2708,
+      "topDenseScore": 0.94,
+      "lexicalMatch": 1,
+      "topicLexicalMatch": 0,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "gps_signal_issue",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 1.2708,
+          "faq_id": "F860-001",
+          "question": "无法搜索到GPS信号或丢失信号怎么办？"
+        },
+        {
+          "score": 0.65,
+          "faq_id": "F860-036",
+          "question": "当设备显示信号异常时，我还能使用围栏吗？"
+        },
+        {
+          "score": 0.468715,
+          "faq_id": "F860-028",
+          "question": "如何连接接收器？"
+        },
+        {
+          "score": 0.423949,
+          "faq_id": "F860-017",
+          "question": "设备可以创建那些类型的围栏？"
+        },
+        {
+          "score": 0.210058,
+          "faq_id": "F860-039",
+          "question": "产品无法正常使用怎么办？"
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-03T06:23:11.327Z",
+    "userId": "u_battery",
+    "sessionId": "s_battery",
+    "message": "为什么一天就没电了",
+    "reply": "【排查步骤：先判断电池状态，再优化使用】\n1. 优先检查电池本身（占70%）\n   → 情况1：循环寿命耗尽：锂电池循环约300–500次后，容量会降至初始 70% 以下，续航明显缩短。\n     特征：充1小时满电，用1天就没电，可能鼓包\n     操作：更换新电池\n   → 情况2：低温性能差：0℃以下锂电池活性大幅下降，电压骤降、续航显著缩水\n     特征：冬季户外续航明显缩短\n     操作：低温环境减少使用，或给项圈加保暖套\n\n2. 优化充电方式\n   → 正确做法：\n     ① 用原装5V1A充电器，禁用快充\n     ② 电量低于20%充电，充满后30分钟内断电\n     ③ 避免高温/低温环境充电（10-30℃最佳）\n   → 错误做法：\n     ① 未用原装充电器：电压/电流不匹配，导致充不满或过充，加速老化\n     ② 充电环境极端：高温/低温下充电，电池活性差、充入电量少\n     ③ 过充/过放：长期插电不拔、用到彻底关机再充，严重损伤电池寿命\n\n3. 减少耗电过快的习惯\n   → 操作1：不用时关机（持续待机1天耗10%电）\n   → 操作2：降低预警档位（少用高档位电击/震动）\n   → 操作3：信号异常/频繁重连：433MHz/毫米波通信受干扰、距离过远，模块反复搜网、耗电飙升\n   → 操作4：减少频繁越界（每次纠正耗电增加）\n\n【快速总结】查电池是否老化→用原装充电→不用时关机→低温少用",
+    "appContext": {
+      "platform": "ios",
+      "appVersion": "1.0.0",
+      "pageCode": "home"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 1.177,
+      "topDenseScore": 0.85,
+      "lexicalMatch": 1,
+      "topicLexicalMatch": 0.375,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "battery_endurance",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 1.177,
+          "faq_id": "F860-021",
+          "question": "充电时间过长/充不满"
+        },
+        {
+          "score": 0.71,
+          "faq_id": "F860-022",
+          "question": "电池不耐用、一天用不到就关机了？"
+        },
+        {
+          "score": 0.68,
+          "faq_id": "F860-023",
+          "question": "产品长时间未使用后如何处理？"
+        },
+        {
+          "score": 0.660921,
+          "faq_id": "F860-020",
+          "question": "设备无法充电怎么办？"
+        },
+        {
+          "score": 0.529275,
+          "faq_id": "F860-018",
+          "question": "产品耐用性差，使用时间短容易损坏？"
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-03T06:23:11.337Z",
+    "userId": "u_fence_page",
+    "sessionId": "s_fence_page",
+    "message": "围栏页面一直转圈怎么办",
+    "reply": "使用过程中，有一定概率因为网络问题，出现界面加载失败，或显示一直正在连接可通过以下方法解决：\n①点击返回退出到设备主界面，点击设备重新进入围栏界面进行连接。\n②后台退出APP，重启APP进入重新连接。",
+    "appContext": {
+      "platform": "ios",
+      "appVersion": "1.0.0",
+      "pageCode": "home"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 1.2928,
+      "topDenseScore": 0.94,
+      "lexicalMatch": 1,
+      "topicLexicalMatch": 0.25,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "fence_page_load_issue",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 1.2928,
+          "faq_id": "F860-029",
+          "question": "围栏界面连接加载失败怎么处理？"
+        },
+        {
+          "score": 1.2504,
+          "faq_id": "F860-028",
+          "question": "如何连接接收器？"
+        },
+        {
+          "score": 0.527,
+          "faq_id": "F860-030",
+          "question": "是否可以同时创建多个围栏？"
+        },
+        {
+          "score": 0.206656,
+          "faq_id": "F860-024",
+          "question": "设备突然不工作了怎么办？"
+        },
+        {
+          "score": 0.145198,
+          "faq_id": "F860-019",
+          "question": "接收器狗带耳朵断裂"
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-03T06:23:11.348Z",
+    "userId": "u_fence_no_alarm",
+    "sessionId": "s_fence_no_alarm",
+    "message": "围栏明明开着却不报警",
+    "reply": "【排查步骤：从易到难，1分钟定位】\n1. 设备是否已开机，\n2.设备是否已定位，围栏是否已保存并启用。\n3.当前环境是否具备稳定信号，如定位异常或信号不稳定，围栏可能占时无法正常工作。\n\n【快速总结】开机检查→围栏设定检查→信号环境检查",
+    "appContext": {
+      "platform": "ios",
+      "appVersion": "1.0.0",
+      "pageCode": "home"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 1.228911,
+      "topDenseScore": 0.94,
+      "lexicalMatch": 1,
+      "topicLexicalMatch": 0.2222,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "fence_no_alarm",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 1.228911,
+          "faq_id": "F860-032",
+          "question": "围栏已启用，但未触发报警，该怎么办？"
+        },
+        {
+          "score": 0.65,
+          "faq_id": "F860-042",
+          "question": "产品功能未被激活怎么办？"
+        },
+        {
+          "score": 0.65,
+          "faq_id": "F860-026",
+          "question": "预警/纠正功能没反应"
+        },
+        {
+          "score": 0.481727,
+          "faq_id": "F860-028",
+          "question": "如何连接接收器？"
+        },
+        {
+          "score": 0.405314,
+          "faq_id": "F860-017",
+          "question": "设备可以创建那些类型的围栏？"
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-03T06:23:11.358Z",
+    "userId": "u_small_fence",
+    "sessionId": "s_small_fence",
+    "message": "把围栏画小一点会不会更准",
+    "reply": "不推荐绘制小范围，范围太小，报警可能会频繁触发并影响用户体验，可根据环境适当设置围栏范围。",
+    "appContext": {
+      "platform": "ios",
+      "appVersion": "1.0.0",
+      "pageCode": "home"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 1.2653,
+      "topDenseScore": 0.94,
+      "lexicalMatch": 1,
+      "topicLexicalMatch": 0.1818,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "small_fence_issue",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 1.2653,
+          "faq_id": "F860-035",
+          "question": "绘制小范围围栏，围栏效果是否会更好？"
+        },
+        {
+          "score": 1.238,
+          "faq_id": "F860-034",
+          "question": "围栏是否始终准确触发？"
+        },
+        {
+          "score": 0.545244,
+          "faq_id": "F860-036",
+          "question": "当设备显示信号异常时，我还能使用围栏吗？"
+        },
+        {
+          "score": 0.428142,
+          "faq_id": "F860-028",
+          "question": "如何连接接收器？"
+        },
+        {
+          "score": 0.415611,
+          "faq_id": "F860-017",
+          "question": "设备可以创建那些类型的围栏？"
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-03T06:23:11.367Z",
+    "userId": "u_fence_disabled",
+    "sessionId": "s_fence_disabled",
+    "message": "把围栏关掉后报警还会不会触发",
+    "reply": "关闭围栏后，设备将不在提供围栏相关报警或触发功能，其他设备功能不受影响。",
+    "appContext": {
+      "platform": "ios",
+      "appVersion": "1.0.0",
+      "pageCode": "home"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 1.2928,
+      "topDenseScore": 0.94,
+      "lexicalMatch": 1,
+      "topicLexicalMatch": 0.2308,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "fence_disabled_effect",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 1.2928,
+          "faq_id": "F860-038",
+          "question": "关闭围栏后会发生什么？"
+        },
+        {
+          "score": 0.446527,
+          "faq_id": "F860-028",
+          "question": "如何连接接收器？"
+        },
+        {
+          "score": 0.389344,
+          "faq_id": "F860-017",
+          "question": "设备可以创建那些类型的围栏？"
+        },
+        {
+          "score": 0.173987,
+          "faq_id": "F860-035",
+          "question": "绘制小范围围栏，围栏效果是否会更好？"
+        },
+        {
+          "score": 0.120211,
+          "faq_id": "F860-034",
+          "question": "围栏是否始终准确触发？"
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-03T06:23:11.376Z",
+    "userId": "u_startup_beep",
+    "sessionId": "s_startup_beep",
+    "message": "开机一直响",
+    "reply": "排查步骤：\n1.超出安全范围：设备在初始安全范围外开机，GPS图标闪烁并播放3分钟提示音，返回安全半径或重新调整中心点/安全半径即可取消；\n2.信号不足：开机初期卫星数量少定位不准，信号达到4-5格时会自动取消提示音。",
+    "appContext": {
+      "platform": "ios",
+      "appVersion": "1.0.0",
+      "pageCode": "home"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 0.71,
+      "topDenseScore": 0,
+      "lexicalMatch": 1,
+      "topicLexicalMatch": 0.25,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "startup_beep_issue",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 0.71,
+          "faq_id": "F860-041",
+          "question": "机器开启时响起声音怎么办？"
+        },
+        {
+          "score": 0.65,
+          "faq_id": "F860-001",
+          "question": "无法搜索到GPS信号或丢失信号怎么办？"
+        },
+        {
+          "score": 0.516248,
+          "faq_id": "F860-028",
+          "question": "如何连接接收器？"
+        },
+        {
+          "score": 0.3896,
+          "faq_id": "F860-017",
+          "question": "设备可以创建那些类型的围栏？"
+        },
+        {
+          "score": 0.198385,
+          "faq_id": "F860-039",
+          "question": "产品无法正常使用怎么办？"
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-03T06:23:11.387Z",
+    "userId": "u_inactive_feature",
+    "sessionId": "s_inactive_feature",
+    "message": "宠物出界后设备怎么一点动作都没有",
+    "reply": "排查步骤：\n1.宠物状态：宠物超出安全范围但未移动时，设备仅亮红灯不触发警报，检测到奔跑会立即触发；\n2.信号要求：GPS信号强度低于3格时，产品将自动关闭警报功能，需等待信号恢复后使用。",
+    "appContext": {
+      "platform": "ios",
+      "appVersion": "1.0.0",
+      "pageCode": "home"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 0.71,
+      "topDenseScore": 0,
+      "lexicalMatch": 1,
+      "topicLexicalMatch": 0,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "feature_not_activated",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 0.71,
+          "faq_id": "F860-042",
+          "question": "产品功能未被激活怎么办？"
+        },
+        {
+          "score": 0.68,
+          "faq_id": "F860-032",
+          "question": "围栏已启用，但未触发报警，该怎么办？"
+        },
+        {
+          "score": 0.527701,
+          "faq_id": "F860-028",
+          "question": "如何连接接收器？"
+        },
+        {
+          "score": 0.405314,
+          "faq_id": "F860-017",
+          "question": "设备可以创建那些类型的围栏？"
+        },
+        {
+          "score": 0.160097,
+          "faq_id": "F860-025",
+          "question": "无静音/无震动/静态刺激无效怎么办？"
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-03T06:23:11.397Z",
+    "userId": "u_missing_accessory",
+    "sessionId": "s_missing_accessory",
+    "message": "收到货发现少了配件怎么办",
+    "reply": "因运输过程或包装不当导致的配件缺失/损坏，请提供清晰的照片或视频证据，联系客服启动维修/退货/补发流程，我们将快速为您处理。",
+    "appContext": {
+      "platform": "ios",
+      "appVersion": "1.0.0",
+      "pageCode": "home"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 1.2928,
+      "topDenseScore": 0.94,
+      "lexicalMatch": 1,
+      "topicLexicalMatch": 0.1111,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "accessory_damage_issue",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 1.2928,
+          "faq_id": "F860-043",
+          "question": "缺少配件、配件损坏怎么办？"
+        },
+        {
+          "score": 0.3844,
+          "faq_id": "F860-028",
+          "question": "如何连接接收器？"
+        },
+        {
+          "score": 0.3596,
+          "faq_id": "F860-017",
+          "question": "设备可以创建那些类型的围栏？"
+        },
+        {
+          "score": 0.157317,
+          "faq_id": "F860-027",
+          "question": "产品无法启动怎么办？"
+        },
+        {
+          "score": 0.12846,
+          "faq_id": "F860-020",
+          "question": "设备无法充电怎么办？"
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-03T06:23:11.407Z",
+    "userId": "u_stimulus_invalid",
+    "sessionId": "s_stimulus_invalid",
+    "message": "震动没反应怎么办",
+    "reply": "【排查步骤：先确认基础状态】\n1.静电模式功能被锁，选择静电模式后，按锁键解锁或锁定。\n2.电量过低：电池电量低导致输出功率不足，及时给设备充电。\n3.接触不良：检查项圈接触点是否与狗狗皮肤紧密接触；\n4.强度不足：调节设备增加刺激强度等级；\n【快速总结】设备充电→调节接触点→调档位→无效找售后",
+    "appContext": {
+      "platform": "ios",
+      "appVersion": "1.0.0",
+      "pageCode": "home"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 1.2928,
+      "topDenseScore": 0.94,
+      "lexicalMatch": 1,
+      "topicLexicalMatch": 0.2,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "stimulation_output_issue",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 1.2928,
+          "faq_id": "F860-025",
+          "question": "无静音/无震动/静态刺激无效怎么办？"
+        },
+        {
+          "score": 0.68,
+          "faq_id": "F860-026",
+          "question": "预警/纠正功能没反应"
+        },
+        {
+          "score": 0.3844,
+          "faq_id": "F860-028",
+          "question": "如何连接接收器？"
+        },
+        {
+          "score": 0.3596,
+          "faq_id": "F860-017",
+          "question": "设备可以创建那些类型的围栏？"
+        },
+        {
+          "score": 0.290494,
+          "faq_id": "F860-024",
+          "question": "设备突然不工作了怎么办？"
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-03T06:23:11.416Z",
+    "userId": "u_multi_fence",
+    "sessionId": "s_multi_fence",
+    "message": "能不能一次性建多个围栏",
+    "reply": "可以同时创建多个围栏，但一次只能启用一个无线围栏，若要启用另一个围栏，在围栏列表中切换至该围栏，若要更改围栏范围或形状，编辑围栏并保存。",
+    "appContext": {
+      "platform": "ios",
+      "appVersion": "1.0.0",
+      "pageCode": "home"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 1.2928,
+      "topDenseScore": 0.94,
+      "lexicalMatch": 1,
+      "topicLexicalMatch": 0.5,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "multiple_fences",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 1.2928,
+          "faq_id": "F860-030",
+          "question": "是否可以同时创建多个围栏？"
+        },
+        {
+          "score": 1.2628,
+          "faq_id": "F860-031",
+          "question": "围栏创建后可以修改吗？"
+        },
+        {
+          "score": 0.131233,
+          "faq_id": "F860-017",
+          "question": "设备可以创建那些类型的围栏？"
+        },
+        {
+          "score": 0.128965,
+          "faq_id": "F860-028",
+          "question": "如何连接接收器？"
+        },
+        {
+          "score": 0.127494,
+          "faq_id": "F860-037",
+          "question": "创建围栏时，设备是否需要宠物佩戴？"
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-03T06:23:11.426Z",
+    "userId": "u_edit_fence",
+    "sessionId": "s_edit_fence",
+    "message": "围栏怎么编辑",
+    "reply": "可以，在无线围栏设置页面，在地图上调整围栏形状或边界，然后保存应用修改。",
+    "appContext": {
+      "platform": "ios",
+      "appVersion": "1.0.0",
+      "pageCode": "home"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 1.2928,
+      "topDenseScore": 0.94,
+      "lexicalMatch": 1,
+      "topicLexicalMatch": 0.3333,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "edit_fence",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 1.2928,
+          "faq_id": "F860-031",
+          "question": "围栏创建后可以修改吗？"
+        },
+        {
+          "score": 1.2628,
+          "faq_id": "F860-030",
+          "question": "是否可以同时创建多个围栏？"
+        },
+        {
+          "score": 0.52548,
+          "faq_id": "F860-028",
+          "question": "如何连接接收器？"
+        },
+        {
+          "score": 0.448101,
+          "faq_id": "F860-017",
+          "question": "设备可以创建那些类型的围栏？"
+        },
+        {
+          "score": 0.142203,
+          "faq_id": "F860-032",
+          "question": "围栏已启用，但未触发报警，该怎么办？"
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-03T06:23:11.435Z",
+    "userId": "u_fence_delay",
+    "sessionId": "s_fence_delay",
+    "message": "为什么出界后不是立刻触发",
+    "reply": "是的，无线围栏基于卫星定位，触发可能受环境，信号质量和宠物移动速度影响，在某些环境下可能会出现延迟。",
+    "appContext": {
+      "platform": "ios",
+      "appVersion": "1.0.0",
+      "pageCode": "home"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 1.2928,
+      "topDenseScore": 0.94,
+      "lexicalMatch": 1,
+      "topicLexicalMatch": 0.0909,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "fence_trigger_delay",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 1.2928,
+          "faq_id": "F860-033",
+          "question": "围栏触发延迟是正常吗？"
+        },
+        {
+          "score": 1.238,
+          "faq_id": "F860-034",
+          "question": "围栏是否始终准确触发？"
+        },
+        {
+          "score": 0.613537,
+          "faq_id": "F860-036",
+          "question": "当设备显示信号异常时，我还能使用围栏吗？"
+        },
+        {
+          "score": 0.17274,
+          "faq_id": "F860-026",
+          "question": "预警/纠正功能没反应"
+        },
+        {
+          "score": 0.166395,
+          "faq_id": "F860-032",
+          "question": "围栏已启用，但未触发报警，该怎么办？"
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-03T06:23:11.445Z",
+    "userId": "u_fence_wear",
+    "sessionId": "s_fence_wear",
+    "message": "画围栏的时候设备一定要先戴上吗",
+    "reply": "不需要，创建围栏时，只要设备处于开机状态并已获取了定位信息，即可在地图上绘制围栏，在使用围栏时，请确保设备已正确安装于宠物身上且正常运行。",
+    "appContext": {
+      "platform": "ios",
+      "appVersion": "1.0.0",
+      "pageCode": "home"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 1.2928,
+      "topDenseScore": 0.94,
+      "lexicalMatch": 1,
+      "topicLexicalMatch": 0.0909,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "fence_creation_without_wear",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 1.2928,
+          "faq_id": "F860-037",
+          "question": "创建围栏时，设备是否需要宠物佩戴？"
+        },
+        {
+          "score": 1.2504,
+          "faq_id": "F860-028",
+          "question": "如何连接接收器？"
+        },
+        {
+          "score": 0.557,
+          "faq_id": "F860-030",
+          "question": "是否可以同时创建多个围栏？"
+        },
+        {
+          "score": 0.377626,
+          "faq_id": "F860-017",
+          "question": "设备可以创建那些类型的围栏？"
+        },
+        {
+          "score": 0.206656,
+          "faq_id": "F860-024",
+          "question": "设备突然不工作了怎么办？"
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-03T06:23:11.456Z",
+    "userId": "u_only_alarm",
+    "sessionId": "s_only_alarm",
+    "message": "只报警不惩罚怎么办",
+    "reply": "排查步骤：\n1.信号问题：设备处于信号弱/干扰状态，GPS数据偏差导致误报，检查使用位置信号情况，避开干扰区域；\n2.范围调整：重新调节边界范围，避开信号较弱区域使用；\n3.重启设备：重新定位中心点，校准围栏范围。",
+    "appContext": {
+      "platform": "ios",
+      "appVersion": "1.0.0",
+      "pageCode": "home"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 1.2928,
+      "topDenseScore": 0.94,
+      "lexicalMatch": 1,
+      "topicLexicalMatch": 0.1667,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "alarm_without_penalty",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 1.2928,
+          "faq_id": "F860-040",
+          "question": "显示超出安全距离但未受到处罚怎么办？"
+        },
+        {
+          "score": 1.208,
+          "faq_id": "F860-034",
+          "question": "围栏是否始终准确触发？"
+        },
+        {
+          "score": 0.545244,
+          "faq_id": "F860-036",
+          "question": "当设备显示信号异常时，我还能使用围栏吗？"
+        },
+        {
+          "score": 0.197871,
+          "faq_id": "F860-042",
+          "question": "产品功能未被激活怎么办？"
+        },
+        {
+          "score": 0.166395,
+          "faq_id": "F860-032",
+          "question": "围栏已启用，但未触发报警，该怎么办？"
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-03T06:23:11.465Z",
+    "userId": "u_indoor_use",
+    "sessionId": "s_indoor_use",
+    "message": "在家里室内能直接用围栏吗",
+    "reply": "围栏依赖卫星定位，适用于开阔的户外区域，在室内或信号严重阻隔地方，围栏可能无法正常工作",
+    "appContext": {
+      "platform": "ios",
+      "appVersion": "1.0.0",
+      "pageCode": "home"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 1.2928,
+      "topDenseScore": 0.94,
+      "lexicalMatch": 1,
+      "topicLexicalMatch": 0.3,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "indoor_usage_limit",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 1.2928,
+          "faq_id": "F860-015",
+          "question": "产品适合室内使用吗？"
+        },
+        {
+          "score": 1.238,
+          "faq_id": "F860-013",
+          "question": "产品的使用场景有哪些要求？"
+        },
+        {
+          "score": 0.241721,
+          "faq_id": "F860-012",
+          "question": "产品适用哪些犬类？"
+        },
+        {
+          "score": 0.180546,
+          "faq_id": "F860-039",
+          "question": "产品无法正常使用怎么办？"
+        },
+        {
+          "score": 0.122262,
+          "faq_id": "F860-036",
+          "question": "当设备显示信号异常时，我还能使用围栏吗？"
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-03T06:23:11.475Z",
+    "userId": "u2",
+    "sessionId": "s2",
+    "message": "这个设备充不进电怎么办？",
+    "reply": "【排查步骤：从易到难，1分钟定位】\n1. 优先换充电配件（最常见，占80%）\n   → 操作：用Type-C（U-C类）充电线（C-C类无法充电）+ 5V1A普通充电头（禁用快充头）\n   → 验证：换配件后仍无反应，排除配件问题\n   → 建议：优先使用产品附赠原装充电套装\n\n2. 清洁充电口（易忽略）\n   → 问题：泥、毛、汗渍导致接触不良\n   → 操作：棉签蘸酒精，擦拭充电口金属触点，擦净后重试\n\n3. 检查电池状态（长期闲置易出现）\n   → 问题：电池亏电\"饿死\"或老化\n   → 操作：持续充电10-20分钟，仍无反应则电池报废，需联系售后\n\n【快速总结】换配件→擦充电口→充10-20分钟→无效找售后",
+    "appContext": {
+      "platform": "ios",
+      "appVersion": "1.0.0",
+      "pageCode": "home"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 1.2742,
+      "topDenseScore": 0.91,
+      "lexicalMatch": 1,
+      "topicLexicalMatch": 0.25,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "charging_issue",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 1.2742,
+          "faq_id": "F860-020",
+          "question": "设备无法充电怎么办？"
+        },
+        {
+          "score": 1.207,
+          "faq_id": "F860-021",
+          "question": "充电时间过长/充不满"
+        },
+        {
+          "score": 0.65,
+          "faq_id": "F860-023",
+          "question": "产品长时间未使用后如何处理？"
+        },
+        {
+          "score": 0.447267,
+          "faq_id": "F860-028",
+          "question": "如何连接接收器？"
+        },
+        {
+          "score": 0.3596,
+          "faq_id": "F860-017",
+          "question": "设备可以创建那些类型的围栏？"
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-03T06:23:11.943Z",
+    "userId": "u4",
+    "sessionId": "s4",
+    "message": "请说一下定价规则",
+    "reply": "非常抱歉，当前这个问题我暂时无法直接解答。建议你直接联系购买产品的平台客服，他们会为你提供更精准的售后支持，帮你尽快解决问题。",
+    "appContext": {
+      "platform": "ios",
+      "appVersion": "1.0.0",
+      "pageCode": "home"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 0.3844,
+      "topDenseScore": 0.62,
+      "lexicalMatch": 0,
+      "topicLexicalMatch": 0,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 0.3844,
+          "faq_id": "F860-028",
+          "question": "如何连接接收器？"
+        },
+        {
+          "score": 0.3596,
+          "faq_id": "F860-017",
+          "question": "设备可以创建那些类型的围栏？"
+        },
+        {
+          "score": 0.191429,
+          "faq_id": "F860-018",
+          "question": "产品耐用性差，使用时间短容易损坏？"
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-03T06:23:11.953Z",
+    "userId": "u4",
+    "sessionId": "s4",
+    "message": "稍等一下",
+    "reply": "非常抱歉，当前这个问题我暂时无法直接解答。建议你直接联系购买产品的平台客服，他们会为你提供更精准的售后支持，帮你尽快解决问题。",
+    "appContext": {
+      "platform": "ios",
+      "appVersion": "1.0.0",
+      "pageCode": "home"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 0.3844,
+      "topDenseScore": 0.62,
+      "lexicalMatch": 0,
+      "topicLexicalMatch": 0,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 0.3844,
+          "faq_id": "F860-028",
+          "question": "如何连接接收器？"
+        },
+        {
+          "score": 0.3596,
+          "faq_id": "F860-017",
+          "question": "设备可以创建那些类型的围栏？"
+        },
+        {
+          "score": 0.233333,
+          "faq_id": "F860-018",
+          "question": "产品耐用性差，使用时间短容易损坏？"
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-03T06:23:12.428Z",
+    "userId": "u_stale_intent",
+    "sessionId": "s_stale_intent",
+    "message": "产品优势是什么？",
+    "reply": "1. 无需埋线，轻松安装\n采用无线技术，无需复杂施工或地面埋线，简单设置即可在手机APP中定义围栏范围。\n2. 智能围栏，随时随地自定义\n通过手机APP可自由设定围栏的形状和大小，支持圆形、多边形以及自定义绘制等多种模式，灵活适应各种环境。\n3. 两种防护模式，简单选择\nStay Inside（不可越界）：确保您的宠物只在您设定的边界内活动。\nKeep Outside（不可靠近）：防止您的宠物进入设定的禁区。\n4. 实时越界提醒，多重安全反馈\n项圈会在宠物接近或越过围栏边界时，通过声音、震动或静电提醒宠物，引导其返回安全区域，有效预防走失和危险。\n5. 手动训练模式\n提供手动触发的训练模式，允许宠物主通过APP直接控制警告信号（声音、震动或静电），以增强训练效果或即时纠正宠物行为。\n6. 离线自动执行，持续守护\n设置完成后，即使手机与项圈蓝牙断开，设备依然能自主执行围栏功能，确保宠物安全。\n7. 运动追踪，健康管理\n结合运动值与活动距离监控，全面了解宠物的日常活动与健康状态，更好地把握宠物的生活习惯。",
+    "appContext": {
+      "platform": "ios",
+      "appVersion": "1.0.0",
+      "pageCode": "home"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 1.0148,
+      "topDenseScore": 0.63,
+      "lexicalMatch": 1,
+      "topicLexicalMatch": 0.5,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "product_advantages",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 1.0148,
+          "faq_id": "F860-011",
+          "question": "产品是什么，能解决什么问题？"
+        },
+        {
+          "score": 0.786051,
+          "faq_id": "F860-014",
+          "question": "产品有哪些核心特点？"
+        },
+        {
+          "score": 0.62,
+          "faq_id": "F860-017",
+          "question": "设备可以创建那些类型的围栏？"
+        },
+        {
+          "score": 0.497295,
+          "faq_id": "F860-028",
+          "question": "如何连接接收器？"
+        },
+        {
+          "score": 0.346624,
+          "faq_id": "F860-044",
+          "question": "狗狗需要接受专门训练才能使用围栏吗"
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-03T06:23:18.511Z",
+    "userId": "u_fix_1b",
+    "sessionId": "s_fix_1b",
+    "message": "怎么开启电子围栏告警？",
+    "reply": "【排查步骤：先确认连接流程正确】\n检查连接方式（最常见错误）\n① 接收器：在关闭状态下，短按开机。\n② 打开应用APP：点击设置打开蓝牙，点击添加设备，选择F860设备，添加连接。\n③ 连接成功：主页显示F860设备，点击设备进入围栏设备主页。\n④ 创建围栏：在围栏设置页面，点击“创建围栏”进入绘制界面。\n⑤ 绘制边界：在地图上，点击或拖动点来绘制边界，根据需要选择圆形、多边形或手绘模式，对于多边形围栏，您最多可以设置10个点。绘制完成后，系统会自动将该形状闭合为一个封闭区域。\n⑥ 保存并启用围栏：绘制完成后，点击“保存”，围栏成功保存后，您可以立即启用它。\n\n【快速总结】开机→连接APP→绘制围栏→启用围栏",
+    "appContext": {
+      "platform": "web",
+      "appVersion": "1.0.0",
+      "pageCode": "home"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 1.158996,
+      "topDenseScore": 0.82705295,
+      "lexicalMatch": 1,
+      "topicLexicalMatch": 0,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "fence_alert_setup",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 1.158996,
+          "faq_id": "F860-028",
+          "question": "如何连接接收器？"
+        },
+        {
+          "score": 0.685213,
+          "faq_id": "F860-011",
+          "question": "产品是什么，能解决什么问题？"
+        },
+        {
+          "score": 0.56926,
+          "faq_id": "F860-032",
+          "question": "围栏已启用，但未触发报警，该怎么办？"
+        },
+        {
+          "score": 0.564764,
+          "faq_id": "F860-039",
+          "question": "产品无法正常使用怎么办？"
+        },
+        {
+          "score": 0.549077,
+          "faq_id": "F860-024",
+          "question": "设备突然不工作了怎么办？"
+        }
+      ]
+    }
   }
 ]

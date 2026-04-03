@@ -14,12 +14,13 @@ Edit `.env`:
 
 ```env
 PORT=3001
-EMBEDDING_BASE_URL=http://127.0.0.1:1234/v1
-EMBEDDING_MODEL=text-embedding-nomic-embed-text-v1.5
-EMBEDDING_API_KEY=lm-studio
+EMBEDDING_BASE_URL=https://dashscope.aliyuncs.com/compatible-mode/v1
+EMBEDDING_MODEL=text-embedding-v4
+EMBEDDING_API_KEY=your_dashscope_api_key
 QDRANT_URL=https://your-cluster.cloud.qdrant.io
 QDRANT_API_KEY=your_qdrant_key
 QDRANT_COLLECTION=faq_chunks
+EMBEDDING_BATCH_SIZE=10
 RAG_TOP_K=5
 DENSE_CANDIDATE_K=20
 BM25_CANDIDATE_K=20
@@ -46,6 +47,7 @@ Reason:
 - The service now answers from retrieval and built-in reply rules, without chat LLM generation.
 - `EMBEDDING_*` is only used for query/document embeddings.
 - App calls this server through HTTP APIs.
+- The project can use any OpenAI-compatible embeddings endpoint. DashScope `text-embedding-v4` is a ready-to-use hosted option.
 
 ## 2) Run
 
@@ -209,17 +211,18 @@ Next step should be migration to a real DB.
 
 ## 6) Build Embeddings And Upsert To Qdrant
 
-1. Ensure LM Studio local server is running and exposes embeddings at `http://127.0.0.1:1234/v1`.
+1. Ensure your embedding provider is reachable from the machine running the script.
 2. Fill `.env` with:
 
 ```env
-EMBEDDING_BASE_URL=http://127.0.0.1:1234/v1
-EMBEDDING_MODEL=text-embedding-nomic-embed-text-v1.5
-EMBEDDING_API_KEY=lm-studio
+EMBEDDING_BASE_URL=https://dashscope.aliyuncs.com/compatible-mode/v1
+EMBEDDING_MODEL=text-embedding-v4
+EMBEDDING_API_KEY=your_dashscope_api_key
 QDRANT_URL=https://your-cluster.cloud.qdrant.io
 QDRANT_API_KEY=your_qdrant_key
 QDRANT_COLLECTION=faq_chunks
 QDRANT_RECREATE=true
+EMBEDDING_BATCH_SIZE=10
 ```
 
 3. Run:
@@ -233,6 +236,11 @@ This script will:
 - generate embeddings using `search_document:` prefix
 - recreate and upsert points into Qdrant
 - run a test query using `search_query:` prefix
+
+Notes:
+- If you switch to another embedding model, rebuild the Qdrant collection before serving traffic again.
+- With DashScope `text-embedding-v4`, the collection vector size will be created from the returned embedding length, so no manual dimension config is required in this project.
+- DashScope `text-embedding-v4` currently rejects batch sizes larger than `10`, so keep `EMBEDDING_BATCH_SIZE=10` or lower.
 
 ## 7) Quick Chat Test
 
