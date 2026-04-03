@@ -1,22 +1,6 @@
 [
   {
-    "timestamp": "2026-02-24T03:15:25.108Z",
-    "userId": "u1",
-    "sessionId": "s1",
-    "rating": "down",
-    "comment": "回答不够具体",
-    "messageId": ""
-  },
-  {
-    "timestamp": "2026-02-24T03:16:22.884Z",
-    "userId": "u1",
-    "sessionId": "s1",
-    "rating": "down",
-    "comment": "回答不够具体",
-    "messageId": ""
-  },
-  {
-    "timestamp": "2026-02-25T06:16:57.322Z",
+    "timestamp": "2026-04-03T03:22:11.567Z",
     "userId": "u1",
     "sessionId": "s1",
     "rating": "up",
@@ -24,7 +8,7 @@
     "messageId": ""
   },
   {
-    "timestamp": "2026-02-25T06:22:29.615Z",
+    "timestamp": "2026-04-03T03:23:15.697Z",
     "userId": "u1",
     "sessionId": "s1",
     "rating": "up",
@@ -32,7 +16,7 @@
     "messageId": ""
   },
   {
-    "timestamp": "2026-02-26T08:33:28.348Z",
+    "timestamp": "2026-04-03T03:24:20.925Z",
     "userId": "u1",
     "sessionId": "s1",
     "rating": "up",
@@ -40,7 +24,7 @@
     "messageId": ""
   },
   {
-    "timestamp": "2026-04-02T11:59:13.385Z",
+    "timestamp": "2026-04-03T04:09:22.753Z",
     "userId": "u1",
     "sessionId": "s1",
     "rating": "up",
@@ -48,7 +32,7 @@
     "messageId": ""
   },
   {
-    "timestamp": "2026-04-02T12:28:14.183Z",
+    "timestamp": "2026-04-03T04:15:22.835Z",
     "userId": "u1",
     "sessionId": "s1",
     "rating": "up",
@@ -56,7 +40,7 @@
     "messageId": ""
   },
   {
-    "timestamp": "2026-04-02T12:31:13.798Z",
+    "timestamp": "2026-04-03T04:16:11.104Z",
     "userId": "u1",
     "sessionId": "s1",
     "rating": "up",
@@ -64,7 +48,7 @@
     "messageId": ""
   },
   {
-    "timestamp": "2026-04-02T12:32:23.588Z",
+    "timestamp": "2026-04-03T04:20:24.615Z",
     "userId": "u1",
     "sessionId": "s1",
     "rating": "up",
@@ -72,7 +56,7 @@
     "messageId": ""
   },
   {
-    "timestamp": "2026-04-02T12:32:45.277Z",
+    "timestamp": "2026-04-03T04:45:56.635Z",
     "userId": "u1",
     "sessionId": "s1",
     "rating": "up",
@@ -80,7 +64,7 @@
     "messageId": ""
   },
   {
-    "timestamp": "2026-04-02T12:33:00.943Z",
+    "timestamp": "2026-04-03T04:58:35.404Z",
     "userId": "u1",
     "sessionId": "s1",
     "rating": "up",
@@ -88,7 +72,7 @@
     "messageId": ""
   },
   {
-    "timestamp": "2026-04-02T12:34:53.831Z",
+    "timestamp": "2026-04-03T05:29:08.616Z",
     "userId": "u1",
     "sessionId": "s1",
     "rating": "up",
@@ -96,63 +80,7 @@
     "messageId": ""
   },
   {
-    "timestamp": "2026-04-02T12:35:07.511Z",
-    "userId": "u1",
-    "sessionId": "s1",
-    "rating": "up",
-    "comment": "ok",
-    "messageId": ""
-  },
-  {
-    "timestamp": "2026-04-02T12:35:25.088Z",
-    "userId": "u1",
-    "sessionId": "s1",
-    "rating": "up",
-    "comment": "ok",
-    "messageId": ""
-  },
-  {
-    "timestamp": "2026-04-02T12:44:03.966Z",
-    "userId": "u1",
-    "sessionId": "s1",
-    "rating": "up",
-    "comment": "ok",
-    "messageId": ""
-  },
-  {
-    "timestamp": "2026-04-02T12:44:25.995Z",
-    "userId": "u1",
-    "sessionId": "s1",
-    "rating": "up",
-    "comment": "ok",
-    "messageId": ""
-  },
-  {
-    "timestamp": "2026-04-02T12:45:21.178Z",
-    "userId": "u1",
-    "sessionId": "s1",
-    "rating": "up",
-    "comment": "ok",
-    "messageId": ""
-  },
-  {
-    "timestamp": "2026-04-02T12:46:04.591Z",
-    "userId": "u1",
-    "sessionId": "s1",
-    "rating": "up",
-    "comment": "ok",
-    "messageId": ""
-  },
-  {
-    "timestamp": "2026-04-02T12:46:22.596Z",
-    "userId": "u1",
-    "sessionId": "s1",
-    "rating": "up",
-    "comment": "ok",
-    "messageId": ""
-  },
-  {
-    "timestamp": "2026-04-02T12:51:13.223Z",
+    "timestamp": "2026-04-03T05:29:52.576Z",
     "userId": "u1",
     "sessionId": "s1",
     "rating": "up",

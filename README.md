@@ -269,7 +269,7 @@ npm run eval:retrieval
 Default eval set is `eval_queries.jsonl` with fields:
 
 ```json
-{"query":"这个设备要不要每月订阅费","expected_faq_id":"GF-002"}
+{"query":"产品优势是什么","expected_faq_id":"F860-014"}
 ```
 
 Output metrics:
