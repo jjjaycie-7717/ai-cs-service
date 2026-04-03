@@ -19650,5 +19650,255 @@
         }
       ]
     }
+  },
+  {
+    "timestamp": "2026-04-03T06:27:01.721Z",
+    "userId": "u_5e8xnkts2p",
+    "sessionId": "s_vdwaqzts2p",
+    "message": "在哪里可以用？",
+    "reply": "1.需在户外开阔、无遮挡区域使用，禁止在室内、树下、屋檐下等GPS信号弱/无信号处使用；\n2.首次使用前在安全环境测试设备反应，帮助宠物适应；\n3.定期检查设备信号及运行状态，确保边界防护功能正常。\n4.训狗模式可在任意环境使用，但在复杂环境遥控距离可能会有所折损。",
+    "appContext": {
+      "platform": "webview",
+      "appVersion": "1.0.0",
+      "pageCode": "h5_chat"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 1.149104,
+      "topDenseScore": 0.8050063,
+      "lexicalMatch": 1,
+      "topicLexicalMatch": 0,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "usage_scenarios",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 1.149104,
+          "faq_id": "F860-012",
+          "question": "产品适用哪些犬类？"
+        },
+        {
+          "score": 1.092236,
+          "faq_id": "F860-015",
+          "question": "产品适合室内使用吗？"
+        },
+        {
+          "score": 1.040819,
+          "faq_id": "F860-013",
+          "question": "产品的使用场景有哪些要求？"
+        },
+        {
+          "score": 0.489337,
+          "faq_id": "F860-016",
+          "question": "产品有哪些工作模式？"
+        },
+        {
+          "score": 0.468793,
+          "faq_id": "F860-006",
+          "question": "设备伤到狗狗了怎么办？"
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-03T06:27:04.202Z",
+    "userId": "u_5e8xnkts2p",
+    "sessionId": "s_vdwaqzts2p",
+    "message": "这个产品怎么用？",
+    "reply": "【排查步骤：先确认连接流程正确】\n检查连接方式（最常见错误）\n① 接收器：在关闭状态下，短按开机。\n② 打开应用APP：点击设置打开蓝牙，点击添加设备，选择F860设备，添加连接。\n③ 连接成功：主页显示F860设备，点击设备进入围栏设备主页。\n④ 创建围栏：在围栏设置页面，点击“创建围栏”进入绘制界面。\n⑤ 绘制边界：在地图上，点击或拖动点来绘制边界，根据需要选择圆形、多边形或手绘模式，对于多边形围栏，您最多可以设置10个点。绘制完成后，系统会自动将该形状闭合为一个封闭区域。\n⑥ 保存并启用围栏：绘制完成后，点击“保存”，围栏成功保存后，您可以立即启用它。\n\n【快速总结】开机→连接APP→绘制围栏→启用围栏",
+    "appContext": {
+      "platform": "webview",
+      "appVersion": "1.0.0",
+      "pageCode": "h5_chat"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 1.190785,
+      "topDenseScore": 0.89642775,
+      "lexicalMatch": 1,
+      "topicLexicalMatch": 0,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "product_usage",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 1.190785,
+          "faq_id": "F860-030",
+          "question": "是否可以同时创建多个围栏？"
+        },
+        {
+          "score": 1.186492,
+          "faq_id": "F860-017",
+          "question": "设备可以创建那些类型的围栏？"
+        },
+        {
+          "score": 1.158996,
+          "faq_id": "F860-028",
+          "question": "如何连接接收器？"
+        },
+        {
+          "score": 0.786591,
+          "faq_id": "F860-031",
+          "question": "围栏创建后可以修改吗？"
+        },
+        {
+          "score": 0.745008,
+          "faq_id": "F860-037",
+          "question": "创建围栏时，设备是否需要宠物佩戴？"
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-03T06:27:15.148Z",
+    "userId": "u_5e8xnkts2p",
+    "sessionId": "s_vdwaqzts2p",
+    "message": "栅栏怎么设置？",
+    "reply": "【排查步骤：先确认连接流程正确】\n检查连接方式（最常见错误）\n① 接收器：在关闭状态下，短按开机。\n② 打开应用APP：点击设置打开蓝牙，点击添加设备，选择F860设备，添加连接。\n③ 连接成功：主页显示F860设备，点击设备进入围栏设备主页。\n④ 创建围栏：在围栏设置页面，点击“创建围栏”进入绘制界面。\n⑤ 绘制边界：在地图上，点击或拖动点来绘制边界，根据需要选择圆形、多边形或手绘模式，对于多边形围栏，您最多可以设置10个点。绘制完成后，系统会自动将该形状闭合为一个封闭区域。\n⑥ 保存并启用围栏：绘制完成后，点击“保存”，围栏成功保存后，您可以立即启用它。\n\n【快速总结】开机→连接APP→绘制围栏→启用围栏",
+    "appContext": {
+      "platform": "webview",
+      "appVersion": "1.0.0",
+      "pageCode": "h5_chat"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 1.205785,
+      "topDenseScore": 0.89642775,
+      "lexicalMatch": 1,
+      "topicLexicalMatch": 0,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "product_usage",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 1.205785,
+          "faq_id": "F860-030",
+          "question": "是否可以同时创建多个围栏？"
+        },
+        {
+          "score": 1.186492,
+          "faq_id": "F860-017",
+          "question": "设备可以创建那些类型的围栏？"
+        },
+        {
+          "score": 1.158996,
+          "faq_id": "F860-028",
+          "question": "如何连接接收器？"
+        },
+        {
+          "score": 0.954688,
+          "faq_id": "F860-031",
+          "question": "围栏创建后可以修改吗？"
+        },
+        {
+          "score": 0.760008,
+          "faq_id": "F860-037",
+          "question": "创建围栏时，设备是否需要宠物佩戴？"
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-03T06:27:30.002Z",
+    "userId": "u_5e8xnkts2p",
+    "sessionId": "s_vdwaqzts2p",
+    "message": "围栏怎么设置？",
+    "reply": "【排查步骤：先确认连接流程正确】\n检查连接方式（最常见错误）\n① 接收器：在关闭状态下，短按开机。\n② 打开应用APP：点击设置打开蓝牙，点击添加设备，选择F860设备，添加连接。\n③ 连接成功：主页显示F860设备，点击设备进入围栏设备主页。\n④ 创建围栏：在围栏设置页面，点击“创建围栏”进入绘制界面。\n⑤ 绘制边界：在地图上，点击或拖动点来绘制边界，根据需要选择圆形、多边形或手绘模式，对于多边形围栏，您最多可以设置10个点。绘制完成后，系统会自动将该形状闭合为一个封闭区域。\n⑥ 保存并启用围栏：绘制完成后，点击“保存”，围栏成功保存后，您可以立即启用它。\n\n【快速总结】开机→连接APP→绘制围栏→启用围栏",
+    "appContext": {
+      "platform": "webview",
+      "appVersion": "1.0.0",
+      "pageCode": "h5_chat"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 1.205785,
+      "topDenseScore": 0.89642775,
+      "lexicalMatch": 1,
+      "topicLexicalMatch": 0.3333,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "product_usage",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 1.205785,
+          "faq_id": "F860-030",
+          "question": "是否可以同时创建多个围栏？"
+        },
+        {
+          "score": 1.201492,
+          "faq_id": "F860-017",
+          "question": "设备可以创建那些类型的围栏？"
+        },
+        {
+          "score": 1.158996,
+          "faq_id": "F860-028",
+          "question": "如何连接接收器？"
+        },
+        {
+          "score": 1.044515,
+          "faq_id": "F860-031",
+          "question": "围栏创建后可以修改吗？"
+        },
+        {
+          "score": 0.780344,
+          "faq_id": "F860-037",
+          "question": "创建围栏时，设备是否需要宠物佩戴？"
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-03T06:27:55.241Z",
+    "userId": "u_5e8xnkts2p",
+    "sessionId": "s_vdwaqzts2p",
+    "message": "可以创建多个围栏吗？",
+    "reply": "可以同时创建多个围栏，但一次只能启用一个无线围栏，若要启用另一个围栏，在围栏列表中切换至该围栏，若要更改围栏范围或形状，编辑围栏并保存。",
+    "appContext": {
+      "platform": "webview",
+      "appVersion": "1.0.0",
+      "pageCode": "h5_chat"
+    },
+    "retrieval": {
+      "error": "",
+      "topScore": 1.265785,
+      "topDenseScore": 0.9183345,
+      "lexicalMatch": 1,
+      "topicLexicalMatch": 1,
+      "lexicalMatchMin": 0.15,
+      "semanticMatchMinDense": 0.6,
+      "intent": "multiple_fences",
+      "answerConfidenceThreshold": 0.78,
+      "topHits": [
+        {
+          "score": 1.265785,
+          "faq_id": "F860-030",
+          "question": "是否可以同时创建多个围栏？"
+        },
+        {
+          "score": 1.234229,
+          "faq_id": "F860-031",
+          "question": "围栏创建后可以修改吗？"
+        },
+        {
+          "score": 0.74859,
+          "faq_id": "F860-017",
+          "question": "设备可以创建那些类型的围栏？"
+        },
+        {
+          "score": 0.594411,
+          "faq_id": "F860-028",
+          "question": "如何连接接收器？"
+        },
+        {
+          "score": 0.586261,
+          "faq_id": "F860-037",
+          "question": "创建围栏时，设备是否需要宠物佩戴？"
+        }
+      ]
+    }
   }
 ]
