@@ -950,6 +950,18 @@ async function runDefaultFlowSuite(baseUrl) {
   assert.match(chatNormal.reply, /无需埋线|围栏形状|越界提醒|手动训练/, "chat normal reply unexpected");
   assert.equal("handoff" in chatNormal, false, "chat should not expose handoff info");
 
+  const chatGreeting = assertJsonResponse(
+    await request(baseUrl, "POST", "/api/chat", {
+      userId: "u_greeting",
+      sessionId: "s_greeting",
+      message: "你好",
+      appContext: { platform: "ios", appVersion: "1.0.0", pageCode: "home" },
+    }),
+    200,
+    "chat greeting",
+  );
+  assert.equal(chatGreeting.reply, "您可以直接说出遇到的产品问题哦～");
+
   const chatSceneParaphrase = assertJsonResponse(
     await request(baseUrl, "POST", "/api/chat", {
       userId: "u_scene",

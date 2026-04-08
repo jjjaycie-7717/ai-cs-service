@@ -59,6 +59,7 @@ const unknownTopicScoreMax = envNumber("UNKNOWN_TOPIC_SCORE_MAX", 0.64);
 const unknownTopicDenseMax = envNumber("UNKNOWN_TOPIC_DENSE_MAX", 0.74);
 const unknownTopicLexicalMax = envNumber("UNKNOWN_TOPIC_LEXICAL_MAX", 0.16);
 let bm25IndexPromise = null;
+const greetingReply = "您可以直接说出遇到的产品问题哦～";
 const genericFallbackReply =
   "非常抱歉，当前这个问题我暂时无法直接解答。建议你直接联系购买产品的平台客服，他们会为你提供更精准的售后支持，帮你尽快解决问题。";
 
@@ -496,6 +497,22 @@ function isDecisionQuestion(text) {
   }
 
   return /(吗|么|？|\?)$/.test(normalized) && /(订阅|收费|付费|支持|开启|关闭|绑定|告警)/.test(normalized);
+}
+
+function isGreetingMessage(text) {
+  const normalized = String(text || "")
+    .toLowerCase()
+    .replace(/[？?！!，,。.、~\s]/g, "");
+  if (!normalized) return false;
+
+  return [
+    "你好",
+    "您好",
+    "哈喽",
+    "嗨",
+    "hi",
+    "hello",
+  ].includes(normalized);
 }
 
 async function appendJsonArray(fileName, item) {
@@ -1202,6 +1219,39 @@ app.post("/api/chat", async (req, res) => {
   const { userId, sessionId, message, appContext = {} } = req.body;
 
   try {
+    if (isGreetingMessage(message)) {
+      const now = new Date().toISOString();
+      const reply = greetingReply;
+
+      await appendJsonArray("messages.json", {
+        timestamp: now,
+        userId,
+        sessionId,
+        message,
+        reply,
+        appContext,
+        retrieval: {
+          error: "",
+          topScore: 0,
+          topDenseScore: 0,
+          lexicalMatch: 0,
+          topicLexicalMatch: 0,
+          lexicalMatchMin,
+          semanticMatchMinDense,
+          intent: "",
+          answerConfidenceThreshold,
+          topHits: [],
+        },
+      });
+
+      return res.json({
+        sessionId,
+        reply,
+        sources: [],
+        timestamp: now,
+      });
+    }
+
     let retrievalError = "";
     let hits = [];
     const normalizedMessage = normalizeTerminology(message);

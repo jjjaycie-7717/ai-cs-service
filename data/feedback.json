@@ -102,5 +102,13 @@
     "rating": "up",
     "comment": "ok",
     "messageId": ""
+  },
+  {
+    "timestamp": "2026-04-07T05:44:23.952Z",
+    "userId": "u1",
+    "sessionId": "s1",
+    "rating": "up",
+    "comment": "ok",
+    "messageId": ""
   }
 ]

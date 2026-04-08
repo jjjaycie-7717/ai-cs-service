@@ -208,14 +208,14 @@
       </header>
 
       <section id="feed" class="feed">
-        <div id="empty" class="empty">你好，我是客服助手。请描述你的问题。</div>
+        <div id="empty" class="empty">您好～我是产品智能专属客服，仅为您解答产品功能、操作及相关问题，非产品类咨询暂无法回复，感谢理解。</div>
       </section>
 
       <footer id="composer" class="composer">
         <div class="input-row">
           <textarea
             id="input"
-            placeholder="请输入你的问题"
+            placeholder="请输入产品功能或操作相关问题"
             autocomplete="off"
             enterkeyhint="send"
           ></textarea>
@@ -259,8 +259,8 @@
 
         var cfg = {
           title: q("title", "在线客服"),
-          welcome: q("welcome", "你好，我是客服助手。请描述你的问题。"),
-          placeholder: q("placeholder", "请输入你的问题"),
+          welcome: q("welcome", "您好～我是产品智能专属客服，仅为您解答产品功能、操作及相关问题，非产品类咨询暂无法回复，感谢理解。"),
+          placeholder: q("placeholder", "请输入产品功能或操作相关问题"),
           apiBase: q("apiBase", ""),
           endpoint: q("endpoint", "/api/chat"),
           userId: q("userId", randomId("u")),
@@ -360,6 +360,12 @@
           feed.appendChild(box);
           feed.scrollTop = feed.scrollHeight + 200;
           return box;
+        }
+
+        function renderWelcomeBubble() {
+          feed.innerHTML = "";
+          empty = null;
+          addBubble("bot", cfg.welcome);
         }
 
         function withApiBase(endpoint) {
@@ -473,8 +479,7 @@
             cfg.appVersion = payload.appVersion || cfg.appVersion;
             cfg.pageCode = payload.pageCode || cfg.pageCode;
           } else if (type === "clear") {
-            feed.innerHTML = '<div id="empty" class="empty">' + cfg.welcome + "</div>";
-            empty = document.getElementById("empty");
+            renderWelcomeBubble();
           }
         }
 
@@ -495,6 +500,8 @@
         document.addEventListener("message", function (event) {
           handleInbound(event.data);
         });
+
+        renderWelcomeBubble();
 
         if (window.visualViewport) {
           function adjustForKeyboard() {
